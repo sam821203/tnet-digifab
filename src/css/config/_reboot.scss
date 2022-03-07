@@ -1,0 +1,46 @@
+body {
+  font-family: "Nunito", "Noto Sans TC", sans-serif;
+}
+
+main {
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.25;
+}
+
+p {
+  line-height: 1.75;
+}
+
+input,
+select,
+textarea {
+  font-family: "Nunito", "Noto Sans TC", sans-serif;
+  &:focus {
+    outline: none;
+  }
+}
+
+select {
+  min-width: 200px;
+  // background-image: url(../img/icon/icon-select-arrow.svg);
+  background-size: 10px 6px;
+  background-position: right 1.25rem center;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  &::-ms-expand {
+    display: none;
+  }
+}
+
+button:focus {
+  outline: none;
+}
