@@ -23,9 +23,16 @@
 @import "plugin/photoswipe/photoswipe";
 @import "plugin/photoswipe/default-skin";
 
+// Adobe font
+@import url("https://use.typekit.net/lqg0lqg.css");
+
 /* ==========
   #UTILITIES
   ========== */
+
+// WIDTH
+@import "utilities/width";
+
 // GRID
 @import "utilities/gap";
 

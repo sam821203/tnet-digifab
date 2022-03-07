@@ -17,6 +17,10 @@ module.exports = {
       xl: "1200px",
       xxl: "1400px",
     },
+    fontFamily: {
+      sans: ['"Noto Sans TC"', "sans-serif"],
+      filson: ["filson-soft", "sans-serif"],
+    },
     fontSize: {
       xs: ".75rem",
       sm: ".875rem",
@@ -43,9 +47,18 @@ module.exports = {
       90: ".9",
       100: "1",
     },
+    inset: {
+      0: 0,
+      auto: "auto",
+      "1/2": "50%",
+      "8x5": "40px",
+      "8x6": "48px",
+    },
     extend: {
       colors: {
-        primary: "#38c674",
+        primary: "#e55400",
+        primaryhover: "#bf4600",
+        logincolor: "rgba(0,0,0,0.4)",
         gray: {
           100: "#eeeeee",
           200: "#dddddd",

@@ -4,95 +4,63 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>專案名稱</title>
+    <title>index</title>
     <link rel="stylesheet" href="../../css/all.css" />
   </head>
-  <body>
-    <div id="container">
-      <!-- @@include ../include/header.html -->
-      <main>
-        <div class="gray-gradient mt-85">
-          <div class="pt-14 pb-18 pb-36@md">
-            <div class="wrap">
-              <div class="mb-10 text-center">
-                <h1 class="text-5xl text-uppercase">會員登入</h1>
+  <body class="w-full h-full">
+    <section
+      style="background-image: url(../../img/login-bg-2560.jpg)"
+      class="bg-cover w-screen h-screen bg-no-repeat"
+    >
+      <div id="container">
+        <header class="mb-32">
+          <img
+            src="../../img/logo.svg"
+            alt=""
+            class="relative top-8x6 left-8x5"
+          />
+        </header>
+        <main>
+          <h1
+            class="font-filson font-medium text-6xl text-center text-white mb-10"
+          >
+            Tnet Fabric Library
+          </h1>
+          <div class="mb-10 text-center">
+            <h2
+              class="font-medium text-3xl text-uppercase text-white font-sans"
+            >
+              會員登入
+            </h2>
+          </div>
+          <div class="w-full h-full">
+            <div class="flex flex-col items-center w-full h-full">
+              <div class="email-address">
+                <input
+                  type="email"
+                  placeholder="帳號 *"
+                  class="bg-logincolor rounded w-300 py-3 pl-5 mb-6 placeholder-white"
+                />
               </div>
-              <div class="login" style="max-width: 540px; margin: 0 auto">
-                <div class="gap-y-20">
-                  <div class="email-address">
-                    <input
-                      type="email"
-                      placeholder="帳號 *"
-                      class="form-control"
-                    />
-                  </div>
 
-                  <div class="password">
-                    <input
-                      type="password"
-                      placeholder="Password"
-                      class="form-control"
-                    />
-                  </div>
+              <div class="password">
+                <input
+                  type="password"
+                  placeholder="密碼 *"
+                  class="bg-logincolor rounded w-300 py-3 pl-5 mb-10 placeholder-white"
+                />
+              </div>
 
-                  <div class="flex@sm justify-between@sm items-start@sm">
-                    <a href="member.html" class="btn btn--primary">Login</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="wrap">
-              <div class="register-table">
-                <table>
-                  <thead>
-                    <tr>
-                      <th colspan="2">會員註冊時間：2021-01-01 / 08:36:05</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>電子信箱</td>
-                      <td>jae@creatop.com.tw</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <!-- <img src="<?=base_url()?>assets/img/logo/logo.png"> -->
+              <div
+                class="w-160 h-12 bg-white py-3 px-16 text-primary rounded-full hover:text-primaryhover"
+              >
+                <a href="member.html">登入</a>
               </div>
             </div>
           </div>
-        </div>
-        <div class="breadcrumb">
-          <div class="wrapper-large">
-            <div class="breadcrumb-list">
-              <a href="index.html" class="breadcrumb-link">Home</a>
-              <span></span>
-              <a href="login.html" class="breadcrumb-link">Member</a>
-            </div>
-          </div>
-        </div>
-      </main>
-      <div id="js-forgotten" class="modal">
-        <div class="modal-main">
-          <div class="wrapper-tiny">
-            <div class="text-center">
-              <h2 class="text-5xl text-uppercase color-white mb-10">
-                Forgotten Your Password?
-              </h2>
-              <input
-                type="email"
-                placeholder="Your E-mail *"
-                class="form-control mb-5"
-              />
-              <a href="javascript:;" class="btn btn--white">Submit</a>
-            </div>
-          </div>
-        </div>
-        <a href="javascript:;" class="modal-close" data-dismiss="#js-forgotten">
-          <span></span>
-          <span></span>
-        </a>
+        </main>
+        <!-- @@include ../include/footer.html -->
       </div>
-      <!-- @@include ../include/footer.html -->
-    </div>
+    </section>
   </body>
 </html>
