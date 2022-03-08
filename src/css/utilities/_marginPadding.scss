@@ -1,0 +1,11 @@
+.glo-mb {
+  margin-bottom: 28px;
+}
+
+.icon-mr {
+  margin-right: 10px;
+}
+
+.gray-block {
+  @apply bg-gray-100 glo-radius border-gray-200 border p-6;
+}

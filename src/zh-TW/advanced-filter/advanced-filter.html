@@ -11,61 +11,23 @@
     style="background-image: url(../../img/bg-search.png)"
     class="bg-cover w-full h-full bg-no-repeat"
   >
-<!-- start header.html-->
-<header
-  class="fixed top-0 left-0 flex justify-between items-center w-full h-16 bg-white px-20 py-4"
->
-  <div class="flex items-center">
-    <div class="img-wrap w-10 mr-4">
-      <img src="../../img/logo.svg" alt="" />
-    </div>
-    <div class="border-l-2 pl-4">
-      <h4 class="font-filson">Tnet Fabric Library</h4>
-    </div>
-  </div>
-
-  <div class="flex items-center">
-    <h5 class="icon-mr">登出</h5>
-    <span>icon</span>
-  </div>
-</header>
-
-<!-- end header.html-->
+    <!-- @@include ../include/header.html -->
 
     <main>
       <h1 class="text-center text-secondary font-filson filson-h2 mt-32">
-        Search
+        Advanced filter
       </h1>
       <div class="search-container mx-20 glo-mb mt-8">
         <form action="" class="flex gap-5">
           <div class="w-4/5 gray-block">
             <div class="flex w-full h-full">
+              <label for="number">編號：</label>
               <input
                 type="text"
-                placeholder="布料編號、 關鍵字搜尋"
+                placeholder="請輸入編號"
                 name="search"
                 class="w-5/6 px-5 py-3 text-base rounded-l-2point5"
               />
-              <button
-                type="submit"
-                class="w-1/6 flex justify-center items-center bg-primary text-white rounded-r-2point5"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6 mr-2"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                  />
-                </svg>
-                <h5>搜尋</h5>
-              </button>
             </div>
           </div>
           <div class="w-1/5 flex justify-center gray-block">
@@ -316,25 +278,6 @@
       </div>
     </main>
 
-<!-- start footer.html-->
-<footer
-  class="flex justify-between items-center w-full h-16 bg-black px-20 py-4"
->
-  <div class="flex items-center">
-    <h5 class="text-white">
-      © 2022 Taiwan Textile Research Institute. All Rights Reserved.
-    </h5>
-  </div>
-
-  <div class="img-wrap h-12">
-    <img
-      src="../../img/footer_logo.png"
-      alt=""
-      class="object-contain w-full h-full"
-    />
-  </div>
-</footer>
-
-<!-- end footer.html-->
+    <!-- @@include ../include/footer.html -->
   </body>
 </html>

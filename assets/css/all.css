@@ -1978,6 +1978,12 @@ video {
   border-color: rgba(0,0,0,0.4);
 }
 
+.divide-secondary > :not(template) ~ :not(template){
+  --divide-opacity: 1;
+  border-color: #3F4547;
+  border-color: rgba(63, 69, 71, var(--divide-opacity));
+}
+
 .divide-solid > :not(template) ~ :not(template){
   border-style: solid;
 }
@@ -2697,6 +2703,12 @@ video {
   background-color: rgba(0,0,0,0.4);
 }
 
+.bg-secondary{
+  --bg-opacity: 1;
+  background-color: #3F4547;
+  background-color: rgba(63, 69, 71, var(--bg-opacity));
+}
+
 .hover\:bg-transparent:hover{
   background-color: transparent;
 }
@@ -3271,6 +3283,12 @@ video {
 
 .hover\:bg-logincolor:hover{
   background-color: rgba(0,0,0,0.4);
+}
+
+.hover\:bg-secondary:hover{
+  --bg-opacity: 1;
+  background-color: #3F4547;
+  background-color: rgba(63, 69, 71, var(--bg-opacity));
 }
 
 .focus\:bg-transparent:focus{
@@ -3849,6 +3867,12 @@ video {
   background-color: rgba(0,0,0,0.4);
 }
 
+.focus\:bg-secondary:focus{
+  --bg-opacity: 1;
+  background-color: #3F4547;
+  background-color: rgba(63, 69, 71, var(--bg-opacity));
+}
+
 .bg-none{
   background-image: none;
 }
@@ -4370,6 +4394,11 @@ video {
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
 }
 
+.from-secondary{
+  --gradient-from-color: #3F4547;
+  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(63, 69, 71, 0));
+}
+
 .via-transparent{
   --gradient-via-color: transparent;
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
@@ -4855,6 +4884,11 @@ video {
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
 }
 
+.via-secondary{
+  --gradient-via-color: #3F4547;
+  --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(63, 69, 71, 0));
+}
+
 .to-transparent{
   --gradient-to-color: transparent;
 }
@@ -5241,6 +5275,10 @@ video {
 
 .to-logincolor{
   --gradient-to-color: rgba(0,0,0,0.4);
+}
+
+.to-secondary{
+  --gradient-to-color: #3F4547;
 }
 
 .hover\:from-transparent:hover{
@@ -5728,6 +5766,11 @@ video {
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
 }
 
+.hover\:from-secondary:hover{
+  --gradient-from-color: #3F4547;
+  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(63, 69, 71, 0));
+}
+
 .hover\:via-transparent:hover{
   --gradient-via-color: transparent;
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
@@ -6213,6 +6256,11 @@ video {
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
 }
 
+.hover\:via-secondary:hover{
+  --gradient-via-color: #3F4547;
+  --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(63, 69, 71, 0));
+}
+
 .hover\:to-transparent:hover{
   --gradient-to-color: transparent;
 }
@@ -6599,6 +6647,10 @@ video {
 
 .hover\:to-logincolor:hover{
   --gradient-to-color: rgba(0,0,0,0.4);
+}
+
+.hover\:to-secondary:hover{
+  --gradient-to-color: #3F4547;
 }
 
 .focus\:from-transparent:focus{
@@ -7086,6 +7138,11 @@ video {
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
 }
 
+.focus\:from-secondary:focus{
+  --gradient-from-color: #3F4547;
+  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(63, 69, 71, 0));
+}
+
 .focus\:via-transparent:focus{
   --gradient-via-color: transparent;
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
@@ -7571,6 +7628,11 @@ video {
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
 }
 
+.focus\:via-secondary:focus{
+  --gradient-via-color: #3F4547;
+  --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(63, 69, 71, 0));
+}
+
 .focus\:to-transparent:focus{
   --gradient-to-color: transparent;
 }
@@ -7957,6 +8019,10 @@ video {
 
 .focus\:to-logincolor:focus{
   --gradient-to-color: rgba(0,0,0,0.4);
+}
+
+.focus\:to-secondary:focus{
+  --gradient-to-color: #3F4547;
 }
 
 .bg-opacity-0{
@@ -8747,6 +8813,12 @@ video {
   border-color: rgba(0,0,0,0.4);
 }
 
+.border-secondary{
+  --border-opacity: 1;
+  border-color: #3F4547;
+  border-color: rgba(63, 69, 71, var(--border-opacity));
+}
+
 .hover\:border-transparent:hover{
   border-color: transparent;
 }
@@ -9323,6 +9395,12 @@ video {
   border-color: rgba(0,0,0,0.4);
 }
 
+.hover\:border-secondary:hover{
+  --border-opacity: 1;
+  border-color: #3F4547;
+  border-color: rgba(63, 69, 71, var(--border-opacity));
+}
+
 .focus\:border-transparent:focus{
   border-color: transparent;
 }
@@ -9897,6 +9975,12 @@ video {
 
 .focus\:border-logincolor:focus{
   border-color: rgba(0,0,0,0.4);
+}
+
+.focus\:border-secondary:focus{
+  --border-opacity: 1;
+  border-color: #3F4547;
+  border-color: rgba(63, 69, 71, var(--border-opacity));
 }
 
 .border-opacity-0{
@@ -15653,6 +15737,18 @@ video {
   color: rgba(0,0,0,0.4);
 }
 
+.placeholder-secondary:-ms-input-placeholder{
+  --placeholder-opacity: 1;
+  color: #3F4547;
+  color: rgba(63, 69, 71, var(--placeholder-opacity));
+}
+
+.placeholder-secondary::placeholder{
+  --placeholder-opacity: 1;
+  color: #3F4547;
+  color: rgba(63, 69, 71, var(--placeholder-opacity));
+}
+
 .focus\:placeholder-transparent:focus:-ms-input-placeholder{
   color: transparent;
 }
@@ -16805,6 +16901,18 @@ video {
   color: rgba(0,0,0,0.4);
 }
 
+.focus\:placeholder-secondary:focus:-ms-input-placeholder{
+  --placeholder-opacity: 1;
+  color: #3F4547;
+  color: rgba(63, 69, 71, var(--placeholder-opacity));
+}
+
+.focus\:placeholder-secondary:focus::placeholder{
+  --placeholder-opacity: 1;
+  color: #3F4547;
+  color: rgba(63, 69, 71, var(--placeholder-opacity));
+}
+
 .placeholder-opacity-0:-ms-input-placeholder{
   --placeholder-opacity: 0;
 }
@@ -17931,6 +18039,12 @@ video {
   color: rgba(0,0,0,0.4);
 }
 
+.text-secondary{
+  --text-opacity: 1;
+  color: #3F4547;
+  color: rgba(63, 69, 71, var(--text-opacity));
+}
+
 .hover\:text-transparent:hover{
   color: transparent;
 }
@@ -18507,6 +18621,12 @@ video {
   color: rgba(0,0,0,0.4);
 }
 
+.hover\:text-secondary:hover{
+  --text-opacity: 1;
+  color: #3F4547;
+  color: rgba(63, 69, 71, var(--text-opacity));
+}
+
 .focus\:text-transparent:focus{
   color: transparent;
 }
@@ -19081,6 +19201,12 @@ video {
 
 .focus\:text-logincolor:focus{
   color: rgba(0,0,0,0.4);
+}
+
+.focus\:text-secondary:focus{
+  --text-opacity: 1;
+  color: #3F4547;
+  color: rgba(63, 69, 71, var(--text-opacity));
 }
 
 .text-opacity-0{
@@ -25926,6 +26052,14 @@ a.pswp__share--download:hover {
   width: 10rem;
 }
 
+.w-198 {
+  width: 198px;
+}
+
+.h-94 {
+  height: 94px;
+}
+
 .g-2\.5 {
   margin-left: -0.625rem;
   margin-bottom: -0.625rem;
@@ -26870,6 +27004,106 @@ a.pswp__share--download:hover {
   .xxl\:gy-15 > * {
     padding-bottom: 3.75rem;
   }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Noto Sans TC", "sans-serif";
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 500;
+}
+
+h4,
+h5 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+.filson-h1 {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.filson-h2 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.filson-h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.filson-h4 {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.filson-h5 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.glo-radius {
+  border-radius: 5px;
+}
+
+.rounded-l-2point5 {
+  border-radius: 5px 0 0 5px;
+}
+
+.rounded-r-2point5 {
+  border-radius: 0 5px 5px 0;
+}
+
+.glo-mb {
+  margin-bottom: 28px;
+}
+
+.icon-mr {
+  margin-right: 10px;
+}
+
+.gray-block {
+  --bg-opacity: 1;
+  background-color: #eeeeee;
+  background-color: rgba(238, 238, 238, var(--bg-opacity));
+  border-radius: 5px;
+  --border-opacity: 1;
+  border-color: #dddddd;
+  border-color: rgba(221, 221, 221, var(--border-opacity));
+  border-width: 1px;
+  padding: 1.5rem;
+}
+
+.bg-white70 {
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 /* ==========
@@ -28279,6 +28513,12 @@ a.pswp__share--download:hover {
     border-color: rgba(0,0,0,0.4);
   }
 
+  .sm\:divide-secondary > :not(template) ~ :not(template){
+    --divide-opacity: 1;
+    border-color: #3F4547;
+    border-color: rgba(63, 69, 71, var(--divide-opacity));
+  }
+
   .sm\:divide-solid > :not(template) ~ :not(template){
     border-style: solid;
   }
@@ -28998,6 +29238,12 @@ a.pswp__share--download:hover {
     background-color: rgba(0,0,0,0.4);
   }
 
+  .sm\:bg-secondary{
+    --bg-opacity: 1;
+    background-color: #3F4547;
+    background-color: rgba(63, 69, 71, var(--bg-opacity));
+  }
+
   .sm\:hover\:bg-transparent:hover{
     background-color: transparent;
   }
@@ -29572,6 +29818,12 @@ a.pswp__share--download:hover {
 
   .sm\:hover\:bg-logincolor:hover{
     background-color: rgba(0,0,0,0.4);
+  }
+
+  .sm\:hover\:bg-secondary:hover{
+    --bg-opacity: 1;
+    background-color: #3F4547;
+    background-color: rgba(63, 69, 71, var(--bg-opacity));
   }
 
   .sm\:focus\:bg-transparent:focus{
@@ -30150,6 +30402,12 @@ a.pswp__share--download:hover {
     background-color: rgba(0,0,0,0.4);
   }
 
+  .sm\:focus\:bg-secondary:focus{
+    --bg-opacity: 1;
+    background-color: #3F4547;
+    background-color: rgba(63, 69, 71, var(--bg-opacity));
+  }
+
   .sm\:bg-none{
     background-image: none;
   }
@@ -30671,6 +30929,11 @@ a.pswp__share--download:hover {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
   }
 
+  .sm\:from-secondary{
+    --gradient-from-color: #3F4547;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(63, 69, 71, 0));
+  }
+
   .sm\:via-transparent{
     --gradient-via-color: transparent;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
@@ -31156,6 +31419,11 @@ a.pswp__share--download:hover {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
   }
 
+  .sm\:via-secondary{
+    --gradient-via-color: #3F4547;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(63, 69, 71, 0));
+  }
+
   .sm\:to-transparent{
     --gradient-to-color: transparent;
   }
@@ -31542,6 +31810,10 @@ a.pswp__share--download:hover {
 
   .sm\:to-logincolor{
     --gradient-to-color: rgba(0,0,0,0.4);
+  }
+
+  .sm\:to-secondary{
+    --gradient-to-color: #3F4547;
   }
 
   .sm\:hover\:from-transparent:hover{
@@ -32029,6 +32301,11 @@ a.pswp__share--download:hover {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
   }
 
+  .sm\:hover\:from-secondary:hover{
+    --gradient-from-color: #3F4547;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(63, 69, 71, 0));
+  }
+
   .sm\:hover\:via-transparent:hover{
     --gradient-via-color: transparent;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
@@ -32514,6 +32791,11 @@ a.pswp__share--download:hover {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
   }
 
+  .sm\:hover\:via-secondary:hover{
+    --gradient-via-color: #3F4547;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(63, 69, 71, 0));
+  }
+
   .sm\:hover\:to-transparent:hover{
     --gradient-to-color: transparent;
   }
@@ -32900,6 +33182,10 @@ a.pswp__share--download:hover {
 
   .sm\:hover\:to-logincolor:hover{
     --gradient-to-color: rgba(0,0,0,0.4);
+  }
+
+  .sm\:hover\:to-secondary:hover{
+    --gradient-to-color: #3F4547;
   }
 
   .sm\:focus\:from-transparent:focus{
@@ -33387,6 +33673,11 @@ a.pswp__share--download:hover {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
   }
 
+  .sm\:focus\:from-secondary:focus{
+    --gradient-from-color: #3F4547;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(63, 69, 71, 0));
+  }
+
   .sm\:focus\:via-transparent:focus{
     --gradient-via-color: transparent;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
@@ -33872,6 +34163,11 @@ a.pswp__share--download:hover {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
   }
 
+  .sm\:focus\:via-secondary:focus{
+    --gradient-via-color: #3F4547;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(63, 69, 71, 0));
+  }
+
   .sm\:focus\:to-transparent:focus{
     --gradient-to-color: transparent;
   }
@@ -34258,6 +34554,10 @@ a.pswp__share--download:hover {
 
   .sm\:focus\:to-logincolor:focus{
     --gradient-to-color: rgba(0,0,0,0.4);
+  }
+
+  .sm\:focus\:to-secondary:focus{
+    --gradient-to-color: #3F4547;
   }
 
   .sm\:bg-opacity-0{
@@ -35048,6 +35348,12 @@ a.pswp__share--download:hover {
     border-color: rgba(0,0,0,0.4);
   }
 
+  .sm\:border-secondary{
+    --border-opacity: 1;
+    border-color: #3F4547;
+    border-color: rgba(63, 69, 71, var(--border-opacity));
+  }
+
   .sm\:hover\:border-transparent:hover{
     border-color: transparent;
   }
@@ -35624,6 +35930,12 @@ a.pswp__share--download:hover {
     border-color: rgba(0,0,0,0.4);
   }
 
+  .sm\:hover\:border-secondary:hover{
+    --border-opacity: 1;
+    border-color: #3F4547;
+    border-color: rgba(63, 69, 71, var(--border-opacity));
+  }
+
   .sm\:focus\:border-transparent:focus{
     border-color: transparent;
   }
@@ -36198,6 +36510,12 @@ a.pswp__share--download:hover {
 
   .sm\:focus\:border-logincolor:focus{
     border-color: rgba(0,0,0,0.4);
+  }
+
+  .sm\:focus\:border-secondary:focus{
+    --border-opacity: 1;
+    border-color: #3F4547;
+    border-color: rgba(63, 69, 71, var(--border-opacity));
   }
 
   .sm\:border-opacity-0{
@@ -41954,6 +42272,18 @@ a.pswp__share--download:hover {
     color: rgba(0,0,0,0.4);
   }
 
+  .sm\:placeholder-secondary:-ms-input-placeholder{
+    --placeholder-opacity: 1;
+    color: #3F4547;
+    color: rgba(63, 69, 71, var(--placeholder-opacity));
+  }
+
+  .sm\:placeholder-secondary::placeholder{
+    --placeholder-opacity: 1;
+    color: #3F4547;
+    color: rgba(63, 69, 71, var(--placeholder-opacity));
+  }
+
   .sm\:focus\:placeholder-transparent:focus:-ms-input-placeholder{
     color: transparent;
   }
@@ -43106,6 +43436,18 @@ a.pswp__share--download:hover {
     color: rgba(0,0,0,0.4);
   }
 
+  .sm\:focus\:placeholder-secondary:focus:-ms-input-placeholder{
+    --placeholder-opacity: 1;
+    color: #3F4547;
+    color: rgba(63, 69, 71, var(--placeholder-opacity));
+  }
+
+  .sm\:focus\:placeholder-secondary:focus::placeholder{
+    --placeholder-opacity: 1;
+    color: #3F4547;
+    color: rgba(63, 69, 71, var(--placeholder-opacity));
+  }
+
   .sm\:placeholder-opacity-0:-ms-input-placeholder{
     --placeholder-opacity: 0;
   }
@@ -44232,6 +44574,12 @@ a.pswp__share--download:hover {
     color: rgba(0,0,0,0.4);
   }
 
+  .sm\:text-secondary{
+    --text-opacity: 1;
+    color: #3F4547;
+    color: rgba(63, 69, 71, var(--text-opacity));
+  }
+
   .sm\:hover\:text-transparent:hover{
     color: transparent;
   }
@@ -44808,6 +45156,12 @@ a.pswp__share--download:hover {
     color: rgba(0,0,0,0.4);
   }
 
+  .sm\:hover\:text-secondary:hover{
+    --text-opacity: 1;
+    color: #3F4547;
+    color: rgba(63, 69, 71, var(--text-opacity));
+  }
+
   .sm\:focus\:text-transparent:focus{
     color: transparent;
   }
@@ -45382,6 +45736,12 @@ a.pswp__share--download:hover {
 
   .sm\:focus\:text-logincolor:focus{
     color: rgba(0,0,0,0.4);
+  }
+
+  .sm\:focus\:text-secondary:focus{
+    --text-opacity: 1;
+    color: #3F4547;
+    color: rgba(63, 69, 71, var(--text-opacity));
   }
 
   .sm\:text-opacity-0{
@@ -51112,6 +51472,12 @@ a.pswp__share--download:hover {
     border-color: rgba(0,0,0,0.4);
   }
 
+  .md\:divide-secondary > :not(template) ~ :not(template){
+    --divide-opacity: 1;
+    border-color: #3F4547;
+    border-color: rgba(63, 69, 71, var(--divide-opacity));
+  }
+
   .md\:divide-solid > :not(template) ~ :not(template){
     border-style: solid;
   }
@@ -51831,6 +52197,12 @@ a.pswp__share--download:hover {
     background-color: rgba(0,0,0,0.4);
   }
 
+  .md\:bg-secondary{
+    --bg-opacity: 1;
+    background-color: #3F4547;
+    background-color: rgba(63, 69, 71, var(--bg-opacity));
+  }
+
   .md\:hover\:bg-transparent:hover{
     background-color: transparent;
   }
@@ -52405,6 +52777,12 @@ a.pswp__share--download:hover {
 
   .md\:hover\:bg-logincolor:hover{
     background-color: rgba(0,0,0,0.4);
+  }
+
+  .md\:hover\:bg-secondary:hover{
+    --bg-opacity: 1;
+    background-color: #3F4547;
+    background-color: rgba(63, 69, 71, var(--bg-opacity));
   }
 
   .md\:focus\:bg-transparent:focus{
@@ -52983,6 +53361,12 @@ a.pswp__share--download:hover {
     background-color: rgba(0,0,0,0.4);
   }
 
+  .md\:focus\:bg-secondary:focus{
+    --bg-opacity: 1;
+    background-color: #3F4547;
+    background-color: rgba(63, 69, 71, var(--bg-opacity));
+  }
+
   .md\:bg-none{
     background-image: none;
   }
@@ -53504,6 +53888,11 @@ a.pswp__share--download:hover {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
   }
 
+  .md\:from-secondary{
+    --gradient-from-color: #3F4547;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(63, 69, 71, 0));
+  }
+
   .md\:via-transparent{
     --gradient-via-color: transparent;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
@@ -53989,6 +54378,11 @@ a.pswp__share--download:hover {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
   }
 
+  .md\:via-secondary{
+    --gradient-via-color: #3F4547;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(63, 69, 71, 0));
+  }
+
   .md\:to-transparent{
     --gradient-to-color: transparent;
   }
@@ -54375,6 +54769,10 @@ a.pswp__share--download:hover {
 
   .md\:to-logincolor{
     --gradient-to-color: rgba(0,0,0,0.4);
+  }
+
+  .md\:to-secondary{
+    --gradient-to-color: #3F4547;
   }
 
   .md\:hover\:from-transparent:hover{
@@ -54862,6 +55260,11 @@ a.pswp__share--download:hover {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
   }
 
+  .md\:hover\:from-secondary:hover{
+    --gradient-from-color: #3F4547;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(63, 69, 71, 0));
+  }
+
   .md\:hover\:via-transparent:hover{
     --gradient-via-color: transparent;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
@@ -55347,6 +55750,11 @@ a.pswp__share--download:hover {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
   }
 
+  .md\:hover\:via-secondary:hover{
+    --gradient-via-color: #3F4547;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(63, 69, 71, 0));
+  }
+
   .md\:hover\:to-transparent:hover{
     --gradient-to-color: transparent;
   }
@@ -55733,6 +56141,10 @@ a.pswp__share--download:hover {
 
   .md\:hover\:to-logincolor:hover{
     --gradient-to-color: rgba(0,0,0,0.4);
+  }
+
+  .md\:hover\:to-secondary:hover{
+    --gradient-to-color: #3F4547;
   }
 
   .md\:focus\:from-transparent:focus{
@@ -56220,6 +56632,11 @@ a.pswp__share--download:hover {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
   }
 
+  .md\:focus\:from-secondary:focus{
+    --gradient-from-color: #3F4547;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(63, 69, 71, 0));
+  }
+
   .md\:focus\:via-transparent:focus{
     --gradient-via-color: transparent;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
@@ -56705,6 +57122,11 @@ a.pswp__share--download:hover {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
   }
 
+  .md\:focus\:via-secondary:focus{
+    --gradient-via-color: #3F4547;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(63, 69, 71, 0));
+  }
+
   .md\:focus\:to-transparent:focus{
     --gradient-to-color: transparent;
   }
@@ -57091,6 +57513,10 @@ a.pswp__share--download:hover {
 
   .md\:focus\:to-logincolor:focus{
     --gradient-to-color: rgba(0,0,0,0.4);
+  }
+
+  .md\:focus\:to-secondary:focus{
+    --gradient-to-color: #3F4547;
   }
 
   .md\:bg-opacity-0{
@@ -57881,6 +58307,12 @@ a.pswp__share--download:hover {
     border-color: rgba(0,0,0,0.4);
   }
 
+  .md\:border-secondary{
+    --border-opacity: 1;
+    border-color: #3F4547;
+    border-color: rgba(63, 69, 71, var(--border-opacity));
+  }
+
   .md\:hover\:border-transparent:hover{
     border-color: transparent;
   }
@@ -58457,6 +58889,12 @@ a.pswp__share--download:hover {
     border-color: rgba(0,0,0,0.4);
   }
 
+  .md\:hover\:border-secondary:hover{
+    --border-opacity: 1;
+    border-color: #3F4547;
+    border-color: rgba(63, 69, 71, var(--border-opacity));
+  }
+
   .md\:focus\:border-transparent:focus{
     border-color: transparent;
   }
@@ -59031,6 +59469,12 @@ a.pswp__share--download:hover {
 
   .md\:focus\:border-logincolor:focus{
     border-color: rgba(0,0,0,0.4);
+  }
+
+  .md\:focus\:border-secondary:focus{
+    --border-opacity: 1;
+    border-color: #3F4547;
+    border-color: rgba(63, 69, 71, var(--border-opacity));
   }
 
   .md\:border-opacity-0{
@@ -64787,6 +65231,18 @@ a.pswp__share--download:hover {
     color: rgba(0,0,0,0.4);
   }
 
+  .md\:placeholder-secondary:-ms-input-placeholder{
+    --placeholder-opacity: 1;
+    color: #3F4547;
+    color: rgba(63, 69, 71, var(--placeholder-opacity));
+  }
+
+  .md\:placeholder-secondary::placeholder{
+    --placeholder-opacity: 1;
+    color: #3F4547;
+    color: rgba(63, 69, 71, var(--placeholder-opacity));
+  }
+
   .md\:focus\:placeholder-transparent:focus:-ms-input-placeholder{
     color: transparent;
   }
@@ -65939,6 +66395,18 @@ a.pswp__share--download:hover {
     color: rgba(0,0,0,0.4);
   }
 
+  .md\:focus\:placeholder-secondary:focus:-ms-input-placeholder{
+    --placeholder-opacity: 1;
+    color: #3F4547;
+    color: rgba(63, 69, 71, var(--placeholder-opacity));
+  }
+
+  .md\:focus\:placeholder-secondary:focus::placeholder{
+    --placeholder-opacity: 1;
+    color: #3F4547;
+    color: rgba(63, 69, 71, var(--placeholder-opacity));
+  }
+
   .md\:placeholder-opacity-0:-ms-input-placeholder{
     --placeholder-opacity: 0;
   }
@@ -67065,6 +67533,12 @@ a.pswp__share--download:hover {
     color: rgba(0,0,0,0.4);
   }
 
+  .md\:text-secondary{
+    --text-opacity: 1;
+    color: #3F4547;
+    color: rgba(63, 69, 71, var(--text-opacity));
+  }
+
   .md\:hover\:text-transparent:hover{
     color: transparent;
   }
@@ -67641,6 +68115,12 @@ a.pswp__share--download:hover {
     color: rgba(0,0,0,0.4);
   }
 
+  .md\:hover\:text-secondary:hover{
+    --text-opacity: 1;
+    color: #3F4547;
+    color: rgba(63, 69, 71, var(--text-opacity));
+  }
+
   .md\:focus\:text-transparent:focus{
     color: transparent;
   }
@@ -68215,6 +68695,12 @@ a.pswp__share--download:hover {
 
   .md\:focus\:text-logincolor:focus{
     color: rgba(0,0,0,0.4);
+  }
+
+  .md\:focus\:text-secondary:focus{
+    --text-opacity: 1;
+    color: #3F4547;
+    color: rgba(63, 69, 71, var(--text-opacity));
   }
 
   .md\:text-opacity-0{
@@ -73945,6 +74431,12 @@ a.pswp__share--download:hover {
     border-color: rgba(0,0,0,0.4);
   }
 
+  .lg\:divide-secondary > :not(template) ~ :not(template){
+    --divide-opacity: 1;
+    border-color: #3F4547;
+    border-color: rgba(63, 69, 71, var(--divide-opacity));
+  }
+
   .lg\:divide-solid > :not(template) ~ :not(template){
     border-style: solid;
   }
@@ -74664,6 +75156,12 @@ a.pswp__share--download:hover {
     background-color: rgba(0,0,0,0.4);
   }
 
+  .lg\:bg-secondary{
+    --bg-opacity: 1;
+    background-color: #3F4547;
+    background-color: rgba(63, 69, 71, var(--bg-opacity));
+  }
+
   .lg\:hover\:bg-transparent:hover{
     background-color: transparent;
   }
@@ -75238,6 +75736,12 @@ a.pswp__share--download:hover {
 
   .lg\:hover\:bg-logincolor:hover{
     background-color: rgba(0,0,0,0.4);
+  }
+
+  .lg\:hover\:bg-secondary:hover{
+    --bg-opacity: 1;
+    background-color: #3F4547;
+    background-color: rgba(63, 69, 71, var(--bg-opacity));
   }
 
   .lg\:focus\:bg-transparent:focus{
@@ -75816,6 +76320,12 @@ a.pswp__share--download:hover {
     background-color: rgba(0,0,0,0.4);
   }
 
+  .lg\:focus\:bg-secondary:focus{
+    --bg-opacity: 1;
+    background-color: #3F4547;
+    background-color: rgba(63, 69, 71, var(--bg-opacity));
+  }
+
   .lg\:bg-none{
     background-image: none;
   }
@@ -76337,6 +76847,11 @@ a.pswp__share--download:hover {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
   }
 
+  .lg\:from-secondary{
+    --gradient-from-color: #3F4547;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(63, 69, 71, 0));
+  }
+
   .lg\:via-transparent{
     --gradient-via-color: transparent;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
@@ -76822,6 +77337,11 @@ a.pswp__share--download:hover {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
   }
 
+  .lg\:via-secondary{
+    --gradient-via-color: #3F4547;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(63, 69, 71, 0));
+  }
+
   .lg\:to-transparent{
     --gradient-to-color: transparent;
   }
@@ -77208,6 +77728,10 @@ a.pswp__share--download:hover {
 
   .lg\:to-logincolor{
     --gradient-to-color: rgba(0,0,0,0.4);
+  }
+
+  .lg\:to-secondary{
+    --gradient-to-color: #3F4547;
   }
 
   .lg\:hover\:from-transparent:hover{
@@ -77695,6 +78219,11 @@ a.pswp__share--download:hover {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
   }
 
+  .lg\:hover\:from-secondary:hover{
+    --gradient-from-color: #3F4547;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(63, 69, 71, 0));
+  }
+
   .lg\:hover\:via-transparent:hover{
     --gradient-via-color: transparent;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
@@ -78180,6 +78709,11 @@ a.pswp__share--download:hover {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
   }
 
+  .lg\:hover\:via-secondary:hover{
+    --gradient-via-color: #3F4547;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(63, 69, 71, 0));
+  }
+
   .lg\:hover\:to-transparent:hover{
     --gradient-to-color: transparent;
   }
@@ -78566,6 +79100,10 @@ a.pswp__share--download:hover {
 
   .lg\:hover\:to-logincolor:hover{
     --gradient-to-color: rgba(0,0,0,0.4);
+  }
+
+  .lg\:hover\:to-secondary:hover{
+    --gradient-to-color: #3F4547;
   }
 
   .lg\:focus\:from-transparent:focus{
@@ -79053,6 +79591,11 @@ a.pswp__share--download:hover {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
   }
 
+  .lg\:focus\:from-secondary:focus{
+    --gradient-from-color: #3F4547;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(63, 69, 71, 0));
+  }
+
   .lg\:focus\:via-transparent:focus{
     --gradient-via-color: transparent;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
@@ -79538,6 +80081,11 @@ a.pswp__share--download:hover {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
   }
 
+  .lg\:focus\:via-secondary:focus{
+    --gradient-via-color: #3F4547;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(63, 69, 71, 0));
+  }
+
   .lg\:focus\:to-transparent:focus{
     --gradient-to-color: transparent;
   }
@@ -79924,6 +80472,10 @@ a.pswp__share--download:hover {
 
   .lg\:focus\:to-logincolor:focus{
     --gradient-to-color: rgba(0,0,0,0.4);
+  }
+
+  .lg\:focus\:to-secondary:focus{
+    --gradient-to-color: #3F4547;
   }
 
   .lg\:bg-opacity-0{
@@ -80714,6 +81266,12 @@ a.pswp__share--download:hover {
     border-color: rgba(0,0,0,0.4);
   }
 
+  .lg\:border-secondary{
+    --border-opacity: 1;
+    border-color: #3F4547;
+    border-color: rgba(63, 69, 71, var(--border-opacity));
+  }
+
   .lg\:hover\:border-transparent:hover{
     border-color: transparent;
   }
@@ -81290,6 +81848,12 @@ a.pswp__share--download:hover {
     border-color: rgba(0,0,0,0.4);
   }
 
+  .lg\:hover\:border-secondary:hover{
+    --border-opacity: 1;
+    border-color: #3F4547;
+    border-color: rgba(63, 69, 71, var(--border-opacity));
+  }
+
   .lg\:focus\:border-transparent:focus{
     border-color: transparent;
   }
@@ -81864,6 +82428,12 @@ a.pswp__share--download:hover {
 
   .lg\:focus\:border-logincolor:focus{
     border-color: rgba(0,0,0,0.4);
+  }
+
+  .lg\:focus\:border-secondary:focus{
+    --border-opacity: 1;
+    border-color: #3F4547;
+    border-color: rgba(63, 69, 71, var(--border-opacity));
   }
 
   .lg\:border-opacity-0{
@@ -87620,6 +88190,18 @@ a.pswp__share--download:hover {
     color: rgba(0,0,0,0.4);
   }
 
+  .lg\:placeholder-secondary:-ms-input-placeholder{
+    --placeholder-opacity: 1;
+    color: #3F4547;
+    color: rgba(63, 69, 71, var(--placeholder-opacity));
+  }
+
+  .lg\:placeholder-secondary::placeholder{
+    --placeholder-opacity: 1;
+    color: #3F4547;
+    color: rgba(63, 69, 71, var(--placeholder-opacity));
+  }
+
   .lg\:focus\:placeholder-transparent:focus:-ms-input-placeholder{
     color: transparent;
   }
@@ -88772,6 +89354,18 @@ a.pswp__share--download:hover {
     color: rgba(0,0,0,0.4);
   }
 
+  .lg\:focus\:placeholder-secondary:focus:-ms-input-placeholder{
+    --placeholder-opacity: 1;
+    color: #3F4547;
+    color: rgba(63, 69, 71, var(--placeholder-opacity));
+  }
+
+  .lg\:focus\:placeholder-secondary:focus::placeholder{
+    --placeholder-opacity: 1;
+    color: #3F4547;
+    color: rgba(63, 69, 71, var(--placeholder-opacity));
+  }
+
   .lg\:placeholder-opacity-0:-ms-input-placeholder{
     --placeholder-opacity: 0;
   }
@@ -89898,6 +90492,12 @@ a.pswp__share--download:hover {
     color: rgba(0,0,0,0.4);
   }
 
+  .lg\:text-secondary{
+    --text-opacity: 1;
+    color: #3F4547;
+    color: rgba(63, 69, 71, var(--text-opacity));
+  }
+
   .lg\:hover\:text-transparent:hover{
     color: transparent;
   }
@@ -90474,6 +91074,12 @@ a.pswp__share--download:hover {
     color: rgba(0,0,0,0.4);
   }
 
+  .lg\:hover\:text-secondary:hover{
+    --text-opacity: 1;
+    color: #3F4547;
+    color: rgba(63, 69, 71, var(--text-opacity));
+  }
+
   .lg\:focus\:text-transparent:focus{
     color: transparent;
   }
@@ -91048,6 +91654,12 @@ a.pswp__share--download:hover {
 
   .lg\:focus\:text-logincolor:focus{
     color: rgba(0,0,0,0.4);
+  }
+
+  .lg\:focus\:text-secondary:focus{
+    --text-opacity: 1;
+    color: #3F4547;
+    color: rgba(63, 69, 71, var(--text-opacity));
   }
 
   .lg\:text-opacity-0{
@@ -96778,6 +97390,12 @@ a.pswp__share--download:hover {
     border-color: rgba(0,0,0,0.4);
   }
 
+  .xl\:divide-secondary > :not(template) ~ :not(template){
+    --divide-opacity: 1;
+    border-color: #3F4547;
+    border-color: rgba(63, 69, 71, var(--divide-opacity));
+  }
+
   .xl\:divide-solid > :not(template) ~ :not(template){
     border-style: solid;
   }
@@ -97497,6 +98115,12 @@ a.pswp__share--download:hover {
     background-color: rgba(0,0,0,0.4);
   }
 
+  .xl\:bg-secondary{
+    --bg-opacity: 1;
+    background-color: #3F4547;
+    background-color: rgba(63, 69, 71, var(--bg-opacity));
+  }
+
   .xl\:hover\:bg-transparent:hover{
     background-color: transparent;
   }
@@ -98071,6 +98695,12 @@ a.pswp__share--download:hover {
 
   .xl\:hover\:bg-logincolor:hover{
     background-color: rgba(0,0,0,0.4);
+  }
+
+  .xl\:hover\:bg-secondary:hover{
+    --bg-opacity: 1;
+    background-color: #3F4547;
+    background-color: rgba(63, 69, 71, var(--bg-opacity));
   }
 
   .xl\:focus\:bg-transparent:focus{
@@ -98649,6 +99279,12 @@ a.pswp__share--download:hover {
     background-color: rgba(0,0,0,0.4);
   }
 
+  .xl\:focus\:bg-secondary:focus{
+    --bg-opacity: 1;
+    background-color: #3F4547;
+    background-color: rgba(63, 69, 71, var(--bg-opacity));
+  }
+
   .xl\:bg-none{
     background-image: none;
   }
@@ -99170,6 +99806,11 @@ a.pswp__share--download:hover {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
   }
 
+  .xl\:from-secondary{
+    --gradient-from-color: #3F4547;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(63, 69, 71, 0));
+  }
+
   .xl\:via-transparent{
     --gradient-via-color: transparent;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
@@ -99655,6 +100296,11 @@ a.pswp__share--download:hover {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
   }
 
+  .xl\:via-secondary{
+    --gradient-via-color: #3F4547;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(63, 69, 71, 0));
+  }
+
   .xl\:to-transparent{
     --gradient-to-color: transparent;
   }
@@ -100041,6 +100687,10 @@ a.pswp__share--download:hover {
 
   .xl\:to-logincolor{
     --gradient-to-color: rgba(0,0,0,0.4);
+  }
+
+  .xl\:to-secondary{
+    --gradient-to-color: #3F4547;
   }
 
   .xl\:hover\:from-transparent:hover{
@@ -100528,6 +101178,11 @@ a.pswp__share--download:hover {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
   }
 
+  .xl\:hover\:from-secondary:hover{
+    --gradient-from-color: #3F4547;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(63, 69, 71, 0));
+  }
+
   .xl\:hover\:via-transparent:hover{
     --gradient-via-color: transparent;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
@@ -101013,6 +101668,11 @@ a.pswp__share--download:hover {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
   }
 
+  .xl\:hover\:via-secondary:hover{
+    --gradient-via-color: #3F4547;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(63, 69, 71, 0));
+  }
+
   .xl\:hover\:to-transparent:hover{
     --gradient-to-color: transparent;
   }
@@ -101399,6 +102059,10 @@ a.pswp__share--download:hover {
 
   .xl\:hover\:to-logincolor:hover{
     --gradient-to-color: rgba(0,0,0,0.4);
+  }
+
+  .xl\:hover\:to-secondary:hover{
+    --gradient-to-color: #3F4547;
   }
 
   .xl\:focus\:from-transparent:focus{
@@ -101886,6 +102550,11 @@ a.pswp__share--download:hover {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
   }
 
+  .xl\:focus\:from-secondary:focus{
+    --gradient-from-color: #3F4547;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(63, 69, 71, 0));
+  }
+
   .xl\:focus\:via-transparent:focus{
     --gradient-via-color: transparent;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
@@ -102371,6 +103040,11 @@ a.pswp__share--download:hover {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
   }
 
+  .xl\:focus\:via-secondary:focus{
+    --gradient-via-color: #3F4547;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(63, 69, 71, 0));
+  }
+
   .xl\:focus\:to-transparent:focus{
     --gradient-to-color: transparent;
   }
@@ -102757,6 +103431,10 @@ a.pswp__share--download:hover {
 
   .xl\:focus\:to-logincolor:focus{
     --gradient-to-color: rgba(0,0,0,0.4);
+  }
+
+  .xl\:focus\:to-secondary:focus{
+    --gradient-to-color: #3F4547;
   }
 
   .xl\:bg-opacity-0{
@@ -103547,6 +104225,12 @@ a.pswp__share--download:hover {
     border-color: rgba(0,0,0,0.4);
   }
 
+  .xl\:border-secondary{
+    --border-opacity: 1;
+    border-color: #3F4547;
+    border-color: rgba(63, 69, 71, var(--border-opacity));
+  }
+
   .xl\:hover\:border-transparent:hover{
     border-color: transparent;
   }
@@ -104123,6 +104807,12 @@ a.pswp__share--download:hover {
     border-color: rgba(0,0,0,0.4);
   }
 
+  .xl\:hover\:border-secondary:hover{
+    --border-opacity: 1;
+    border-color: #3F4547;
+    border-color: rgba(63, 69, 71, var(--border-opacity));
+  }
+
   .xl\:focus\:border-transparent:focus{
     border-color: transparent;
   }
@@ -104697,6 +105387,12 @@ a.pswp__share--download:hover {
 
   .xl\:focus\:border-logincolor:focus{
     border-color: rgba(0,0,0,0.4);
+  }
+
+  .xl\:focus\:border-secondary:focus{
+    --border-opacity: 1;
+    border-color: #3F4547;
+    border-color: rgba(63, 69, 71, var(--border-opacity));
   }
 
   .xl\:border-opacity-0{
@@ -110453,6 +111149,18 @@ a.pswp__share--download:hover {
     color: rgba(0,0,0,0.4);
   }
 
+  .xl\:placeholder-secondary:-ms-input-placeholder{
+    --placeholder-opacity: 1;
+    color: #3F4547;
+    color: rgba(63, 69, 71, var(--placeholder-opacity));
+  }
+
+  .xl\:placeholder-secondary::placeholder{
+    --placeholder-opacity: 1;
+    color: #3F4547;
+    color: rgba(63, 69, 71, var(--placeholder-opacity));
+  }
+
   .xl\:focus\:placeholder-transparent:focus:-ms-input-placeholder{
     color: transparent;
   }
@@ -111605,6 +112313,18 @@ a.pswp__share--download:hover {
     color: rgba(0,0,0,0.4);
   }
 
+  .xl\:focus\:placeholder-secondary:focus:-ms-input-placeholder{
+    --placeholder-opacity: 1;
+    color: #3F4547;
+    color: rgba(63, 69, 71, var(--placeholder-opacity));
+  }
+
+  .xl\:focus\:placeholder-secondary:focus::placeholder{
+    --placeholder-opacity: 1;
+    color: #3F4547;
+    color: rgba(63, 69, 71, var(--placeholder-opacity));
+  }
+
   .xl\:placeholder-opacity-0:-ms-input-placeholder{
     --placeholder-opacity: 0;
   }
@@ -112731,6 +113451,12 @@ a.pswp__share--download:hover {
     color: rgba(0,0,0,0.4);
   }
 
+  .xl\:text-secondary{
+    --text-opacity: 1;
+    color: #3F4547;
+    color: rgba(63, 69, 71, var(--text-opacity));
+  }
+
   .xl\:hover\:text-transparent:hover{
     color: transparent;
   }
@@ -113307,6 +114033,12 @@ a.pswp__share--download:hover {
     color: rgba(0,0,0,0.4);
   }
 
+  .xl\:hover\:text-secondary:hover{
+    --text-opacity: 1;
+    color: #3F4547;
+    color: rgba(63, 69, 71, var(--text-opacity));
+  }
+
   .xl\:focus\:text-transparent:focus{
     color: transparent;
   }
@@ -113881,6 +114613,12 @@ a.pswp__share--download:hover {
 
   .xl\:focus\:text-logincolor:focus{
     color: rgba(0,0,0,0.4);
+  }
+
+  .xl\:focus\:text-secondary:focus{
+    --text-opacity: 1;
+    color: #3F4547;
+    color: rgba(63, 69, 71, var(--text-opacity));
   }
 
   .xl\:text-opacity-0{
@@ -119611,6 +120349,12 @@ a.pswp__share--download:hover {
     border-color: rgba(0,0,0,0.4);
   }
 
+  .xxl\:divide-secondary > :not(template) ~ :not(template){
+    --divide-opacity: 1;
+    border-color: #3F4547;
+    border-color: rgba(63, 69, 71, var(--divide-opacity));
+  }
+
   .xxl\:divide-solid > :not(template) ~ :not(template){
     border-style: solid;
   }
@@ -120330,6 +121074,12 @@ a.pswp__share--download:hover {
     background-color: rgba(0,0,0,0.4);
   }
 
+  .xxl\:bg-secondary{
+    --bg-opacity: 1;
+    background-color: #3F4547;
+    background-color: rgba(63, 69, 71, var(--bg-opacity));
+  }
+
   .xxl\:hover\:bg-transparent:hover{
     background-color: transparent;
   }
@@ -120904,6 +121654,12 @@ a.pswp__share--download:hover {
 
   .xxl\:hover\:bg-logincolor:hover{
     background-color: rgba(0,0,0,0.4);
+  }
+
+  .xxl\:hover\:bg-secondary:hover{
+    --bg-opacity: 1;
+    background-color: #3F4547;
+    background-color: rgba(63, 69, 71, var(--bg-opacity));
   }
 
   .xxl\:focus\:bg-transparent:focus{
@@ -121482,6 +122238,12 @@ a.pswp__share--download:hover {
     background-color: rgba(0,0,0,0.4);
   }
 
+  .xxl\:focus\:bg-secondary:focus{
+    --bg-opacity: 1;
+    background-color: #3F4547;
+    background-color: rgba(63, 69, 71, var(--bg-opacity));
+  }
+
   .xxl\:bg-none{
     background-image: none;
   }
@@ -122003,6 +122765,11 @@ a.pswp__share--download:hover {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
   }
 
+  .xxl\:from-secondary{
+    --gradient-from-color: #3F4547;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(63, 69, 71, 0));
+  }
+
   .xxl\:via-transparent{
     --gradient-via-color: transparent;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
@@ -122488,6 +123255,11 @@ a.pswp__share--download:hover {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
   }
 
+  .xxl\:via-secondary{
+    --gradient-via-color: #3F4547;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(63, 69, 71, 0));
+  }
+
   .xxl\:to-transparent{
     --gradient-to-color: transparent;
   }
@@ -122874,6 +123646,10 @@ a.pswp__share--download:hover {
 
   .xxl\:to-logincolor{
     --gradient-to-color: rgba(0,0,0,0.4);
+  }
+
+  .xxl\:to-secondary{
+    --gradient-to-color: #3F4547;
   }
 
   .xxl\:hover\:from-transparent:hover{
@@ -123361,6 +124137,11 @@ a.pswp__share--download:hover {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
   }
 
+  .xxl\:hover\:from-secondary:hover{
+    --gradient-from-color: #3F4547;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(63, 69, 71, 0));
+  }
+
   .xxl\:hover\:via-transparent:hover{
     --gradient-via-color: transparent;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
@@ -123846,6 +124627,11 @@ a.pswp__share--download:hover {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
   }
 
+  .xxl\:hover\:via-secondary:hover{
+    --gradient-via-color: #3F4547;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(63, 69, 71, 0));
+  }
+
   .xxl\:hover\:to-transparent:hover{
     --gradient-to-color: transparent;
   }
@@ -124232,6 +125018,10 @@ a.pswp__share--download:hover {
 
   .xxl\:hover\:to-logincolor:hover{
     --gradient-to-color: rgba(0,0,0,0.4);
+  }
+
+  .xxl\:hover\:to-secondary:hover{
+    --gradient-to-color: #3F4547;
   }
 
   .xxl\:focus\:from-transparent:focus{
@@ -124719,6 +125509,11 @@ a.pswp__share--download:hover {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
   }
 
+  .xxl\:focus\:from-secondary:focus{
+    --gradient-from-color: #3F4547;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(63, 69, 71, 0));
+  }
+
   .xxl\:focus\:via-transparent:focus{
     --gradient-via-color: transparent;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
@@ -125204,6 +125999,11 @@ a.pswp__share--download:hover {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
   }
 
+  .xxl\:focus\:via-secondary:focus{
+    --gradient-via-color: #3F4547;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(63, 69, 71, 0));
+  }
+
   .xxl\:focus\:to-transparent:focus{
     --gradient-to-color: transparent;
   }
@@ -125590,6 +126390,10 @@ a.pswp__share--download:hover {
 
   .xxl\:focus\:to-logincolor:focus{
     --gradient-to-color: rgba(0,0,0,0.4);
+  }
+
+  .xxl\:focus\:to-secondary:focus{
+    --gradient-to-color: #3F4547;
   }
 
   .xxl\:bg-opacity-0{
@@ -126380,6 +127184,12 @@ a.pswp__share--download:hover {
     border-color: rgba(0,0,0,0.4);
   }
 
+  .xxl\:border-secondary{
+    --border-opacity: 1;
+    border-color: #3F4547;
+    border-color: rgba(63, 69, 71, var(--border-opacity));
+  }
+
   .xxl\:hover\:border-transparent:hover{
     border-color: transparent;
   }
@@ -126956,6 +127766,12 @@ a.pswp__share--download:hover {
     border-color: rgba(0,0,0,0.4);
   }
 
+  .xxl\:hover\:border-secondary:hover{
+    --border-opacity: 1;
+    border-color: #3F4547;
+    border-color: rgba(63, 69, 71, var(--border-opacity));
+  }
+
   .xxl\:focus\:border-transparent:focus{
     border-color: transparent;
   }
@@ -127530,6 +128346,12 @@ a.pswp__share--download:hover {
 
   .xxl\:focus\:border-logincolor:focus{
     border-color: rgba(0,0,0,0.4);
+  }
+
+  .xxl\:focus\:border-secondary:focus{
+    --border-opacity: 1;
+    border-color: #3F4547;
+    border-color: rgba(63, 69, 71, var(--border-opacity));
   }
 
   .xxl\:border-opacity-0{
@@ -133286,6 +134108,18 @@ a.pswp__share--download:hover {
     color: rgba(0,0,0,0.4);
   }
 
+  .xxl\:placeholder-secondary:-ms-input-placeholder{
+    --placeholder-opacity: 1;
+    color: #3F4547;
+    color: rgba(63, 69, 71, var(--placeholder-opacity));
+  }
+
+  .xxl\:placeholder-secondary::placeholder{
+    --placeholder-opacity: 1;
+    color: #3F4547;
+    color: rgba(63, 69, 71, var(--placeholder-opacity));
+  }
+
   .xxl\:focus\:placeholder-transparent:focus:-ms-input-placeholder{
     color: transparent;
   }
@@ -134438,6 +135272,18 @@ a.pswp__share--download:hover {
     color: rgba(0,0,0,0.4);
   }
 
+  .xxl\:focus\:placeholder-secondary:focus:-ms-input-placeholder{
+    --placeholder-opacity: 1;
+    color: #3F4547;
+    color: rgba(63, 69, 71, var(--placeholder-opacity));
+  }
+
+  .xxl\:focus\:placeholder-secondary:focus::placeholder{
+    --placeholder-opacity: 1;
+    color: #3F4547;
+    color: rgba(63, 69, 71, var(--placeholder-opacity));
+  }
+
   .xxl\:placeholder-opacity-0:-ms-input-placeholder{
     --placeholder-opacity: 0;
   }
@@ -135564,6 +136410,12 @@ a.pswp__share--download:hover {
     color: rgba(0,0,0,0.4);
   }
 
+  .xxl\:text-secondary{
+    --text-opacity: 1;
+    color: #3F4547;
+    color: rgba(63, 69, 71, var(--text-opacity));
+  }
+
   .xxl\:hover\:text-transparent:hover{
     color: transparent;
   }
@@ -136140,6 +136992,12 @@ a.pswp__share--download:hover {
     color: rgba(0,0,0,0.4);
   }
 
+  .xxl\:hover\:text-secondary:hover{
+    --text-opacity: 1;
+    color: #3F4547;
+    color: rgba(63, 69, 71, var(--text-opacity));
+  }
+
   .xxl\:focus\:text-transparent:focus{
     color: transparent;
   }
@@ -136714,6 +137572,12 @@ a.pswp__share--download:hover {
 
   .xxl\:focus\:text-logincolor:focus{
     color: rgba(0,0,0,0.4);
+  }
+
+  .xxl\:focus\:text-secondary:focus{
+    --text-opacity: 1;
+    color: #3F4547;
+    color: rgba(63, 69, 71, var(--text-opacity));
   }
 
   .xxl\:text-opacity-0{

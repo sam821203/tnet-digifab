@@ -7,25 +7,33 @@
     <title>search</title>
     <link rel="stylesheet" href="../../css/all.css" />
   </head>
-  <body>
+  <body
+    style="background-image: url(../../img/bg-search.png)"
+    class="bg-cover w-full h-full bg-no-repeat"
+  >
     <!-- @@include ../include/header.html -->
 
     <main>
-      <h1 class="text-center text-blue-600">Search</h1>
-      <div>
-        <div class="search-container">
-          <form action="">
-            <div class="bg-gray-100 p-8">
+      <h1 class="text-center text-secondary font-filson filson-h2 mt-32">
+        Search
+      </h1>
+      <div class="search-container mx-20 glo-mb mt-8">
+        <form action="" class="flex gap-5">
+          <div class="w-4/5 gray-block">
+            <div class="flex w-full h-full">
               <input
                 type="text"
-                placeholder="布料編號"
+                placeholder="布料編號、 關鍵字搜尋"
                 name="search"
-                class="px-2 py-3"
+                class="w-5/6 px-5 py-3 text-base rounded-l-2point5"
               />
-              <button type="submit">
+              <button
+                type="submit"
+                class="w-1/6 flex justify-center items-center bg-primary text-white rounded-r-2point5"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
+                  class="h-6 w-6 mr-2"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -37,9 +45,254 @@
                     d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
                   />
                 </svg>
+                <h5>搜尋</h5>
               </button>
             </div>
-          </form>
+          </div>
+          <div class="w-1/5 flex justify-center gray-block">
+            <div
+              class="w-full flex justify-center items-center bg-white glo-radius h-full py-5"
+            >
+              <h5 class="font-filson icon-mr">Advanced filter</h5>
+              <span>icon</span>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="filter-container mb-32">
+        <div class="flex gap-5 mx-20">
+          <div class="flex gap-5 w-4/5">
+            <!-- ----- woven ----- -->
+            <div class="w-1/5 flex flex-col gray-block">
+              <div
+                class="flex justify-center bg-black glo-radius w-full py-6 mb-4"
+              >
+                <div class="img-wrap icon-mr w-12.5 h-12.5">
+                  <img
+                    src="../../img/search-1.svg"
+                    alt=""
+                    class="object-contain w-full h-full"
+                  />
+                </div>
+                <div class="text-white">
+                  <h3 class="font-normal font-filson filson-h4">Woven</h3>
+                  <h4>梭織布</h4>
+                </div>
+              </div>
+              <div
+                class="flex justify-center bg-primary glo-radius w-full py-5 mb-4"
+              >
+                <h5 class="text-white">TOP</h5>
+              </div>
+              <div
+                class="flex justify-center bg-white70 glo-radius w-full py-5 mb-4"
+              >
+                <h5 class="">Plain</h5>
+              </div>
+              <div
+                class="flex justify-center bg-white70 glo-radius w-full py-5 mb-4"
+              >
+                <h5 class="">NOP</h5>
+              </div>
+              <div
+                class="flex justify-center bg-white70 glo-radius w-full py-5 mb-4"
+              >
+                <h5 class="">Taffeta</h5>
+              </div>
+              <div
+                class="flex justify-center bg-white70 glo-radius w-full py-5 mb-4"
+              >
+                <h5 class="">Downproof</h5>
+              </div>
+              <div
+                class="flex justify-center bg-white70 glo-radius w-full py-5 mb-4"
+              >
+                <h5 class="">Ribstop</h5>
+              </div>
+            </div>
+
+            <!-- ----- Knit ----- -->
+            <div class="w-3/5 flex flex-col gray-block">
+              <div
+                class="flex justify-center bg-secondary glo-radius w-full py-6 mb-4"
+              >
+                <div class="img-wrap icon-mr w-12.5 h-12.5">
+                  <img
+                    src="../../img/search-1.svg"
+                    alt=""
+                    class="object-contain w-full h-full"
+                  />
+                </div>
+                <div class="text-white">
+                  <h3 class="font-normal font-filson filson-h4">Knit</h3>
+                  <h4>針織方式</h4>
+                </div>
+              </div>
+              <div class="flex gap-5 mb-4">
+                <div
+                  class="w-1/2 flex justify-center items-center bg-white70 glo-radius h-full py-5"
+                >
+                  <h5>Circular</h5>
+                </div>
+
+                <div
+                  class="w-1/2 flex justify-center items-center bg-white70 glo-radius h-full py-5"
+                >
+                  <h5>Warp</h5>
+                </div>
+              </div>
+
+              <div class="flex gap-5 mb-4">
+                <div
+                  class="w-1/3 flex justify-center items-center bg-white70 glo-radius h-full py-5"
+                >
+                  <h5>TOP</h5>
+                </div>
+                <div
+                  class="w-1/3 flex justify-center items-center bg-white70 glo-radius h-full py-5"
+                >
+                  <h5>TOP</h5>
+                </div>
+                <div
+                  class="w-1/3 flex justify-center items-center bg-white70 glo-radius h-full py-5"
+                >
+                  <h5>TOP</h5>
+                </div>
+              </div>
+
+              <div class="flex gap-5 mb-4">
+                <div
+                  class="w-1/3 flex justify-center items-center bg-white70 glo-radius h-full py-5"
+                >
+                  <h5>TOP</h5>
+                </div>
+                <div
+                  class="w-1/3 flex justify-center items-center bg-white70 glo-radius h-full py-5"
+                >
+                  <h5>TOP</h5>
+                </div>
+                <div
+                  class="w-1/3 flex justify-center items-center bg-white70 glo-radius h-full py-5"
+                >
+                  <h5>TOP</h5>
+                </div>
+              </div>
+
+              <div class="flex gap-5 mb-4">
+                <div
+                  class="w-1/3 flex justify-center items-center bg-white70 glo-radius h-full py-5"
+                >
+                  <h5>TOP</h5>
+                </div>
+                <div
+                  class="w-1/3 flex justify-center items-center bg-white70 glo-radius h-full py-5"
+                >
+                  <h5>TOP</h5>
+                </div>
+                <div
+                  class="w-1/3 flex justify-center items-center bg-white70 glo-radius h-full py-5"
+                >
+                  <h5>TOP</h5>
+                </div>
+              </div>
+
+              <div class="flex gap-5 mb-4">
+                <div
+                  class="w-1/3 flex justify-center items-center bg-white70 glo-radius h-full py-5"
+                >
+                  <h5>TOP</h5>
+                </div>
+                <div
+                  class="w-1/3 flex justify-center items-center bg-white70 glo-radius h-full py-5"
+                >
+                  <h5>TOP</h5>
+                </div>
+                <div
+                  class="w-1/3 flex justify-center items-center bg-white70 glo-radius h-full py-5"
+                >
+                  <h5>TOP</h5>
+                </div>
+              </div>
+            </div>
+
+            <!-- ----- Laminate ----- -->
+            <div class="w-1/5 flex flex-col gray-block">
+              <div
+                class="flex justify-center bg-secondary glo-radius w-full py-6 mb-4"
+              >
+                <div class="img-wrap icon-mr w-12.5 h-12.5">
+                  <img
+                    src="../../img/search-1.svg"
+                    alt=""
+                    class="object-contain w-full h-full"
+                  />
+                </div>
+                <div class="text-white">
+                  <h3 class="font-normal font-filson filson-h4">Laminate</h3>
+                  <h4>貼合布</h4>
+                </div>
+              </div>
+              <div
+                class="flex justify-center items-center bg-white70 glo-radius w-full py-5 mb-4"
+              >
+                <h5 class="">Plain</h5>
+              </div>
+              <div
+                class="flex justify-center items-center bg-white70 glo-radius w-full py-5 mb-4"
+              >
+                <h5 class="">Plain</h5>
+              </div>
+              <div
+                class="flex justify-center items-center bg-white70 glo-radius w-full py-5 mb-4"
+              >
+                <h5 class="">Plain</h5>
+              </div>
+              <div
+                class="flex justify-center items-center bg-white70 glo-radius w-full py-5 mb-4"
+              >
+                <h5 class="">Plain</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- ----- Function ----- -->
+          <div class="w-1/5 flex flex-col gray-block">
+            <div
+              class="flex justify-center bg-secondary glo-radius w-full py-6 mb-4"
+            >
+              <div class="img-wrap icon-mr w-12.5 h-12.5">
+                <img
+                  src="../../img/search-1.svg"
+                  alt=""
+                  class="object-contain w-full h-full"
+                />
+              </div>
+              <div class="text-white">
+                <h3 class="font-normal font-filson filson-h4">Function</h3>
+                <h4>貼合布</h4>
+              </div>
+            </div>
+            <div
+              class="flex justify-center items-center bg-white70 glo-radius w-full py-5 mb-4"
+            >
+              <h5 class="">Plain</h5>
+            </div>
+            <div
+              class="flex justify-center items-center bg-white70 glo-radius w-full py-5 mb-4"
+            >
+              <h5 class="">Plain</h5>
+            </div>
+            <div
+              class="flex justify-center items-center bg-white70 glo-radius w-full py-5 mb-4"
+            >
+              <h5 class="">Plain</h5>
+            </div>
+            <div
+              class="flex justify-center items-center bg-white70 glo-radius w-full py-5 mb-4"
+            >
+              <h5 class="">Plain</h5>
+            </div>
+          </div>
         </div>
       </div>
     </main>

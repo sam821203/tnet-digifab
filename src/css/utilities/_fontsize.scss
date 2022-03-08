@@ -1,0 +1,59 @@
+// Global Setting
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Noto Sans TC", "sans-serif";
+}
+h1,
+h2,
+h3 {
+  font-weight: 500;
+}
+h4,
+h5 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 32px;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 20px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+
+// filson own font size
+.filson-h1 {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.filson-h2 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.filson-h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.filson-h4 {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.filson-h5 {
+  font-size: 1rem;
+  font-weight: 400;
+}

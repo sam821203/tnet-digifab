@@ -59,6 +59,7 @@ module.exports = {
         primary: "#e55400",
         primaryhover: "#bf4600",
         logincolor: "rgba(0,0,0,0.4)",
+        secondary: "#3F4547",
         gray: {
           100: "#eeeeee",
           200: "#dddddd",
@@ -86,6 +87,9 @@ module.exports = {
         25: "6.25rem",
         30: "7.5rem",
         40: "10rem",
+      },
+      radius: {
+        "2.5xl": "1.25rem",
       },
     },
   },

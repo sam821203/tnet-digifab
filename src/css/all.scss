@@ -31,10 +31,17 @@
   ========== */
 
 // WIDTH
-@import "utilities/width";
-
+@import "utilities/widthHeight";
 // GRID
 @import "utilities/gap";
+// TEXT
+@import "utilities/fontsize";
+// BORDER RADIUS
+@import "utilities/borderRa";
+// MARGIN BOTTOM
+@import "utilities/marginPadding";
+// COLOR
+@import "utilities/color";
 
 /* ==========
   #COMPONENTS
