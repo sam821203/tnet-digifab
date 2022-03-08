@@ -33,267 +33,448 @@
 <!-- end header.html-->
 
     <main>
-      <h1 class="text-center text-secondary font-filson filson-h2 mt-32">
+      <h1 class="text-center text-secondary font-filson filson-h2 mt-32 mb-8">
         Advanced filter
       </h1>
-      <div class="search-container mx-20 glo-mb mt-8">
-        <form action="" class="flex gap-5">
-          <div class="w-4/5 gray-block">
-            <div class="flex w-full h-full">
-              <label for="number">編號：</label>
+      <div class="flex w-full px-20 gap-10 mb-32">
+        <section class="w-3/5 glo-mb">
+          <form action="" class="gray-block gap-5">
+            <div class="flex items-center w-1/2 h-full mb-8">
+              <label for="number" class="whitespace-no-wrap mr-5">編號：</label>
               <input
                 type="text"
                 placeholder="請輸入編號"
-                name="search"
-                class="w-5/6 px-5 py-3 text-base rounded-l-2point5"
+                name="number"
+                class="px-5 py-3 text-base rounded-2point5"
               />
             </div>
-          </div>
-          <div class="w-1/5 flex justify-center gray-block">
-            <div
-              class="w-full flex justify-center items-center bg-white glo-radius h-full py-5"
-            >
-              <h5 class="font-filson icon-mr">Advanced filter</h5>
-              <span>icon</span>
+
+            <h3 class="mb-5 border-b-2 pb-5">規格</h3>
+
+            <div class="flex items-center h-full mb-4">
+              <label for="number" class="whitespace-no-wrap mr-5">廠商：</label>
+              <select class="select-tag w-full" required>
+                <option value="" disabled selected>請選擇</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+              </select>
             </div>
-          </div>
-        </form>
-      </div>
-      <div class="filter-container mb-32">
-        <div class="flex gap-5 mx-20">
-          <div class="flex gap-5 w-4/5">
-            <!-- ----- woven ----- -->
-            <div class="w-1/5 flex flex-col gray-block">
-              <div
-                class="flex justify-center bg-black glo-radius w-full py-6 mb-4"
+
+            <div class="flex items-center w-full h-full mb-4">
+              <label for="number" class="whitespace-no-wrap mr-5">幅寬：</label>
+              <input
+                type="text"
+                placeholder="inch"
+                name="inch"
+                class="flex-grow px-5 py-3 text-base rounded-2point5"
+              />
+              <h4 class="mx-5">至</h4>
+              <input
+                type="text"
+                placeholder="inch"
+                name="inch"
+                class="flex-grow px-5 py-3 text-base rounded-2point5"
+              />
+            </div>
+            <div class="flex items-center w-full h-full mb-4">
+              <label for="number" class="whitespace-no-wrap mr-5">幅寬：</label>
+              <input
+                type="text"
+                placeholder="inch"
+                name="inch"
+                class="flex-grow px-5 py-3 text-base rounded-2point5"
+              />
+              <h4 class="mx-5">至</h4>
+              <input
+                type="text"
+                placeholder="inch"
+                name="inch"
+                class="flex-grow px-5 py-3 text-base rounded-2point5"
+              />
+            </div>
+            <div class="flex items-center w-full h-full mb-4">
+              <label for="number" class="whitespace-no-wrap mr-5">幅寬：</label>
+              <input
+                type="text"
+                placeholder="inch"
+                name="inch"
+                class="flex-grow px-5 py-3 text-base rounded-2point5"
+              />
+              <h4 class="mx-5">至</h4>
+              <input
+                type="text"
+                placeholder="inch"
+                name="inch"
+                class="flex-grow px-5 py-3 text-base rounded-2point5"
+              />
+            </div>
+
+            <!-- gradient -->
+            <div class="flex mb-4">
+              <h4 class="w-4/5">成分：</h4>
+              <h4 class="w-1/5">And / OR：</h4>
+            </div>
+            <div class="flex items-center w-full mb-4">
+              <select class="select-tag w-2/5 mr-5" required>
+                <option value="" disabled selected>請選擇</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+              </select>
+              <select class="select-tag w-1/5 mr-5" required>
+                <option value="" disabled selected>請選擇</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+              </select>
+              <h4>～</h4>
+              <select class="select-tag w-1/5 mx-5" required>
+                <option value="" disabled selected>請選擇</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+              </select>
+              <h4>％</h4>
+              <select class="select-tag w-1/5 ml-5" required>
+                <option value="" disabled selected>請選擇</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+              </select>
+            </div>
+            <div class="flex items-center w-full mb-4">
+              <select class="select-tag w-2/5 mr-5" required>
+                <option value="" disabled selected>請選擇</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+              </select>
+              <select class="select-tag w-1/5 mr-5" required>
+                <option value="" disabled selected>請選擇</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+              </select>
+              <h4>～</h4>
+              <select class="select-tag w-1/5 mx-5" required>
+                <option value="" disabled selected>請選擇</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+              </select>
+              <h4>％</h4>
+              <select class="select-tag w-1/5 ml-5" required>
+                <option value="" disabled selected>請選擇</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+              </select>
+            </div>
+            <button data-add id="add-list" class="flex">
+              <span
+                class="w-5 h-5 bg-primary rounded-full text-white flex justify-center items-center icon-mr"
+                >+</span
               >
-                <div class="img-wrap icon-mr w-12.5 h-12.5">
-                  <img
-                    src="../../img/search-1.svg"
-                    alt=""
-                    class="object-contain w-full h-full"
+              <h4 class="text-primary mb-4">新增一筆</h4>
+            </button>
+
+            <!-- organization -->
+            <h4 class="w-4/6 mb-4">布種及組織：</h4>
+            <div class="flex items-center w-full mb-4 gap-5">
+              <select class="select-tag w-1/2" required>
+                <option value="" disabled selected>請選擇</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+              </select>
+              <select class="select-tag w-1/2" required>
+                <option value="" disabled selected>請選擇</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+              </select>
+            </div>
+
+            <!-- flexible -->
+            <h4 class="w-4/6 mb-4">彈性：</h4>
+            <div class="flex items-center w-full mb-4 gap-5">
+              <select class="select-tag w-1/2" required>
+                <option value="" disabled selected>請選擇</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+              </select>
+              <select class="select-tag w-1/2" required>
+                <option value="" disabled selected>請選擇</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+              </select>
+            </div>
+
+            <!-- dry -->
+            <h4 class="w-4/6">染色：</h4>
+            <div class="flex items-center w-full mb-4 gap-5">
+              <select class="select-tag w-full" required>
+                <option value="" disabled selected>請選擇</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+              </select>
+            </div>
+
+            <!-- processing -->
+            <div class="flex mb-4">
+              <h4 class="w-4/5">整理加工：</h4>
+              <h4 class="w-1/5">And / OR：</h4>
+            </div>
+            <div class="flex items-center w-full mb-4 gap-5">
+              <select class="select-tag w-2/5" required>
+                <option value="" disabled selected>請選擇</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+              </select>
+              <select class="select-tag w-2/5" required>
+                <option value="" disabled selected>請選擇</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+              </select>
+              <select class="select-tag w-1/5" required>
+                <option value="" disabled selected>請選擇</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+              </select>
+            </div>
+
+            <!-- textarea -->
+            <h4 class="w-4/6 mb-4">全文檢索：</h4>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              cols="50"
+              placeholder="請填寫訊息"
+              class="w-full px-5 py-3 glo-radius"
+            ></textarea>
+          </form>
+        </section>
+
+        <aside class="w-2/5 mb-32 gap-5 flex flex-col">
+          <!-- ----- top ----- -->
+          <div class="gray-block mb-8">
+            <h3 class="mb-5 border-b-2 pb-5">穿著機能系統性指標</h3>
+            <h4 class="w-4/6 mb-4">衣著用布料分層：</h4>
+            <select class="select-tag w-full mb-4" required>
+              <option value="" disabled selected>請選擇</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+            </select>
+
+            <div class="flex mb-4 w-full gap-5">
+              <h4 class="w-1/2">機能性：</h4>
+              <h4 class="w-1/2">And / OR：</h4>
+            </div>
+            <div class="flex gap-5 mb-4">
+              <select class="select-tag w-1/2" required>
+                <option value="" disabled selected>請選擇</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+              </select>
+              <select class="select-tag w-1/2" required>
+                <option value="" disabled selected>請選擇</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+              </select>
+            </div>
+            <button data-add id="add-list" class="flex">
+              <span
+                class="w-5 h-5 bg-primary rounded-full text-white flex justify-center items-center icon-mr"
+                >+</span
+              >
+              <h4 class="text-primary mb-4">新增一筆</h4>
+            </button>
+
+            <h4 class="w-4/6 mb-4">圖案：</h4>
+            <select class="select-tag w-full mb-4" required>
+              <option value="" disabled selected>請選擇</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+            </select>
+            <h4 class="w-4/6 mb-4">應用：</h4>
+            <select class="select-tag w-full mb-4" required>
+              <option value="" disabled selected>請選擇</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+            </select>
+          </div>
+
+          <!-- ----- bottom ----- -->
+          <div class="gray-block mb-8">
+            <h3 class="mb-5 border-b-2 pb-5">手感</h3>
+            <form action="">
+              <select class="select-tag w-full mb-4" required>
+                <option value="" disabled selected>請選擇</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+              </select>
+              <div class="w-full flex items-center gap-5 mb-5">
+                <div class="w-1/6">
+                  <input
+                    type="checkbox"
+                    id="cbox1"
+                    value="first_checkbox"
+                    checked
+                    class="mr-4 rounded-full"
+                  />
+                  <label for="huey" class="text-lg">硬挺</label>
+                </div>
+                <div class="w-4/6 mt-auto">
+                  <input
+                    id="rate"
+                    type="range"
+                    value="1"
+                    min="0.3"
+                    max="5"
+                    step="0.1"
                   />
                 </div>
-                <div class="text-white">
-                  <h3 class="font-normal font-filson filson-h4">Woven</h3>
-                  <h4>梭織布</h4>
+                <div class="w-1/6">
+                  <label for="huey" class="text-lg">柔軟</label>
                 </div>
               </div>
-              <div
-                class="flex justify-center bg-primary glo-radius w-full py-5 mb-4"
-              >
-                <h5 class="text-white">TOP</h5>
-              </div>
-              <div
-                class="flex justify-center bg-white70 glo-radius w-full py-5 mb-4"
-              >
-                <h5 class="">Plain</h5>
-              </div>
-              <div
-                class="flex justify-center bg-white70 glo-radius w-full py-5 mb-4"
-              >
-                <h5 class="">NOP</h5>
-              </div>
-              <div
-                class="flex justify-center bg-white70 glo-radius w-full py-5 mb-4"
-              >
-                <h5 class="">Taffeta</h5>
-              </div>
-              <div
-                class="flex justify-center bg-white70 glo-radius w-full py-5 mb-4"
-              >
-                <h5 class="">Downproof</h5>
-              </div>
-              <div
-                class="flex justify-center bg-white70 glo-radius w-full py-5 mb-4"
-              >
-                <h5 class="">Ribstop</h5>
-              </div>
-            </div>
-
-            <!-- ----- Knit ----- -->
-            <div class="w-3/5 flex flex-col gray-block">
-              <div
-                class="flex justify-center bg-secondary glo-radius w-full py-6 mb-4"
-              >
-                <div class="img-wrap icon-mr w-12.5 h-12.5">
-                  <img
-                    src="../../img/search-1.svg"
-                    alt=""
-                    class="object-contain w-full h-full"
+              <div class="w-full flex items-center gap-5 mb-5">
+                <div class="w-1/6">
+                  <input
+                    type="checkbox"
+                    id="cbox1"
+                    value="first_checkbox"
+                    checked
+                    class="mr-4 rounded-full"
+                  />
+                  <label for="huey" class="text-lg">硬挺</label>
+                </div>
+                <div class="w-4/6 mt-auto">
+                  <input
+                    id="rate"
+                    type="range"
+                    value="1"
+                    min="0.3"
+                    max="5"
+                    step="0.1"
                   />
                 </div>
-                <div class="text-white">
-                  <h3 class="font-normal font-filson filson-h4">Knit</h3>
-                  <h4>針織方式</h4>
+                <div class="w-1/6">
+                  <label for="huey" class="text-lg">柔軟</label>
                 </div>
               </div>
-              <div class="flex gap-5 mb-4">
-                <div
-                  class="w-1/2 flex justify-center items-center bg-white70 glo-radius h-full py-5"
-                >
-                  <h5>Circular</h5>
+              <div class="w-full flex items-center gap-5 mb-5">
+                <div class="w-1/6">
+                  <input
+                    type="checkbox"
+                    id="cbox1"
+                    value="first_checkbox"
+                    checked
+                    class="mr-4 rounded-full"
+                  />
+                  <label for="huey" class="text-lg">硬挺</label>
                 </div>
-
-                <div
-                  class="w-1/2 flex justify-center items-center bg-white70 glo-radius h-full py-5"
-                >
-                  <h5>Warp</h5>
-                </div>
-              </div>
-
-              <div class="flex gap-5 mb-4">
-                <div
-                  class="w-1/3 flex justify-center items-center bg-white70 glo-radius h-full py-5"
-                >
-                  <h5>TOP</h5>
-                </div>
-                <div
-                  class="w-1/3 flex justify-center items-center bg-white70 glo-radius h-full py-5"
-                >
-                  <h5>TOP</h5>
-                </div>
-                <div
-                  class="w-1/3 flex justify-center items-center bg-white70 glo-radius h-full py-5"
-                >
-                  <h5>TOP</h5>
-                </div>
-              </div>
-
-              <div class="flex gap-5 mb-4">
-                <div
-                  class="w-1/3 flex justify-center items-center bg-white70 glo-radius h-full py-5"
-                >
-                  <h5>TOP</h5>
-                </div>
-                <div
-                  class="w-1/3 flex justify-center items-center bg-white70 glo-radius h-full py-5"
-                >
-                  <h5>TOP</h5>
-                </div>
-                <div
-                  class="w-1/3 flex justify-center items-center bg-white70 glo-radius h-full py-5"
-                >
-                  <h5>TOP</h5>
-                </div>
-              </div>
-
-              <div class="flex gap-5 mb-4">
-                <div
-                  class="w-1/3 flex justify-center items-center bg-white70 glo-radius h-full py-5"
-                >
-                  <h5>TOP</h5>
-                </div>
-                <div
-                  class="w-1/3 flex justify-center items-center bg-white70 glo-radius h-full py-5"
-                >
-                  <h5>TOP</h5>
-                </div>
-                <div
-                  class="w-1/3 flex justify-center items-center bg-white70 glo-radius h-full py-5"
-                >
-                  <h5>TOP</h5>
-                </div>
-              </div>
-
-              <div class="flex gap-5 mb-4">
-                <div
-                  class="w-1/3 flex justify-center items-center bg-white70 glo-radius h-full py-5"
-                >
-                  <h5>TOP</h5>
-                </div>
-                <div
-                  class="w-1/3 flex justify-center items-center bg-white70 glo-radius h-full py-5"
-                >
-                  <h5>TOP</h5>
-                </div>
-                <div
-                  class="w-1/3 flex justify-center items-center bg-white70 glo-radius h-full py-5"
-                >
-                  <h5>TOP</h5>
-                </div>
-              </div>
-            </div>
-
-            <!-- ----- Laminate ----- -->
-            <div class="w-1/5 flex flex-col gray-block">
-              <div
-                class="flex justify-center bg-secondary glo-radius w-full py-6 mb-4"
-              >
-                <div class="img-wrap icon-mr w-12.5 h-12.5">
-                  <img
-                    src="../../img/search-1.svg"
-                    alt=""
-                    class="object-contain w-full h-full"
+                <div class="w-4/6 mt-auto">
+                  <input
+                    id="rate"
+                    type="range"
+                    value="1"
+                    min="0.3"
+                    max="5"
+                    step="0.1"
                   />
                 </div>
-                <div class="text-white">
-                  <h3 class="font-normal font-filson filson-h4">Laminate</h3>
-                  <h4>貼合布</h4>
+                <div class="w-1/6">
+                  <label for="huey" class="text-lg">柔軟</label>
                 </div>
               </div>
-              <div
-                class="flex justify-center items-center bg-white70 glo-radius w-full py-5 mb-4"
-              >
-                <h5 class="">Plain</h5>
+              <div class="w-full flex items-center gap-5 mb-5">
+                <div class="w-1/6">
+                  <input
+                    type="checkbox"
+                    id="cbox1"
+                    value="first_checkbox"
+                    checked
+                    class="mr-4 rounded-full"
+                  />
+                  <label for="huey" class="text-lg">硬挺</label>
+                </div>
+                <div class="w-4/6 mt-auto">
+                  <input
+                    id="rate"
+                    type="range"
+                    value="1"
+                    min="0.3"
+                    max="5"
+                    step="0.1"
+                  />
+                </div>
+                <div class="w-1/6">
+                  <label for="huey" class="text-lg">柔軟</label>
+                </div>
               </div>
-              <div
-                class="flex justify-center items-center bg-white70 glo-radius w-full py-5 mb-4"
-              >
-                <h5 class="">Plain</h5>
+              <div class="w-full flex items-center gap-5 mb-5">
+                <div class="w-1/6">
+                  <input
+                    type="checkbox"
+                    id="cbox1"
+                    value="first_checkbox"
+                    checked
+                    class="mr-4 rounded-full"
+                  />
+                  <label for="huey" class="text-lg">硬挺</label>
+                </div>
+                <div class="w-4/6 mt-auto">
+                  <input
+                    id="rate"
+                    type="range"
+                    value="1"
+                    min="0.3"
+                    max="5"
+                    step="0.1"
+                  />
+                </div>
+                <div class="w-1/6">
+                  <label for="huey" class="text-lg">柔軟</label>
+                </div>
               </div>
-              <div
-                class="flex justify-center items-center bg-white70 glo-radius w-full py-5 mb-4"
-              >
-                <h5 class="">Plain</h5>
+              <div class="w-full flex items-center gap-5 mb-5">
+                <div class="w-1/6">
+                  <input
+                    type="checkbox"
+                    id="cbox1"
+                    value="first_checkbox"
+                    checked
+                    class="mr-4 rounded-full"
+                  />
+                  <label for="huey" class="text-lg">硬挺</label>
+                </div>
+                <div class="w-4/6 mt-auto">
+                  <input
+                    id="rate"
+                    type="range"
+                    value="1"
+                    min="0.3"
+                    max="5"
+                    step="0.1"
+                  />
+                </div>
+                <div class="w-1/6">
+                  <label for="huey" class="text-lg">柔軟</label>
+                </div>
               </div>
-              <div
-                class="flex justify-center items-center bg-white70 glo-radius w-full py-5 mb-4"
-              >
-                <h5 class="">Plain</h5>
-              </div>
-            </div>
+            </form>
           </div>
 
-          <!-- ----- Function ----- -->
-          <div class="w-1/5 flex flex-col gray-block">
-            <div
-              class="flex justify-center bg-secondary glo-radius w-full py-6 mb-4"
+          <!-- ----- button ----- -->
+          <div class="w-full flex gap-5">
+            <button
+              data-add
+              id="refresh"
+              class="w-1/2 flex bg-secondary hover:bg-black glo-radius py-3 text-white justify-center"
             >
-              <div class="img-wrap icon-mr w-12.5 h-12.5">
-                <img
-                  src="../../img/search-1.svg"
-                  alt=""
-                  class="object-contain w-full h-full"
-                />
-              </div>
-              <div class="text-white">
-                <h3 class="font-normal font-filson filson-h4">Function</h3>
-                <h4>貼合布</h4>
-              </div>
-            </div>
-            <div
-              class="flex justify-center items-center bg-white70 glo-radius w-full py-5 mb-4"
+              重新整理
+            </button>
+            <button
+              data-add
+              id="refresh"
+              class="w-1/2 flex bg-primary hover:bg-primaryhover glo-radius py-3 text-white justify-center"
             >
-              <h5 class="">Plain</h5>
-            </div>
-            <div
-              class="flex justify-center items-center bg-white70 glo-radius w-full py-5 mb-4"
-            >
-              <h5 class="">Plain</h5>
-            </div>
-            <div
-              class="flex justify-center items-center bg-white70 glo-radius w-full py-5 mb-4"
-            >
-              <h5 class="">Plain</h5>
-            </div>
-            <div
-              class="flex justify-center items-center bg-white70 glo-radius w-full py-5 mb-4"
-            >
-              <h5 class="">Plain</h5>
-            </div>
+              開始搜尋
+            </button>
           </div>
-        </div>
+        </aside>
       </div>
     </main>
 
@@ -317,5 +498,7 @@
 </footer>
 
 <!-- end footer.html-->
+    <script src="../../js/vendor.js"></script>
+    <script src="../../js/app.js"></script>
   </body>
 </html>

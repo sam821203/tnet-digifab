@@ -26052,8 +26052,16 @@ a.pswp__share--download:hover {
   width: 10rem;
 }
 
+.w-166 {
+  width: 10.375rem;
+}
+
 .w-198 {
   width: 198px;
+}
+
+.w-236 {
+  width: 236px;
 }
 
 .h-94 {
@@ -27006,11 +27014,7 @@ a.pswp__share--download:hover {
   }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+* {
   font-family: "Noto Sans TC", "sans-serif";
 }
 
@@ -27074,6 +27078,10 @@ h5 {
   border-radius: 5px;
 }
 
+.rounded-2point5 {
+  border-radius: 5px;
+}
+
 .rounded-l-2point5 {
   border-radius: 5px 0 0 5px;
 }
@@ -27107,8 +27115,62 @@ h5 {
 }
 
 /* ==========
-  #COMPONENTS
+  #COMPONENT
   ========== */
+
+input[type="email"] {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: red;
+}
+
+.login-input {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  background: #c1c1c1;
+  border-radius: 50px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  background: tomato;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+select {
+  background-color: white;
+  min-width: 20px;
+}
+
+select::after {
+  position: absolute;
+  left: 50%;
+  top: -8px;
+  width: 0;
+  height: 0;
+  content: "";
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #000000;
+}
+
+.select-tag {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 1rem;
+  border-radius: 5px;
+}
 
 /* ==========
   #LAYOUT

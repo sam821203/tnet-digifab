@@ -44,8 +44,15 @@
 @import "utilities/color";
 
 /* ==========
-  #COMPONENTS
+  #COMPONENT
   ========== */
+
+// DROPDOWN
+@import "component/input";
+// DROPDOWN
+@import "component/dropdown";
+// ADDLIST
+@import "component/addlist";
 
 /* ==========
   #LAYOUT
