@@ -27256,6 +27256,7 @@ select {
   border: none;
   cursor: inherit;
   outline: none;
+  min-width: 30px;
 }
 
 select::-ms-expand {
@@ -27275,7 +27276,6 @@ select::-ms-expand {
 }
 
 .select {
-  width: 330px;
   border-radius: 5px;
   padding: 0.75rem 1.25rem 0.75rem 1.25rem;
   background-image: linear-gradient(to top, #f9f9f9, #fff 33%);

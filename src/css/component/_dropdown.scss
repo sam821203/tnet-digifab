@@ -16,6 +16,7 @@ select {
   border: none;
   cursor: inherit;
   outline: none;
+  min-width: 30px;
 }
 
 // remove arrow form lower IE versions
@@ -31,7 +32,6 @@ select::-ms-expand {
   // width: 100%;
   // min-width: 15ch;
   // max-width: 30ch;
-  width: 330px;
   border-radius: 5px;
   padding: 0.75rem 1.25rem 0.75rem 1.25rem;
   // padding-right: 20px;

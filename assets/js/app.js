@@ -1,16 +1,16 @@
 "use strict";
 
 // checkbox event
-// function checking() {
-//   const checkBox = document.getElementById("checking");
-//   const border = document.getElementById("imgborder");
+function checkBorder() {
+    var checkBox1 = document.getElementById("checkborder1");
+    var border1 = document.getElementById("imgborder1");
 
-//   if (checkBox.checked) {
-//     border.style.borderStyle = "dotted";
-//   } else {
-//     border.style.borderStyle = "none";
-//   }
-// }
+    if (checkBox1.checked) {
+        border1.style.borderColor = "#E55400";
+    } else {
+        border1.style.borderColor = "transparent";
+    }
+}
 
 // swiper
 var swiper = new Swiper(".mySwiper", {
