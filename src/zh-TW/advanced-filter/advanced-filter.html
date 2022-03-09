@@ -290,17 +290,16 @@
                 <option value="1">One</option>
                 <option value="2">Two</option>
               </select>
+
               <div class="w-full flex items-center gap-5 mb-5">
                 <div class="w-1/6">
-                  <input
-                    type="checkbox"
-                    id="cbox1"
-                    value="first_checkbox"
-                    checked
-                    class="mr-4 rounded-full"
-                  />
-                  <label for="huey" class="text-lg">硬挺</label>
+                  <label class="checkwrap text-md"
+                    >硬挺
+                    <input type="checkbox" checked="checked" />
+                    <span class="mycheck"></span>
+                  </label>
                 </div>
+
                 <div class="w-4/6 mt-auto">
                   <input
                     id="rate"
@@ -311,10 +310,11 @@
                     step="0.1"
                   />
                 </div>
-                <div class="w-1/6">
-                  <label for="huey" class="text-lg">柔軟</label>
+                <div class="w-1/6 mt-auto">
+                  <label for="huey" class="text-md">柔軟</label>
                 </div>
               </div>
+
               <div class="w-full flex items-center gap-5 mb-5">
                 <div class="w-1/6">
                   <input

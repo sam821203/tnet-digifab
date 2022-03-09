@@ -7,6 +7,7 @@ input[type="email"] {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+// input range
 input[type="range"] {
   -webkit-appearance: none;
   width: 100%;
@@ -24,4 +25,67 @@ input[type="range"]::-webkit-slider-thumb {
   background: tomato;
   border-radius: 50%;
   transition: 0.2s;
+}
+
+// input checkbox
+.checkwrap {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkwrap input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.mycheck {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.checkwrap input ~ .mycheck {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+
+.checkwrap input:checked ~ .mycheck {
+  background-color: $primary;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+
+.mycheck:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkwrap input:checked ~ .mycheck:after {
+  display: block;
+}
+
+.checkwrap .mycheck:after {
+  left: 9px;
+  top: 5px;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
