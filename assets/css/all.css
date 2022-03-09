@@ -17099,6 +17099,13 @@ video {
   left: 50%;
 }
 
+.inset-8x2{
+  top: 16px;
+  right: 16px;
+  bottom: 16px;
+  left: 16px;
+}
+
 .inset-8x5{
   top: 40px;
   right: 40px;
@@ -17141,6 +17148,16 @@ video {
 .inset-x-1\/2{
   right: 50%;
   left: 50%;
+}
+
+.inset-y-8x2{
+  top: 16px;
+  bottom: 16px;
+}
+
+.inset-x-8x2{
+  right: 16px;
+  left: 16px;
 }
 
 .inset-y-8x5{
@@ -17209,6 +17226,22 @@ video {
 
 .left-1\/2{
   left: 50%;
+}
+
+.top-8x2{
+  top: 16px;
+}
+
+.right-8x2{
+  right: 16px;
+}
+
+.bottom-8x2{
+  bottom: 16px;
+}
+
+.left-8x2{
+  left: 16px;
 }
 
 .top-8x5{
@@ -27070,6 +27103,14 @@ h5 {
   padding: 1.5rem;
 }
 
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+}
+
 .bg-white70 {
   background-color: rgba(255, 255, 255, 0.7);
 }
@@ -27090,26 +27131,47 @@ input[type="email"] {
 input[type="range"] {
   -webkit-appearance: none;
   width: 100%;
-  height: 100%;
+  height: 10px;
   outline: none;
-  background: #c1c1c1;
+  background: white;
   border-radius: 50px;
 }
 
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   position: relative;
-  width: 16px;
-  height: 16px;
-  background: tomato;
+  width: 15px;
+  height: 15px;
+  background: #e55400;
   border-radius: 50%;
   transition: 0.2s;
+}
+
+input[type="range"]::-webkit-slider-thumb::before,
+input[type="range"]::-webkit-slider-thumb::after {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 4px;
+  content: "";
+  pointer-events: none;
+  transition: 0.2s;
+}
+
+input[type="range"]::-webkit-slider-thumb::before {
+  left: -97px;
+  background: red;
+}
+
+input[type="range"]::-webkit-slider-thumb::after {
+  left: 10px;
+  background: #fff;
 }
 
 .checkwrap {
   display: block;
   position: relative;
-  padding-left: 40px;
+  padding-left: 32px;
   cursor: pointer;
   -webkit-user-select: none;
   -ms-user-select: none;
@@ -27124,38 +27186,54 @@ input[type="range"]::-webkit-slider-thumb {
   width: 0;
 }
 
-.mycheck {
+.round-check,
+.square-check {
   position: absolute;
   top: 0;
   left: 0;
   height: 25px;
   width: 25px;
-  background-color: #eee;
+  background-color: #fff;
 }
 
-.checkwrap input ~ .mycheck {
+.checkwrap input ~ .round-check {
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 50%;
 }
 
-.checkwrap input:checked ~ .mycheck {
+.checkwrap input ~ .square-check {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+.checkwrap input:checked ~ .round-check {
   background-color: #e55400;
   border: 1px solid transparent;
   border-radius: 50%;
 }
 
-.mycheck:after {
+.checkwrap input:checked ~ .square-check {
+  background-color: #e55400;
+  border: 1px solid transparent;
+  border-radius: 2px;
+}
+
+.round-check::after,
+.square-check::after {
   content: "";
   position: absolute;
   display: none;
 }
 
-.checkwrap input:checked ~ .mycheck:after {
+.checkwrap input:checked ~ .round-check::after,
+.checkwrap input:checked ~ .square-check::after {
   display: block;
 }
 
-.checkwrap .mycheck:after {
+.checkwrap .round-check::after,
+.checkwrap .square-check::after {
   left: 9px;
   top: 5px;
   width: 6px;
@@ -43746,6 +43824,13 @@ select,
     left: 50%;
   }
 
+  .sm\:inset-8x2{
+    top: 16px;
+    right: 16px;
+    bottom: 16px;
+    left: 16px;
+  }
+
   .sm\:inset-8x5{
     top: 40px;
     right: 40px;
@@ -43788,6 +43873,16 @@ select,
   .sm\:inset-x-1\/2{
     right: 50%;
     left: 50%;
+  }
+
+  .sm\:inset-y-8x2{
+    top: 16px;
+    bottom: 16px;
+  }
+
+  .sm\:inset-x-8x2{
+    right: 16px;
+    left: 16px;
   }
 
   .sm\:inset-y-8x5{
@@ -43856,6 +43951,22 @@ select,
 
   .sm\:left-1\/2{
     left: 50%;
+  }
+
+  .sm\:top-8x2{
+    top: 16px;
+  }
+
+  .sm\:right-8x2{
+    right: 16px;
+  }
+
+  .sm\:bottom-8x2{
+    bottom: 16px;
+  }
+
+  .sm\:left-8x2{
+    left: 16px;
   }
 
   .sm\:top-8x5{
@@ -66665,6 +66776,13 @@ select,
     left: 50%;
   }
 
+  .md\:inset-8x2{
+    top: 16px;
+    right: 16px;
+    bottom: 16px;
+    left: 16px;
+  }
+
   .md\:inset-8x5{
     top: 40px;
     right: 40px;
@@ -66707,6 +66825,16 @@ select,
   .md\:inset-x-1\/2{
     right: 50%;
     left: 50%;
+  }
+
+  .md\:inset-y-8x2{
+    top: 16px;
+    bottom: 16px;
+  }
+
+  .md\:inset-x-8x2{
+    right: 16px;
+    left: 16px;
   }
 
   .md\:inset-y-8x5{
@@ -66775,6 +66903,22 @@ select,
 
   .md\:left-1\/2{
     left: 50%;
+  }
+
+  .md\:top-8x2{
+    top: 16px;
+  }
+
+  .md\:right-8x2{
+    right: 16px;
+  }
+
+  .md\:bottom-8x2{
+    bottom: 16px;
+  }
+
+  .md\:left-8x2{
+    left: 16px;
   }
 
   .md\:top-8x5{
@@ -89584,6 +89728,13 @@ select,
     left: 50%;
   }
 
+  .lg\:inset-8x2{
+    top: 16px;
+    right: 16px;
+    bottom: 16px;
+    left: 16px;
+  }
+
   .lg\:inset-8x5{
     top: 40px;
     right: 40px;
@@ -89626,6 +89777,16 @@ select,
   .lg\:inset-x-1\/2{
     right: 50%;
     left: 50%;
+  }
+
+  .lg\:inset-y-8x2{
+    top: 16px;
+    bottom: 16px;
+  }
+
+  .lg\:inset-x-8x2{
+    right: 16px;
+    left: 16px;
   }
 
   .lg\:inset-y-8x5{
@@ -89694,6 +89855,22 @@ select,
 
   .lg\:left-1\/2{
     left: 50%;
+  }
+
+  .lg\:top-8x2{
+    top: 16px;
+  }
+
+  .lg\:right-8x2{
+    right: 16px;
+  }
+
+  .lg\:bottom-8x2{
+    bottom: 16px;
+  }
+
+  .lg\:left-8x2{
+    left: 16px;
   }
 
   .lg\:top-8x5{
@@ -112503,6 +112680,13 @@ select,
     left: 50%;
   }
 
+  .xl\:inset-8x2{
+    top: 16px;
+    right: 16px;
+    bottom: 16px;
+    left: 16px;
+  }
+
   .xl\:inset-8x5{
     top: 40px;
     right: 40px;
@@ -112545,6 +112729,16 @@ select,
   .xl\:inset-x-1\/2{
     right: 50%;
     left: 50%;
+  }
+
+  .xl\:inset-y-8x2{
+    top: 16px;
+    bottom: 16px;
+  }
+
+  .xl\:inset-x-8x2{
+    right: 16px;
+    left: 16px;
   }
 
   .xl\:inset-y-8x5{
@@ -112613,6 +112807,22 @@ select,
 
   .xl\:left-1\/2{
     left: 50%;
+  }
+
+  .xl\:top-8x2{
+    top: 16px;
+  }
+
+  .xl\:right-8x2{
+    right: 16px;
+  }
+
+  .xl\:bottom-8x2{
+    bottom: 16px;
+  }
+
+  .xl\:left-8x2{
+    left: 16px;
   }
 
   .xl\:top-8x5{
@@ -135422,6 +135632,13 @@ select,
     left: 50%;
   }
 
+  .xxl\:inset-8x2{
+    top: 16px;
+    right: 16px;
+    bottom: 16px;
+    left: 16px;
+  }
+
   .xxl\:inset-8x5{
     top: 40px;
     right: 40px;
@@ -135464,6 +135681,16 @@ select,
   .xxl\:inset-x-1\/2{
     right: 50%;
     left: 50%;
+  }
+
+  .xxl\:inset-y-8x2{
+    top: 16px;
+    bottom: 16px;
+  }
+
+  .xxl\:inset-x-8x2{
+    right: 16px;
+    left: 16px;
   }
 
   .xxl\:inset-y-8x5{
@@ -135532,6 +135759,22 @@ select,
 
   .xxl\:left-1\/2{
     left: 50%;
+  }
+
+  .xxl\:top-8x2{
+    top: 16px;
+  }
+
+  .xxl\:right-8x2{
+    right: 16px;
+  }
+
+  .xxl\:bottom-8x2{
+    bottom: 16px;
+  }
+
+  .xxl\:left-8x2{
+    left: 16px;
   }
 
   .xxl\:top-8x5{

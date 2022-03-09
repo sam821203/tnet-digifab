@@ -13,7 +13,7 @@
   >
 <!-- start header.html-->
 <header
-  class="fixed top-0 left-0 flex justify-between items-center w-full h-16 bg-white px-20 py-4"
+  class="fixed top-0 left-0 flex justify-between items-center w-full h-16 bg-white px-20 py-4 z-50"
 >
   <div class="flex items-center">
     <div class="img-wrap w-10 mr-4">
@@ -26,18 +26,28 @@
 
   <div class="flex items-center">
     <h5 class="icon-mr">登出</h5>
-    <span>icon</span>
+    <div class="w-5">
+      <img
+        src="../../img/log_out.svg"
+        alt=""
+        class="object-contain w-full h-full"
+      />
+    </div>
   </div>
 </header>
 
 <!-- end header.html-->
 
     <main class="w-full px-20">
-      <div class="directory">
-        <a href="#">Advanced filter</a> /
+      <div class="directory flex w-full mt-25 mb-20">
+        <div class="opacity-40 mr-2">
+          <a href="#" class="mr-1">Advanced filter</a>
+          /
+        </div>
         <a href="#">Result</a>
       </div>
-      <h1 class="text-center text-secondary font-filson filson-h2 mt-32 mb-8">
+
+      <h1 class="text-center text-secondary font-filson filson-h2 mb-8">
         Result
       </h1>
       <section>
@@ -62,14 +72,13 @@
 
         <div class="flex justify-between mb-8">
           <div class="flex items-center">
-            <input
-              type="checkbox"
-              id="cbox1"
-              value="first_checkbox"
-              checked
-              class="mr-4 icon-mr"
-            />
-            <h4>全選</h4>
+            <form action="">
+              <label class="checkwrap text-md"
+                >全選
+                <input type="checkbox" />
+                <span class="square-check"></span>
+              </label>
+            </form>
           </div>
           <div>
             <span class="w-166 h-10 bg-white70 glo-radius px-10 py-2 mr-5"
@@ -82,20 +91,80 @@
           </div>
         </div>
 
-        <div class="result-items">
-          <div class="item">
-            <input
-              type="checkbox"
-              id="cbox1"
-              value="first_checkbox"
-              checked
-              class="mr-4 icon-mr"
-            />
-            <div class="img-wrap w-236">
-              <img src="../../img/item-1.jpg" alt="" class="w-full h-full" />
-            </div>
+        <div class="flex gap-6">
+          <div class="item w-1/5 mb-10">
+            <form action="">
+              <div
+                style="border: none"
+                class="img-wrap w-full relative mb-3"
+                id="imgborder"
+              >
+                <label
+                  for="checking"
+                  class="checkwrap absolute top-8x2 left-8x2"
+                >
+                  <input type="checkbox" id="checking" onclick="checking()" />
+                  <span class="square-check"></span>
+                </label>
+                <img src="../../img/item-1.jpg" alt="" class="w-full h-full" />
+              </div>
+            </form>
+
             <h3>QR31TH</h3>
-            <h5>100% Rec Polyester</h5>
+            <h5 class="font-light">100% Rec Polyester</h5>
+          </div>
+
+          <div class="item w-1/5 mb-10">
+            <form action="">
+              <div
+                style="border: none"
+                class="img-wrap w-full relative mb-3"
+                id="imgborder"
+              >
+                <label
+                  for="checking"
+                  class="checkwrap absolute top-8x2 left-8x2"
+                >
+                  <input type="checkbox" id="checking" onclick="checking()" />
+                  <span class="square-check"></span>
+                </label>
+                <img src="../../img/item-1.jpg" alt="" class="w-full h-full" />
+              </div>
+            </form>
+
+            <h3>QR31TH</h3>
+            <h5 class="font-light">100% Rec Polyester</h5>
+          </div>
+        </div>
+      </section>
+
+      <!-- page number -->
+      <section class="mb-10">
+        <div class="flex justify-center">
+          <div class="w-160 flex justify-center border border-gray-300">
+            <a href="" class="w-8 h-8 border-r relative">
+              <div class="absolute-center">
+                <img src="../../img/dblleft.svg" alt="" class="w-2 h-2" />
+              </div>
+            </a>
+            <a href="" class="w-8 h-8 border-r relative">
+              <div class="absolute-center">
+                <img src="../../img/dblleft.svg" alt="" class="w-2 h-2" />
+              </div>
+            </a>
+            <a href="" class="w-8 h-8 relative border-primary bg-primary">
+              <div class="absolute-center text-base text-white">1</div>
+            </a>
+            <a href="" class="w-8 h-8 border-l relative">
+              <div class="absolute-center">
+                <img src="../../img/dblleft.svg" alt="" class="w-2 h-2" />
+              </div>
+            </a>
+            <a href="" class="w-8 h-8 border-l relative">
+              <div class="absolute-center">
+                <img src="../../img/dblleft.svg" alt="" class="w-2 h-2" />
+              </div>
+            </a>
           </div>
         </div>
       </section>

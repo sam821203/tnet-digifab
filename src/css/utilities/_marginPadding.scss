@@ -9,3 +9,8 @@
 .gray-block {
   @apply bg-gray-100 glo-radius border-gray-200 border p-6;
 }
+
+.absolute-center {
+  @apply absolute top-1/2 left-1/2;
+  transform: translate(-50%, -50%);
+}

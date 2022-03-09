@@ -7,31 +7,53 @@ input[type="email"] {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-// input range
+// ----- input range -----
 input[type="range"] {
   -webkit-appearance: none;
+  // overflow: hidden;
   width: 100%;
-  height: 100%;
+  height: 10px;
   outline: none;
-  background: rgb(193, 193, 193);
+  background: white;
   border-radius: 50px;
 }
 
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   position: relative;
-  width: 16px;
-  height: 16px;
-  background: tomato;
+  width: 15px;
+  height: 15px;
+  background: $primary;
   border-radius: 50%;
   transition: 0.2s;
 }
 
-// input checkbox
+input[type="range"]::-webkit-slider-thumb::before,
+input[type="range"]::-webkit-slider-thumb::after {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 4px;
+  content: "";
+  pointer-events: none;
+  transition: 0.2s;
+}
+
+input[type="range"]::-webkit-slider-thumb::before {
+  left: -97px;
+  background: red;
+}
+
+input[type="range"]::-webkit-slider-thumb::after {
+  left: 10px;
+  background: #fff;
+}
+
+// ----- input checkbox -----
 .checkwrap {
   display: block;
   position: relative;
-  padding-left: 40px;
+  padding-left: 32px;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -47,38 +69,54 @@ input[type="range"]::-webkit-slider-thumb {
   width: 0;
 }
 
-.mycheck {
+.round-check,
+.square-check {
   position: absolute;
   top: 0;
   left: 0;
   height: 25px;
   width: 25px;
-  background-color: #eee;
+  background-color: #fff;
 }
 
-.checkwrap input ~ .mycheck {
+.checkwrap input ~ .round-check {
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 50%;
 }
 
-.checkwrap input:checked ~ .mycheck {
+.checkwrap input ~ .square-check {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+.checkwrap input:checked ~ .round-check {
   background-color: $primary;
   border: 1px solid transparent;
   border-radius: 50%;
 }
 
-.mycheck:after {
+.checkwrap input:checked ~ .square-check {
+  background-color: $primary;
+  border: 1px solid transparent;
+  border-radius: 2px;
+}
+
+.round-check::after,
+.square-check::after {
   content: "";
   position: absolute;
   display: none;
 }
 
-.checkwrap input:checked ~ .mycheck:after {
+.checkwrap input:checked ~ .round-check::after,
+.checkwrap input:checked ~ .square-check::after {
   display: block;
 }
 
-.checkwrap .mycheck:after {
+.checkwrap .round-check::after,
+.checkwrap .square-check::after {
   left: 9px;
   top: 5px;
   width: 6px;
