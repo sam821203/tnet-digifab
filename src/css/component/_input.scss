@@ -1,6 +1,18 @@
-input[type="email"] {
-  background-color: rgba(0, 0, 0, 0.4);
-  color: red;
+// placeholder
+input::placeholder,
+textarea::placeholder {
+  color: rgba(63, 69, 71, 0.6);
+  opacity: 1; /* Firefox */
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: rgba(63, 69, 71, 0.6);
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  color: rgba(63, 69, 71, 0.6);
 }
 
 .login-input {

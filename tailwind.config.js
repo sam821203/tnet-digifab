@@ -70,6 +70,7 @@ module.exports = {
         primaryhover: "#bf4600",
         logincolor: "rgba(0,0,0,0.4)",
         secondary: "#3F4547",
+        white40: "rgba(255, 255, 255, 0.4)",
         gray: {
           100: "#eeeeee",
           200: "#dddddd",

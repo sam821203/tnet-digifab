@@ -33,7 +33,7 @@ select::-ms-expand {
   // min-width: 15ch;
   // max-width: 30ch;
   border-radius: 5px;
-  padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+  padding: 0.5rem 1.25rem 0.5rem 1.25rem;
   // padding-right: 20px;
   // font-size: 1.25rem;
   // cursor: pointer;
@@ -46,9 +46,9 @@ select::-ms-expand {
 
 .select::after {
   content: "";
-  width: 0.8em;
-  height: 0.5em;
-  background-color: black;
+  width: 0.75rem;
+  height: 0.45rem;
+  background-color: $secondary;
   clip-path: polygon(100% 0%, 0 0%, 50% 100%);
   justify-self: end;
 }
@@ -56,4 +56,8 @@ select::-ms-expand {
 select,
 .select:after {
   grid-area: select;
+}
+
+select:required:invalid {
+  color: rgba(63, 69, 71, 0.6);
 }
