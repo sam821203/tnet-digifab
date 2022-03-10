@@ -29,3 +29,62 @@ var swiper2 = new Swiper(".mySwiper2", {
     swiper: swiper,
   },
 });
+
+// add new items
+document.querySelector("#pushitem").onclick = function () {
+  document.querySelector("#gradients").innerHTML += `
+  <div class="flex items-center w-full mb-4">
+  <div class="select w-2/5 mr-5">
+    <select class="text-base" required>
+      <option value="" disabled selected>請選擇</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+    </select>
+  </div>
+  <div class="select w-1/5 mr-5">
+    <select class="text-base" required>
+      <option value="" disabled selected>請選擇</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+    </select>
+  </div>
+  <h4>～</h4>
+  <div class="select w-1/5 mx-5">
+    <select class="text-base" required>
+      <option value="" disabled selected>請選擇</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+    </select>
+  </div>
+  <h4>％</h4>
+  <div class="select w-1/5 ml-5">
+    <select class="text-base" required>
+      <option value="" disabled selected>請選擇</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+    </select>
+  </div>
+</div>
+  `;
+
+  let currentlists = document.querySelector("#gradients").innerHTML;
+  var setsession = window.sessionStorage.setItem("items", "currentlists");
+  var getsession = window.sessionStorage.getItem("items");
+  console.log(getsession);
+};
+
+// 取得我們要保留內容的text field元件
+var field = document.getElementById("field");
+
+// 檢查是否有之前的autosave的內容
+// 這段程式碼會在瀏覽器進入該頁面時被執行
+if (sessionStorage.getItem("autosave")) {
+  // 還原先前的內容到指定的text field
+  field.value = sessionStorage.getItem("autosave");
+}
+
+// 註冊事件監聽text field內容的變化
+field.addEventListener("change", function () {
+  // 並儲存變化後的內容至sessionStorage的物件裡
+  sessionStorage.setItem("autosave", field.value);
+});

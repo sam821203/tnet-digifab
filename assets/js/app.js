@@ -32,6 +32,32 @@ var swiper2 = new Swiper(".mySwiper2", {
     }
 });
 
+// add new items
+document.querySelector("#pushitem").onclick = function () {
+    document.querySelector("#gradients").innerHTML += "\n  <div class=\"flex items-center w-full mb-4\">\n  <div class=\"select w-2/5 mr-5\">\n    <select class=\"text-base\" required>\n      <option value=\"\" disabled selected>\u8ACB\u9078\u64C7</option>\n      <option value=\"1\">One</option>\n      <option value=\"2\">Two</option>\n    </select>\n  </div>\n  <div class=\"select w-1/5 mr-5\">\n    <select class=\"text-base\" required>\n      <option value=\"\" disabled selected>\u8ACB\u9078\u64C7</option>\n      <option value=\"1\">One</option>\n      <option value=\"2\">Two</option>\n    </select>\n  </div>\n  <h4>\uFF5E</h4>\n  <div class=\"select w-1/5 mx-5\">\n    <select class=\"text-base\" required>\n      <option value=\"\" disabled selected>\u8ACB\u9078\u64C7</option>\n      <option value=\"1\">One</option>\n      <option value=\"2\">Two</option>\n    </select>\n  </div>\n  <h4>\uFF05</h4>\n  <div class=\"select w-1/5 ml-5\">\n    <select class=\"text-base\" required>\n      <option value=\"\" disabled selected>\u8ACB\u9078\u64C7</option>\n      <option value=\"1\">One</option>\n      <option value=\"2\">Two</option>\n    </select>\n  </div>\n</div>\n  ";
+
+    var currentlists = document.querySelector("#gradients").innerHTML;
+    var setsession = window.sessionStorage.setItem("items", "currentlists");
+    var getsession = window.sessionStorage.getItem("items");
+    console.log(getsession);
+};
+
+// 取得我們要保留內容的text field元件
+var field = document.getElementById("field");
+
+// 檢查是否有之前的autosave的內容
+// 這段程式碼會在瀏覽器進入該頁面時被執行
+if (sessionStorage.getItem("autosave")) {
+    // 還原先前的內容到指定的text field
+    field.value = sessionStorage.getItem("autosave");
+}
+
+// 註冊事件監聽text field內容的變化
+field.addEventListener("change", function () {
+    // 並儲存變化後的內容至sessionStorage的物件裡
+    sessionStorage.setItem("autosave", field.value);
+});
+
 var initPhotoSwipeFromDOM = function initPhotoSwipeFromDOM(gallerySelector) {
 
     // parse slide data (url, title, size ...) from DOM elements 

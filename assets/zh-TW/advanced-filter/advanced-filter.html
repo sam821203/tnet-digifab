@@ -123,78 +123,86 @@
               <h4 class="w-4/5">成分：</h4>
               <h4 class="w-1/5">And / OR：</h4>
             </div>
-            <div class="flex items-center w-full mb-4">
-              <div class="select w-2/5 mr-5">
-                <select class="text-base" required>
-                  <option value="" disabled selected>請選擇</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                </select>
+
+            <div id="gradients">
+              <!-- gradient 1 -->
+              <div class="flex items-center w-full mb-4">
+                <div class="select w-2/5 mr-5">
+                  <select class="text-base" required>
+                    <option value="" disabled selected>請選擇</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                  </select>
+                </div>
+                <div class="select w-1/5 mr-5">
+                  <select class="text-base" required>
+                    <option value="" disabled selected>請選擇</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                  </select>
+                </div>
+                <h4>～</h4>
+                <div class="select w-1/5 mx-5">
+                  <select class="text-base" required>
+                    <option value="" disabled selected>請選擇</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                  </select>
+                </div>
+                <h4>％</h4>
+                <div class="select w-1/5 ml-5">
+                  <select class="text-base" required>
+                    <option value="" disabled selected>請選擇</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                  </select>
+                </div>
               </div>
-              <div class="select w-1/5 mr-5">
-                <select class="text-base" required>
-                  <option value="" disabled selected>請選擇</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                </select>
-              </div>
-              <h4>～</h4>
-              <div class="select w-1/5 mx-5">
-                <select class="text-base" required>
-                  <option value="" disabled selected>請選擇</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                </select>
-              </div>
-              <h4>％</h4>
-              <div class="select w-1/5 ml-5">
-                <select class="text-base" required>
-                  <option value="" disabled selected>請選擇</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                </select>
-              </div>
-            </div>
-            <div class="flex items-center w-full mb-4">
-              <div class="select w-2/5 mr-5">
-                <select class="text-base" required>
-                  <option value="" disabled selected>請選擇</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                </select>
-              </div>
-              <div class="select w-1/5 mr-5">
-                <select class="text-base" required>
-                  <option value="" disabled selected>請選擇</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                </select>
-              </div>
-              <h4>～</h4>
-              <div class="select w-1/5 mx-5">
-                <select class="text-base" required>
-                  <option value="" disabled selected>請選擇</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                </select>
-              </div>
-              <h4>％</h4>
-              <div class="select w-1/5 ml-5">
-                <select class="text-base" required>
-                  <option value="" disabled selected>請選擇</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                </select>
+
+              <!-- gradient 2 -->
+              <div class="flex items-center w-full mb-4">
+                <div class="select w-2/5 mr-5">
+                  <select class="text-base" required>
+                    <option value="" disabled selected>請選擇</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                  </select>
+                </div>
+                <div class="select w-1/5 mr-5">
+                  <select class="text-base" required>
+                    <option value="" disabled selected>請選擇</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                  </select>
+                </div>
+                <h4>～</h4>
+                <div class="select w-1/5 mx-5">
+                  <select class="text-base" required>
+                    <option value="" disabled selected>請選擇</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                  </select>
+                </div>
+                <h4>％</h4>
+                <div class="select w-1/5 ml-5">
+                  <select class="text-base" required>
+                    <option value="" disabled selected>請選擇</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                  </select>
+                </div>
               </div>
             </div>
 
-            <button data-add id="add-list" class="flex">
-              <span
-                class="w-5 h-5 bg-primary rounded-full text-white flex justify-center items-center icon-mr"
-                >+</span
-              >
-              <h4 class="text-primary mb-4">新增一筆</h4>
-            </button>
+            <div id="newitem">
+              <button data-add id="pushitem" class="flex">
+                <span
+                  class="w-5 h-5 bg-primary rounded-full text-white flex justify-center items-center icon-mr"
+                  >+</span
+                >
+                <h4 class="text-primary mb-4">新增一筆</h4>
+              </button>
+            </div>
 
             <!-- organization -->
             <h4 class="w-4/6 mb-3">布種及組織：</h4>
@@ -324,7 +332,7 @@
               </div>
             </div>
 
-            <button data-add id="add-list" class="flex">
+            <button data-add id="pushitem" class="flex">
               <span
                 class="w-5 h-5 bg-primary rounded-full text-white flex justify-center items-center icon-mr"
                 >+</span
@@ -515,14 +523,14 @@
             <button
               data-add
               id="refresh"
-              class="w-1/2 flex bg-secondary hover:bg-black glo-radius py-3 text-white justify-center"
+              class="w-1/2 flex bg-secondary hover:bg-black trans200 glo-radius py-3 text-white justify-center"
             >
               重新整理
             </button>
             <button
               data-add
               id="refresh"
-              class="w-1/2 flex bg-primary hover:bg-primaryhover glo-radius py-3 text-white justify-center"
+              class="w-1/2 flex bg-primary hover:bg-primaryhover trans200 glo-radius py-3 text-white justify-center"
             >
               開始搜尋
             </button>
