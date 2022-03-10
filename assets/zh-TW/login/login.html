@@ -10,21 +10,21 @@
   <body class="w-full h-full">
     <section
       style="background-image: url(../../img/login-bg-2560.jpg)"
-      class="bg-cover w-full h-screen bg-no-repeat overflow-auto"
+      class="bg-cover h-screen object-center bg-no-repeat"
     >
       <div id="container">
-        <header class="mb-32">
-          <div class="max-w-110">
+        <header class="mb-16 md:mb-32">
+          <div class="w-16 md:max-w-110">
             <img
               src="../../img/logo.svg"
               alt=""
-              class="relative top-8x6 left-8x5 object-contain w-full h-full"
+              class="relative top-8x3 left-8x2 md:top-8x6 md:left-8x5 object-contain w-full h-full"
             />
           </div>
         </header>
         <main>
           <h1
-            class="font-filson font-medium text-6xl text-center text-white mb-10"
+            class="font-filson filson-h1 font-medium text-6xl text-center text-white mb-6"
           >
             Tnet Fabric Library
           </h1>
@@ -35,32 +35,31 @@
               會員登入
             </h2>
           </div>
-          <div class="w-full h-full">
-            <div class="flex flex-col items-center w-full h-full">
-              <div class="email-address">
-                <input
-                  type="email"
-                  placeholder="帳號 *"
-                  class="bg-logincolor rounded w-300 py-3 pl-5 mb-6 placeholder-white border border-white glo-radius"
-                />
-              </div>
 
-              <div class="password">
-                <input
-                  type="password"
-                  placeholder="密碼 *"
-                  class="bg-logincolor rounded w-300 py-3 pl-5 mb-10 placeholder-white border border-white glo-radius"
-                />
-              </div>
-
-              <a href="">
-                <div
-                  class="w-160 h-12 bg-white py-3 px-16 text-primary rounded-full hover:bg-primary hover:text-white trans200"
-                >
-                  登入
-                </div>
-              </a>
+          <div class="w-full h-full text-center items-center">
+            <div class="w-full email-address">
+              <input
+                type="email"
+                placeholder="帳號 *"
+                class="bg-logincolor rounded min-w-300 py-3 pl-5 mb-6 placeholder-white border border-white glo-radius"
+              />
             </div>
+
+            <div class="password">
+              <input
+                type="password"
+                placeholder="密碼 *"
+                class="bg-logincolor rounded min-w-300 py-3 pl-5 mb-10 placeholder-white border border-white glo-radius"
+              />
+            </div>
+
+            <a href="" class="w-full flex justify-center">
+              <div
+                class="w-300 h-12 bg-white py-3 px-16 text-primary rounded-full hover:bg-primary hover:text-white trans200"
+              >
+                登入
+              </div>
+            </a>
           </div>
         </main>
       </div>

@@ -14,22 +14,24 @@
     <!-- @@include ../include/header.html -->
 
     <main>
-      <h1 class="text-center text-secondary font-filson filson-h2 mt-32">
+      <h1
+        class="text-center text-secondary font-filson filson-h2 mt-30 md:mt-32"
+      >
         Search
       </h1>
-      <div class="search-container mx-20 glo-mb mt-8">
-        <form action="" class="flex gap-5">
-          <div class="w-4/5 gray-block">
+      <div class="search-container mx-5 md:mx-20 glo-mb mt-8">
+        <form action="" class="lg:flex gap-6">
+          <div class="md:w-full lg:w-3/5 xxl:w-4/5 gray-block mb-6 lg:mb-0">
             <div class="flex w-full h-full">
               <input
                 type="text"
                 placeholder="布料編號、 關鍵字搜尋"
                 name="search"
-                class="w-5/6 px-5 py-3 text-base rounded-l-2point5"
+                class="w-4/6 lg:w-5/6 px-5 h-50 text-base rounded-l-2point5"
               />
               <button
                 type="submit"
-                class="w-1/6 flex justify-center items-center bg-primary hover:bg-primaryhover trans200 text-white rounded-r-2point5"
+                class="w-2/6 lg:w-1/6 flex justify-center items-center bg-primary hover:bg-primaryhover trans200 text-white rounded-r-2point5"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -49,17 +51,20 @@
               </button>
             </div>
           </div>
-          <div class="w-1/5 flex justify-center gray-block">
+
+          <div
+            class="sm:w-full lg:w-2/5 xxl:w-1/5 flex justify-center gray-block"
+          >
             <a href="" class="w-full">
               <div
-                class="w-full flex justify-center items-center bg-white hover:bg-secondary hover:text-white hover:hidden trans200 glo-radius h-full py-5 m-auto"
+                class="w-full flex justify-center items-center bg-white hover:bg-secondary hover:text-white hover:hidden trans200 glo-radius h-50 m-auto"
               >
                 <h5 class="font-filson icon-mr">Advanced filter</h5>
                 <div class="h-3">
                   <img
                     src="../../img/filter_arrow.png"
                     alt=""
-                    class="object-contain w-full h-full"
+                    class="object-cover w-full h-full"
                   />
                 </div>
               </div>
@@ -67,13 +72,14 @@
           </div>
         </form>
       </div>
-      <div class="filter-container mb-32">
-        <div class="flex gap-5 mx-20">
-          <div class="flex gap-5 w-4/5">
-            <!-- ----- woven ----- -->
-            <div class="w-1/5 flex flex-col gray-block">
+
+      <div class="filter-container w-full mb-32">
+        <div class="hidden xxl:flex gap-6 mx-20">
+          <!-- ----- woven ----- -->
+          <div class="lg:w-1/2 xxl:w-1/5 flex flex-col gray-block mb-6 lg:mb-0">
+            <a href="">
               <div
-                class="flex justify-center bg-black glo-radius w-full py-6 mb-4"
+                class="flex justify-center items-center bg-secondary hover:bg-black trans200 glo-radius w-full h-94 mb-4"
               >
                 <div class="img-wrap icon-mr w-12.5 h-12.5">
                   <img
@@ -87,55 +93,57 @@
                   <h4>梭織布</h4>
                 </div>
               </div>
-              <a href="">
-                <div
-                  class="flex justify-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full py-5 mb-4"
-                >
-                  <h5>TOP</h5>
-                </div>
-              </a>
-              <a href="">
-                <div
-                  class="flex justify-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full py-5 mb-4"
-                >
-                  <h5>Plain</h5>
-                </div>
-              </a>
-              <a href="">
-                <div
-                  class="flex justify-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full py-5 mb-4"
-                >
-                  <h5>NOP</h5>
-                </div>
-              </a>
-              <a href="">
-                <div
-                  class="flex justify-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full py-5 mb-4"
-                >
-                  <h5>Taffeta</h5>
-                </div>
-              </a>
-              <a href="">
-                <div
-                  class="flex justify-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full py-5 mb-4"
-                >
-                  <h5>Downproof</h5>
-                </div>
-              </a>
-              <a href="">
-                <div
-                  class="flex justify-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full py-5 mb-4"
-                >
-                  <h5>Ribstop</h5>
-                </div>
-              </a>
-            </div>
-
-            <!-- ----- Knit ----- -->
-            <div class="w-3/5 flex flex-col gray-block">
+            </a>
+            <a href="">
               <div
-                class="flex justify-center bg-secondary glo-radius w-full py-6 mb-4"
+                class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full h-40 mb-4"
               >
+                <h5>TOP</h5>
+              </div>
+            </a>
+            <a href="">
+              <div
+                class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full h-40 mb-4"
+              >
+                <h5>Plain</h5>
+              </div>
+            </a>
+            <a href="">
+              <div
+                class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full h-40 mb-4"
+              >
+                <h5>NOP</h5>
+              </div>
+            </a>
+            <a href="">
+              <div
+                class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full h-40 mb-4"
+              >
+                <h5>Taffeta</h5>
+              </div>
+            </a>
+            <a href="">
+              <div
+                class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full h-40 mb-4"
+              >
+                <h5>Downproof</h5>
+              </div>
+            </a>
+            <a href="">
+              <div
+                class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full h-40 mb-4"
+              >
+                <h5>Ribstop</h5>
+              </div>
+            </a>
+          </div>
+
+          <!-- ----- Knit ----- -->
+          <div class="lg:w-1/2 xxl:w-2/5 flex flex-col gray-block mb-6 lg:mb-0">
+            <div
+              class="flex justify-center items-center bg-secondary hover:bg-black trans200 glo-radius w-full h-94 mb-4"
+            >
+              <a href="">
                 <div class="img-wrap icon-mr w-12.5 h-12.5">
                   <img
                     src="../../img/search_2.svg"
@@ -143,127 +151,129 @@
                     class="object-contain w-full h-full"
                   />
                 </div>
-                <div class="text-white">
-                  <h3 class="font-normal font-filson filson-h4">Knit</h3>
-                  <h4>針織方式</h4>
-                </div>
-              </div>
-              <div class="flex gap-5 mb-4">
-                <a href="" class="w-1/2">
-                  <div
-                    class="flex justify-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius py-5"
-                  >
-                    <h5>Circular</h5>
-                  </div>
-                </a>
-
-                <a href="" class="w-1/2">
-                  <div
-                    class="flex justify-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius py-5"
-                  >
-                    <h5>Warp</h5>
-                  </div>
-                </a>
-              </div>
-
-              <div class="flex gap-5 mb-4">
-                <a href="" class="w-1/3">
-                  <div
-                    class="flex justify-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius py-5"
-                  >
-                    <h5>Single Jersey</h5>
-                  </div>
-                </a>
-                <a href="" class="w-1/3">
-                  <div
-                    class="flex justify-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius py-5"
-                  >
-                    <h5>Double Jersey</h5>
-                  </div>
-                </a>
-                <a href="" class="w-1/3">
-                  <div
-                    class="flex justify-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius py-5"
-                  >
-                    <h5>Tricot Mesh</h5>
-                  </div>
-                </a>
-              </div>
-              <div class="flex gap-5 mb-4">
-                <a href="" class="w-1/3">
-                  <div
-                    class="flex justify-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius py-5"
-                  >
-                    <h5>Power net</h5>
-                  </div>
-                </a>
-                <a href="" class="w-1/3">
-                  <div
-                    class="flex justify-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius py-5"
-                  >
-                    <h5>Fleece</h5>
-                  </div>
-                </a>
-                <a href="" class="w-1/3">
-                  <div
-                    class="flex justify-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius py-5"
-                  >
-                    <h5>Spacer</h5>
-                  </div>
-                </a>
-              </div>
-              <div class="flex gap-5 mb-4">
-                <a href="" class="w-1/3">
-                  <div
-                    class="flex justify-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius py-5"
-                  >
-                    <h5>Fleece</h5>
-                  </div>
-                </a>
-                <a href="" class="w-1/3">
-                  <div
-                    class="flex justify-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius py-5"
-                  >
-                    <h5>Spacer</h5>
-                  </div>
-                </a>
-                <a href="" class="w-1/3">
-                  <div
-                    class="flex justify-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius py-5"
-                  >
-                    <h5>TOP</h5>
-                  </div>
-                </a>
-              </div>
-              <div class="flex gap-5 mb-4">
-                <a href="" class="w-1/3">
-                  <div
-                    class="flex justify-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius py-5"
-                  >
-                    <h5>NOP</h5>
-                  </div>
-                </a>
-                <a href="" class="w-1/3">
-                  <div
-                    class="flex justify-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius py-5"
-                  >
-                    <h5>TOP</h5>
-                  </div>
-                </a>
-                <a href="" class="w-1/3">
-                  <div
-                    class="flex justify-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius py-5"
-                  >
-                    <h5>NOP</h5>
-                  </div>
-                </a>
+              </a>
+              <div class="text-white">
+                <h3 class="font-normal font-filson filson-h4">Knit</h3>
+                <h4>針織方式</h4>
               </div>
             </div>
+            <div class="flex gap-6 mb-4">
+              <a href="" class="w-1/2">
+                <div
+                  class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius h-16"
+                >
+                  <h5>Circular</h5>
+                </div>
+              </a>
 
-            <!-- ----- Laminate ----- -->
-            <div class="w-1/5 flex flex-col gray-block">
+              <a href="" class="w-1/2">
+                <div
+                  class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius h-16"
+                >
+                  <h5>Warp</h5>
+                </div>
+              </a>
+            </div>
+
+            <div class="flex gap-6 mb-4">
+              <a href="" class="w-1/3">
+                <div
+                  class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius h-40"
+                >
+                  <h5>Single Jersey</h5>
+                </div>
+              </a>
+              <a href="" class="w-1/3">
+                <div
+                  class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius h-40"
+                >
+                  <h5>Double Jersey</h5>
+                </div>
+              </a>
+              <a href="" class="w-1/3">
+                <div
+                  class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius h-40"
+                >
+                  <h5>Tricot Mesh</h5>
+                </div>
+              </a>
+            </div>
+            <div class="flex gap-6 mb-4">
+              <a href="" class="w-1/3">
+                <div
+                  class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius h-40"
+                >
+                  <h5>Power net</h5>
+                </div>
+              </a>
+              <a href="" class="w-1/3">
+                <div
+                  class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius h-40"
+                >
+                  <h5>Fleece</h5>
+                </div>
+              </a>
+              <a href="" class="w-1/3">
+                <div
+                  class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius h-40"
+                >
+                  <h5>Spacer</h5>
+                </div>
+              </a>
+            </div>
+            <div class="flex gap-6 mb-4">
+              <a href="" class="w-1/3">
+                <div
+                  class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius h-40"
+                >
+                  <h5>Fleece</h5>
+                </div>
+              </a>
+              <a href="" class="w-1/3">
+                <div
+                  class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius h-40"
+                >
+                  <h5>Spacer</h5>
+                </div>
+              </a>
+              <a href="" class="w-1/3">
+                <div
+                  class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius h-40"
+                >
+                  <h5>TOP</h5>
+                </div>
+              </a>
+            </div>
+            <div class="flex gap-6 mb-4">
+              <a href="" class="w-1/3">
+                <div
+                  class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius h-40"
+                >
+                  <h5>NOP</h5>
+                </div>
+              </a>
+              <a href="" class="w-1/3">
+                <div
+                  class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius h-40"
+                >
+                  <h5>TOP</h5>
+                </div>
+              </a>
+              <a href="" class="w-1/3">
+                <div
+                  class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius h-40"
+                >
+                  <h5>NOP</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- ----- Laminate ----- -->
+          <div class="lg:w-1/2 xxl:w-1/5 flex flex-col gray-block">
+            <a href="">
               <div
-                class="flex justify-center bg-secondary glo-radius w-full py-6 mb-4"
+                class="flex justify-center items-center bg-secondary hover:bg-black trans200 glo-radius w-full h-94 mb-4"
               >
                 <div class="img-wrap icon-mr w-12.5 h-12.5">
                   <img
@@ -277,96 +287,414 @@
                   <h4>貼合布</h4>
                 </div>
               </div>
-              <a href="">
-                <div
-                  class="flex justify-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full py-5 mb-4"
-                >
-                  <h5>2- Layer</h5>
-                </div>
-              </a>
-              <a href="">
-                <div
-                  class="flex justify-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full py-5 mb-4"
-                >
-                  <h5>2.5- Layer</h5>
-                </div>
-              </a>
-              <a href="">
-                <div
-                  class="flex justify-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full py-5 mb-4"
-                >
-                  <h5>3- Layer</h5>
-                </div>
-              </a>
-              <a href="">
-                <div
-                  class="flex justify-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full py-5 mb-4"
-                >
-                  <h5>Bonded</h5>
-                </div>
-              </a>
-            </div>
+            </a>
+            <a href="">
+              <div
+                class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full h-40 mb-4"
+              >
+                <h5>2- Layer</h5>
+              </div>
+            </a>
+            <a href="">
+              <div
+                class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full h-40 mb-4"
+              >
+                <h5>2.5- Layer</h5>
+              </div>
+            </a>
+            <a href="">
+              <div
+                class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full h-40 mb-4"
+              >
+                <h5>3- Layer</h5>
+              </div>
+            </a>
+            <a href="">
+              <div
+                class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full h-40 mb-4"
+              >
+                <h5>Bonded</h5>
+              </div>
+            </a>
           </div>
 
           <!-- ----- Function ----- -->
-          <div class="w-1/5 flex flex-col gray-block">
-            <div
-              class="flex justify-center bg-secondary glo-radius w-full py-6 mb-4"
-            >
-              <div class="img-wrap icon-mr w-12.5 h-12.5">
-                <img
-                  src="../../img/search_4.svg"
-                  alt=""
-                  class="object-contain w-full h-full"
-                />
-              </div>
-              <div class="text-white">
-                <h3 class="font-normal font-filson filson-h4">Function</h3>
-                <h4>貼合布</h4>
-              </div>
-            </div>
+          <div class="lg:w-1/2 xxl:w-1/5 flex flex-col gray-block">
             <a href="">
               <div
-                class="flex justify-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full py-5 mb-4"
+                class="flex justify-center items-center bg-secondary hover:bg-black trans200 glo-radius w-full h-94 mb-4"
+              >
+                <div class="img-wrap icon-mr w-12.5 h-12.5">
+                  <img
+                    src="../../img/search_4.svg"
+                    alt=""
+                    class="object-contain w-full h-full"
+                  />
+                </div>
+                <div class="text-white">
+                  <h3 class="font-normal font-filson filson-h4">Function</h3>
+                  <h4>機能性</h4>
+                </div>
+              </div>
+            </a>
+            <a href="">
+              <div
+                class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full h-40 mb-4"
               >
                 <h5>Downproof</h5>
               </div>
             </a>
             <a href="">
               <div
-                class="flex justify-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full py-5 mb-4"
+                class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full h-40 mb-4"
               >
                 <h5>Windproof</h5>
               </div>
             </a>
             <a href="">
               <div
-                class="flex justify-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full py-5 mb-4"
+                class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full h-40 mb-4"
               >
                 <h5>DWR</h5>
               </div>
             </a>
             <a href="">
               <div
-                class="flex justify-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full py-5 mb-4"
+                class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full h-40 mb-4"
               >
                 <h5>Waterproof</h5>
               </div>
             </a>
             <a href="">
               <div
-                class="flex justify-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full py-5 mb-4"
+                class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full h-40 mb-4"
               >
                 <h5>Odor control</h5>
               </div>
             </a>
             <a href="">
               <div
-                class="flex justify-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full py-5 mb-4"
+                class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full h-40 mb-4"
               >
                 <h5>Anti-microbial</h5>
               </div>
             </a>
+          </div>
+        </div>
+
+        <div class="block xxl:hidden gap-6 mx-5 md:mx-20">
+          <div class="md:block lg:flex gap-6 mb-7.5">
+            <!-- ----- woven ----- -->
+            <div
+              class="lg:w-1/2 xxl:w-1/5 flex flex-col gray-block mb-6 lg:mb-0"
+            >
+              <a href="">
+                <div
+                  class="flex justify-center items-center bg-secondary hover:bg-black trans200 glo-radius w-full h-94 mb-4"
+                >
+                  <div class="img-wrap icon-mr w-12.5 h-12.5">
+                    <img
+                      src="../../img/search_1.svg"
+                      alt=""
+                      class="object-contain w-full h-full"
+                    />
+                  </div>
+                  <div class="text-white">
+                    <h3 class="font-normal font-filson filson-h4">Woven</h3>
+                    <h4>梭織布</h4>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full h-40 mb-4"
+                >
+                  <h5>TOP</h5>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full h-40 mb-4"
+                >
+                  <h5>Plain</h5>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full h-40 mb-4"
+                >
+                  <h5>NOP</h5>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full h-40 mb-4"
+                >
+                  <h5>Taffeta</h5>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full h-40 mb-4"
+                >
+                  <h5>Downproof</h5>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full h-40 mb-4"
+                >
+                  <h5>Ribstop</h5>
+                </div>
+              </a>
+            </div>
+
+            <!-- ----- Knit ----- -->
+            <div
+              class="lg:w-1/2 xxl:w-2/5 flex flex-col gray-block mb-6 lg:mb-0"
+            >
+              <div
+                class="flex justify-center items-center bg-secondary hover:bg-black trans200 glo-radius w-full h-94 mb-4"
+              >
+                <a href="">
+                  <div class="img-wrap icon-mr w-12.5 h-12.5">
+                    <img
+                      src="../../img/search_2.svg"
+                      alt=""
+                      class="object-contain w-full h-full"
+                    />
+                  </div>
+                </a>
+                <div class="text-white">
+                  <h3 class="font-normal font-filson filson-h4">Knit</h3>
+                  <h4>針織方式</h4>
+                </div>
+              </div>
+              <div class="flex gap-6 mb-4">
+                <a href="" class="w-1/2">
+                  <div
+                    class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius h-16"
+                  >
+                    <h5>Circular</h5>
+                  </div>
+                </a>
+
+                <a href="" class="w-1/2">
+                  <div
+                    class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius h-16"
+                  >
+                    <h5>Warp</h5>
+                  </div>
+                </a>
+              </div>
+
+              <div class="flex gap-6 mb-4">
+                <a href="" class="w-1/3">
+                  <div
+                    class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius h-40"
+                  >
+                    <h5>Single Jersey</h5>
+                  </div>
+                </a>
+                <a href="" class="w-1/3">
+                  <div
+                    class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius h-40"
+                  >
+                    <h5>Double Jersey</h5>
+                  </div>
+                </a>
+                <a href="" class="w-1/3">
+                  <div
+                    class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius h-40"
+                  >
+                    <h5>Tricot Mesh</h5>
+                  </div>
+                </a>
+              </div>
+              <div class="flex gap-6 mb-4">
+                <a href="" class="w-1/3">
+                  <div
+                    class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius h-40"
+                  >
+                    <h5>Power net</h5>
+                  </div>
+                </a>
+                <a href="" class="w-1/3">
+                  <div
+                    class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius h-40"
+                  >
+                    <h5>Fleece</h5>
+                  </div>
+                </a>
+                <a href="" class="w-1/3">
+                  <div
+                    class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius h-40"
+                  >
+                    <h5>Spacer</h5>
+                  </div>
+                </a>
+              </div>
+              <div class="flex gap-6 mb-4">
+                <a href="" class="w-1/3">
+                  <div
+                    class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius h-40"
+                  >
+                    <h5>Fleece</h5>
+                  </div>
+                </a>
+                <a href="" class="w-1/3">
+                  <div
+                    class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius h-40"
+                  >
+                    <h5>Spacer</h5>
+                  </div>
+                </a>
+                <a href="" class="w-1/3">
+                  <div
+                    class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius h-40"
+                  >
+                    <h5>TOP</h5>
+                  </div>
+                </a>
+              </div>
+              <div class="flex gap-6 mb-4">
+                <a href="" class="w-1/3">
+                  <div
+                    class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius h-40"
+                  >
+                    <h5>NOP</h5>
+                  </div>
+                </a>
+                <a href="" class="w-1/3">
+                  <div
+                    class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius h-40"
+                  >
+                    <h5>TOP</h5>
+                  </div>
+                </a>
+                <a href="" class="w-1/3">
+                  <div
+                    class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius h-40"
+                  >
+                    <h5>NOP</h5>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:block lg:flex gap-6 mb-7.5">
+            <!-- ----- Laminate ----- -->
+            <div class="lg:w-1/2 xxl:w-1/5 flex flex-col gray-block">
+              <a href="">
+                <div
+                  class="flex justify-center items-center bg-secondary hover:bg-black trans200 glo-radius w-full h-94 mb-4"
+                >
+                  <div class="img-wrap icon-mr w-12.5 h-12.5">
+                    <img
+                      src="../../img/search_3.svg"
+                      alt=""
+                      class="object-contain w-full h-full"
+                    />
+                  </div>
+                  <div class="text-white">
+                    <h3 class="font-normal font-filson filson-h4">Laminate</h3>
+                    <h4>貼合布</h4>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full h-40 mb-4"
+                >
+                  <h5>2- Layer</h5>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full h-40 mb-4"
+                >
+                  <h5>2.5- Layer</h5>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full h-40 mb-4"
+                >
+                  <h5>3- Layer</h5>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full h-40 mb-4"
+                >
+                  <h5>Bonded</h5>
+                </div>
+              </a>
+            </div>
+
+            <!-- ----- Function ----- -->
+            <div class="lg:w-1/2 xxl:w-1/5 flex flex-col gray-block">
+              <a href="">
+                <div
+                  class="flex justify-center items-center bg-secondary hover:bg-black trans200 glo-radius w-full h-94 mb-4"
+                >
+                  <div class="img-wrap icon-mr w-12.5 h-12.5">
+                    <img
+                      src="../../img/search_4.svg"
+                      alt=""
+                      class="object-contain w-full h-full"
+                    />
+                  </div>
+                  <div class="text-white">
+                    <h3 class="font-normal font-filson filson-h4">Function</h3>
+                    <h4>機能性</h4>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full h-40 mb-4"
+                >
+                  <h5>Downproof</h5>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full h-40 mb-4"
+                >
+                  <h5>Windproof</h5>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full h-40 mb-4"
+                >
+                  <h5>DWR</h5>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full h-40 mb-4"
+                >
+                  <h5>Waterproof</h5>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full h-40 mb-4"
+                >
+                  <h5>Odor control</h5>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  class="flex justify-center items-center bg-white70 hover:bg-primary hover:text-white trans200 glo-radius w-full h-40 mb-4"
+                >
+                  <h5>Anti-microbial</h5>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
