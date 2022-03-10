@@ -22,8 +22,8 @@ var swiper2 = new Swiper(".mySwiper2", {
   loop: true,
   spaceBetween: 10,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".my-swiper-next",
+    prevEl: ".my-swiper-prev",
   },
   thumbs: {
     swiper: swiper,
@@ -33,38 +33,40 @@ var swiper2 = new Swiper(".mySwiper2", {
 // add new items
 document.querySelector("#pushitem").onclick = function () {
   document.querySelector("#gradients").innerHTML += `
-  <div class="flex items-center w-full mb-4">
-  <div class="select w-2/5 mr-5">
-    <select class="text-base" required>
-      <option value="" disabled selected>請選擇</option>
-      <option value="1">One</option>
-      <option value="2">Two</option>
-    </select>
-  </div>
-  <div class="select w-1/5 mr-5">
-    <select class="text-base" required>
-      <option value="" disabled selected>請選擇</option>
-      <option value="1">One</option>
-      <option value="2">Two</option>
-    </select>
-  </div>
-  <h4>～</h4>
-  <div class="select w-1/5 mx-5">
-    <select class="text-base" required>
-      <option value="" disabled selected>請選擇</option>
-      <option value="1">One</option>
-      <option value="2">Two</option>
-    </select>
-  </div>
-  <h4>％</h4>
-  <div class="select w-1/5 ml-5">
-    <select class="text-base" required>
-      <option value="" disabled selected>請選擇</option>
-      <option value="1">One</option>
-      <option value="2">Two</option>
-    </select>
-  </div>
-</div>
+              <div class="flex items-center w-full mb-3">
+                <div class="select w-2/5 mr-5">
+                  <select class="text-base" required>
+                    <option value="" disabled selected>請選擇</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                  </select>
+                </div>
+                <div class="select w-1/5 mr-5">
+                  <select class="text-base" required>
+                    <option value="" disabled selected>請選擇</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                  </select>
+                </div>
+                <h4>～</h4>
+
+                <div class="select w-1/5 mx-5">
+                  <select class="text-base" required>
+                    <option value="" disabled selected>請選擇</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                  </select>
+                </div>
+                <h4>％</h4>
+
+                <div class="select w-1/5 ml-5">
+                  <select class="text-base" required>
+                    <option value="" disabled selected>請選擇</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                  </select>
+                </div>
+              </div>
   `;
 
   let currentlists = document.querySelector("#gradients").innerHTML;
@@ -73,6 +75,29 @@ document.querySelector("#pushitem").onclick = function () {
   console.log(getsession);
 };
 
+// input range
+const rangeInputs = document.querySelectorAll('input[type="range"]');
+const numberInput = document.querySelector('input[type="number"]');
+
+function handleInputChange(e) {
+  let target = e.target;
+  if (e.target.type !== "range") {
+    target = document.getElementById("range");
+  }
+  const min = target.min;
+  const max = target.max;
+  const val = target.value;
+
+  target.style.backgroundSize = ((val - min) * 100) / (max - min) + "% 100%";
+}
+
+rangeInputs.forEach((input) => {
+  input.addEventListener("input", handleInputChange);
+});
+
+numberInput.addEventListener("input", handleInputChange);
+
+// localStorage
 // 取得我們要保留內容的text field元件
 var field = document.getElementById("field");
 

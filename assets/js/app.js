@@ -24,8 +24,8 @@ var swiper2 = new Swiper(".mySwiper2", {
     loop: true,
     spaceBetween: 10,
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
+        nextEl: ".my-swiper-next",
+        prevEl: ".my-swiper-prev"
     },
     thumbs: {
         swiper: swiper
@@ -34,7 +34,7 @@ var swiper2 = new Swiper(".mySwiper2", {
 
 // add new items
 document.querySelector("#pushitem").onclick = function () {
-    document.querySelector("#gradients").innerHTML += "\n  <div class=\"flex items-center w-full mb-4\">\n  <div class=\"select w-2/5 mr-5\">\n    <select class=\"text-base\" required>\n      <option value=\"\" disabled selected>\u8ACB\u9078\u64C7</option>\n      <option value=\"1\">One</option>\n      <option value=\"2\">Two</option>\n    </select>\n  </div>\n  <div class=\"select w-1/5 mr-5\">\n    <select class=\"text-base\" required>\n      <option value=\"\" disabled selected>\u8ACB\u9078\u64C7</option>\n      <option value=\"1\">One</option>\n      <option value=\"2\">Two</option>\n    </select>\n  </div>\n  <h4>\uFF5E</h4>\n  <div class=\"select w-1/5 mx-5\">\n    <select class=\"text-base\" required>\n      <option value=\"\" disabled selected>\u8ACB\u9078\u64C7</option>\n      <option value=\"1\">One</option>\n      <option value=\"2\">Two</option>\n    </select>\n  </div>\n  <h4>\uFF05</h4>\n  <div class=\"select w-1/5 ml-5\">\n    <select class=\"text-base\" required>\n      <option value=\"\" disabled selected>\u8ACB\u9078\u64C7</option>\n      <option value=\"1\">One</option>\n      <option value=\"2\">Two</option>\n    </select>\n  </div>\n</div>\n  ";
+    document.querySelector("#gradients").innerHTML += "\n              <div class=\"flex items-center w-full mb-3\">\n                <div class=\"select w-2/5 mr-5\">\n                  <select class=\"text-base\" required>\n                    <option value=\"\" disabled selected>\u8ACB\u9078\u64C7</option>\n                    <option value=\"1\">One</option>\n                    <option value=\"2\">Two</option>\n                  </select>\n                </div>\n                <div class=\"select w-1/5 mr-5\">\n                  <select class=\"text-base\" required>\n                    <option value=\"\" disabled selected>\u8ACB\u9078\u64C7</option>\n                    <option value=\"1\">One</option>\n                    <option value=\"2\">Two</option>\n                  </select>\n                </div>\n                <h4>\uFF5E</h4>\n\n                <div class=\"select w-1/5 mx-5\">\n                  <select class=\"text-base\" required>\n                    <option value=\"\" disabled selected>\u8ACB\u9078\u64C7</option>\n                    <option value=\"1\">One</option>\n                    <option value=\"2\">Two</option>\n                  </select>\n                </div>\n                <h4>\uFF05</h4>\n\n                <div class=\"select w-1/5 ml-5\">\n                  <select class=\"text-base\" required>\n                    <option value=\"\" disabled selected>\u8ACB\u9078\u64C7</option>\n                    <option value=\"1\">One</option>\n                    <option value=\"2\">Two</option>\n                  </select>\n                </div>\n              </div>\n  ";
 
     var currentlists = document.querySelector("#gradients").innerHTML;
     var setsession = window.sessionStorage.setItem("items", "currentlists");
@@ -42,6 +42,29 @@ document.querySelector("#pushitem").onclick = function () {
     console.log(getsession);
 };
 
+// input range
+var rangeInputs = document.querySelectorAll('input[type="range"]');
+var numberInput = document.querySelector('input[type="number"]');
+
+function handleInputChange(e) {
+    var target = e.target;
+    if (e.target.type !== "range") {
+        target = document.getElementById("range");
+    }
+    var min = target.min;
+    var max = target.max;
+    var val = target.value;
+
+    target.style.backgroundSize = (val - min) * 100 / (max - min) + "% 100%";
+}
+
+rangeInputs.forEach(function (input) {
+    input.addEventListener("input", handleInputChange);
+});
+
+numberInput.addEventListener("input", handleInputChange);
+
+// localStorage
 // 取得我們要保留內容的text field元件
 var field = document.getElementById("field");
 

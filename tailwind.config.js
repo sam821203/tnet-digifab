@@ -73,6 +73,8 @@ module.exports = {
         logincolor: "rgba(0,0,0,0.4)",
         secondary: "#3F4547",
         white40: "rgba(255, 255, 255, 0.4)",
+        grayblock: "rgba(221, 221, 221, 0.4)",
+        bgcolor: "#F0F0F0",
         gray: {
           100: "#eeeeee",
           200: "#dddddd",
