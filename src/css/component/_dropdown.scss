@@ -3,15 +3,8 @@
   box-sizing: border-box;
 }
 
-// select {
-//   background-color: white;
-//   min-width: 20px;
-// }
-
 select {
-  // A reset of styles, including removing the default dropdown arrow
   appearance: none;
-  // Additional resets for further consistency
   background-color: transparent;
   border: none;
   cursor: inherit;
@@ -19,7 +12,6 @@ select {
   min-width: 30px;
 }
 
-// remove arrow form lower IE versions
 select::-ms-expand {
   display: none;
 }
@@ -29,15 +21,8 @@ select::-ms-expand {
 }
 
 .select {
-  // width: 100%;
-  // min-width: 15ch;
-  // max-width: 30ch;
   border-radius: 5px;
   padding: 0.5rem 1.25rem 0.5rem 1.25rem;
-  // padding-right: 20px;
-  // font-size: 1.25rem;
-  // cursor: pointer;
-  // line-height: 1.1;
   background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
   display: grid;
   grid-template-areas: "select";

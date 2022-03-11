@@ -469,7 +469,7 @@
             </div>
           </div>
 
-          <!-- ----- bottom ----- -->
+          <!-- ----- range bar ----- -->
           <div class="my-gray-block mb-8">
             <h3 class="mb-5 border-b-2 pb-3 md:pb-5">手感</h3>
             <form action="">
@@ -483,6 +483,7 @@
                 </div>
               </div>
 
+              <!-- lager -->
               <div class="hidden md:block">
                 <div class="w-full flex items-center gap-6 mb-5">
                   <div class="w-1/6">
@@ -502,12 +503,12 @@
                       id="range"
                       oninput="rangevalue.value=value"
                     />
-                    <!-- <output id="rangevalue">70</output> -->
                   </div>
                   <div class="w-1/6 mt-auto">
                     <label for="huey" class="text-md">柔軟</label>
                   </div>
                 </div>
+
                 <div class="w-full flex items-center gap-6 mb-5">
                   <div class="w-1/6">
                     <label class="checkwrap text-md"
@@ -519,18 +520,19 @@
 
                   <div class="w-4/6 mt-auto">
                     <input
-                      id="rate"
                       type="range"
-                      value="1"
-                      min="0.3"
-                      max="5"
-                      step="0.1"
+                      value="70"
+                      min="0"
+                      max="100"
+                      id="range"
+                      oninput="rangevalue.value=value"
                     />
                   </div>
                   <div class="w-1/6 mt-auto">
                     <label for="huey" class="text-md">平滑</label>
                   </div>
                 </div>
+
                 <div class="w-full flex items-center gap-6 mb-5">
                   <div class="w-1/6">
                     <label class="checkwrap text-md"
@@ -542,12 +544,12 @@
 
                   <div class="w-4/6 mt-auto">
                     <input
-                      id="rate"
                       type="range"
-                      value="1"
-                      min="0.3"
-                      max="5"
-                      step="0.1"
+                      value="70"
+                      min="0"
+                      max="100"
+                      id="range"
+                      oninput="rangevalue.value=value"
                     />
                   </div>
                   <div class="w-1/6 mt-auto">
@@ -571,13 +573,14 @@
                       min="0"
                       max="100"
                       id="range"
-                      oninput="rangenumber.value=value"
+                      oninput="rangevalue.value=value"
                     />
                   </div>
                   <div class="w-1/6 mt-auto">
                     <label for="huey" class="text-md">蓬鬆</label>
                   </div>
                 </div>
+
                 <div class="w-full flex items-center gap-6 mb-5">
                   <div class="w-1/6">
                     <label class="checkwrap text-md"
@@ -589,18 +592,19 @@
 
                   <div class="w-4/6 mt-auto">
                     <input
-                      id="rate"
                       type="range"
-                      value="1"
-                      min="0.3"
-                      max="5"
-                      step="0.1"
+                      value="70"
+                      min="0"
+                      max="100"
+                      id="range"
+                      oninput="rangevalue.value=value"
                     />
                   </div>
                   <div class="w-1/6 mt-auto">
                     <label for="huey" class="text-md">厚Q彈</label>
                   </div>
                 </div>
+
                 <div class="w-full flex items-center gap-6 mb-5">
                   <div class="w-1/6">
                     <label class="checkwrap text-md"
@@ -612,12 +616,12 @@
 
                   <div class="w-4/6 mt-auto">
                     <input
-                      id="rate"
                       type="range"
-                      value="1"
-                      min="0.3"
-                      max="5"
-                      step="0.1"
+                      value="70"
+                      min="0"
+                      max="100"
+                      id="range"
+                      oninput="rangevalue.value=value"
                     />
                   </div>
                   <div class="w-1/6 mt-auto">
@@ -626,6 +630,7 @@
                 </div>
               </div>
 
+              <!-- smaller -->
               <div class="block md:hidden">
                 <!-- first input ramge -->
                 <div class="w-full items-center gap-6 mb-5">
@@ -640,38 +645,26 @@
                     </div>
                   </div>
                   <div class="w-full mt-auto">
-                    <input
-                      id="rate"
-                      type="range"
-                      value="1"
-                      min="0.3"
-                      max="5"
-                      step="0.1"
-                    />
+                    <input id="rate" type="range" value="1" min="0.3" max="5" />
                   </div>
                 </div>
+
                 <div class="w-full items-center gap-6 mb-5">
                   <div class="w-full flex justify-between mb-3">
                     <label class="checkwrap text-md"
-                      >粗糙
-                      <input type="checkbox" />
+                      >硬挺
+                      <input type="checkbox" checked="checked" />
                       <span class="round-check"></span>
                     </label>
                     <div class="mt-auto">
-                      <label for="huey" class="text-md">平滑</label>
+                      <label for="huey" class="text-md">柔軟</label>
                     </div>
                   </div>
                   <div class="w-full mt-auto">
-                    <input
-                      id="rate"
-                      type="range"
-                      value="1"
-                      min="0.3"
-                      max="5"
-                      step="0.1"
-                    />
+                    <input id="rate" type="range" value="1" min="0.3" max="5" />
                   </div>
                 </div>
+
                 <div class="w-full items-center gap-6 mb-5">
                   <div class="w-full flex justify-between mb-3">
                     <label class="checkwrap text-md"
@@ -684,14 +677,7 @@
                     </div>
                   </div>
                   <div class="w-full mt-auto">
-                    <input
-                      id="rate"
-                      type="range"
-                      value="1"
-                      min="0.3"
-                      max="5"
-                      step="0.1"
-                    />
+                    <input id="rate" type="range" value="1" min="0.3" max="5" />
                   </div>
                 </div>
                 <div class="w-full items-center gap-6 mb-5">
@@ -706,14 +692,7 @@
                     </div>
                   </div>
                   <div class="w-full mt-auto">
-                    <input
-                      id="rate"
-                      type="range"
-                      value="1"
-                      min="0.3"
-                      max="5"
-                      step="0.1"
-                    />
+                    <input id="rate" type="range" value="1" min="0.3" max="5" />
                   </div>
                 </div>
                 <div class="w-full items-center gap-6 mb-5">
@@ -728,14 +707,7 @@
                     </div>
                   </div>
                   <div class="w-full mt-auto">
-                    <input
-                      id="rate"
-                      type="range"
-                      value="1"
-                      min="0.3"
-                      max="5"
-                      step="0.1"
-                    />
+                    <input id="rate" type="range" value="1" min="0.3" max="5" />
                   </div>
                 </div>
                 <div class="w-full items-center gap-6 mb-5">
@@ -750,14 +722,7 @@
                     </div>
                   </div>
                   <div class="w-full mt-auto">
-                    <input
-                      id="rate"
-                      type="range"
-                      value="1"
-                      min="0.3"
-                      max="5"
-                      step="0.1"
-                    />
+                    <input id="rate" type="range" value="1" min="0.3" max="5" />
                   </div>
                 </div>
               </div>

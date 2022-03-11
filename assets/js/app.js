@@ -64,6 +64,17 @@ rangeInputs.forEach(function (input) {
 
 numberInput.addEventListener("input", handleInputChange);
 
+// select pagination
+$(".pagination a").click(function (e) {
+    e.preventDefault();
+    $(".pagination .active").removeClass("active");
+    $(this).parent().addClass("active");
+});
+
+$("#target").click(function (event) {
+    alert("Handler for .click() called.");
+});
+
 // localStorage
 // 取得我們要保留內容的text field元件
 var field = document.getElementById("field");
