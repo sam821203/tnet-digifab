@@ -4,65 +4,63 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
+    <title>login</title>
     <link rel="stylesheet" href="../../css/all.css" />
   </head>
-  <body>
-    <main
-      style="background-image: url(../../img/login-bg-2560.jpg)"
-      class="bg-cover w-full h-screen object-center bg-no-repeat"
-    >
-      <section>
+  <body
+    style="background-image: url(../../img/login-bg-2560.jpg)"
+    class="bg-cover w-full h-screen bg-center bg-no-repeat"
+  >
+    <header>
+      <div class="w-16 md:max-w-110">
+        <img
+          src="../../img/logo.svg"
+          alt=""
+          class="relative top-8x3 left-8x2 md:top-8x6 md:left-8x5 object-contain w-full h-full"
+        />
+      </div>
+    </header>
+    <main>
+      <section class="flex justify-center items-center h-screen">
         <div id="container">
-          <header class="mb-16 md:mb-32">
-            <div class="w-16 md:max-w-110">
-              <img
-                src="../../img/logo.svg"
-                alt=""
-                class="relative top-8x3 left-8x2 md:top-8x6 md:left-8x5 object-contain w-full h-full"
+          <h1
+            class="font-filson filson-h1 font-medium text-6xl text-center text-white mb-6"
+          >
+            Tnet Fabric Library
+          </h1>
+          <div class="mb-6 text-center">
+            <h2
+              class="font-medium text-3xl text-uppercase text-white font-sans"
+            >
+              會員登入
+            </h2>
+          </div>
+
+          <div class="w-full h-full text-center items-center">
+            <div class="w-full email-address">
+              <input
+                type="email"
+                placeholder="帳號 *"
+                class="bg-logincolor rounded min-w-300 py-3 pl-5 mb-6 text-white placeholder-white border border-white glo-radius"
               />
             </div>
-          </header>
-          <main>
-            <h1
-              class="font-filson filson-h1 font-medium text-6xl text-center text-white mb-6"
-            >
-              Tnet Fabric Library
-            </h1>
-            <div class="mb-10 text-center">
-              <h2
-                class="font-medium text-3xl text-uppercase text-white font-sans"
+
+            <div class="password">
+              <input
+                type="password"
+                placeholder="密碼 *"
+                class="bg-logincolor rounded min-w-300 py-3 pl-5 mb-10 text-white placeholder-white border border-white glo-radius"
+              />
+            </div>
+
+            <a href="" class="w-full flex justify-center">
+              <div
+                class="w-300 h-12 bg-white py-3 px-16 text-primary rounded-full hover:bg-primary hover:text-white trans200"
               >
-                會員登入
-              </h2>
-            </div>
-
-            <div class="w-full h-full text-center items-center">
-              <div class="w-full email-address">
-                <input
-                  type="email"
-                  placeholder="帳號 *"
-                  class="bg-logincolor rounded min-w-300 py-3 pl-5 mb-6 placeholder-white border border-white glo-radius"
-                />
+                登入
               </div>
-
-              <div class="password">
-                <input
-                  type="password"
-                  placeholder="密碼 *"
-                  class="bg-logincolor rounded min-w-300 py-3 pl-5 mb-10 placeholder-white border border-white glo-radius"
-                />
-              </div>
-
-              <a href="" class="w-full flex justify-center">
-                <div
-                  class="w-300 h-12 bg-white py-3 px-16 text-primary rounded-full hover:bg-primary hover:text-white trans200"
-                >
-                  登入
-                </div>
-              </a>
-            </div>
-          </main>
+            </a>
+          </div>
         </div>
       </section>
     </main>

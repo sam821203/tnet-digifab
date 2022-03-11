@@ -458,9 +458,9 @@
                 </div>
               </div>
 
-              <!-- lager -->
+              <!-- larger -->
               <div class="hidden md:block">
-                <div class="w-full flex items-center gap-6 mb-5">
+                <div class="w-full flex items-center gap-4 mb-5">
                   <div class="w-1/6">
                     <label class="checkwrap text-md"
                       >硬挺
@@ -484,7 +484,7 @@
                   </div>
                 </div>
 
-                <div class="w-full flex items-center gap-6 mb-5">
+                <div class="w-full flex items-center gap-4 mb-5">
                   <div class="w-1/6">
                     <label class="checkwrap text-md"
                       >粗糙
@@ -508,7 +508,7 @@
                   </div>
                 </div>
 
-                <div class="w-full flex items-center gap-6 mb-5">
+                <div class="w-full flex items-center gap-4 mb-5">
                   <div class="w-1/6">
                     <label class="checkwrap text-md"
                       >觸摸涼感
@@ -532,7 +532,7 @@
                   </div>
                 </div>
 
-                <div class="w-full flex items-center gap-6 mb-5">
+                <div class="w-full flex items-center gap-4 mb-5">
                   <div class="w-1/6">
                     <label class="checkwrap text-md"
                       >輕薄
@@ -556,7 +556,7 @@
                   </div>
                 </div>
 
-                <div class="w-full flex items-center gap-6 mb-5">
+                <div class="w-full flex items-center gap-4 mb-5">
                   <div class="w-1/6">
                     <label class="checkwrap text-md"
                       >輕Q彈
@@ -580,7 +580,7 @@
                   </div>
                 </div>
 
-                <div class="w-full flex items-center gap-6 mb-5">
+                <div class="w-full flex items-center gap-4 mb-5">
                   <div class="w-1/6">
                     <label class="checkwrap text-md"
                       >垂墜性低
@@ -609,7 +609,7 @@
               <div class="block md:hidden">
                 <!-- first input ramge -->
                 <div class="w-full items-center gap-6 mb-5">
-                  <div class="w-full flex justify-between mb-3">
+                  <div class="w-full flex justify-between mb-1">
                     <label class="checkwrap text-md"
                       >硬挺
                       <input type="checkbox" checked="checked" />
@@ -620,43 +620,64 @@
                     </div>
                   </div>
                   <div class="w-full mt-auto">
-                    <input id="rate" type="range" value="1" min="0.3" max="5" />
+                    <input
+                      type="range"
+                      value="70"
+                      min="0"
+                      max="100"
+                      id="range"
+                      oninput="rangevalue.value=value"
+                    />
                   </div>
                 </div>
 
                 <div class="w-full items-center gap-6 mb-5">
-                  <div class="w-full flex justify-between mb-3">
+                  <div class="w-full flex justify-between mb-1">
                     <label class="checkwrap text-md"
-                      >硬挺
+                      >粗糙
                       <input type="checkbox" checked="checked" />
                       <span class="round-check"></span>
                     </label>
                     <div class="mt-auto">
-                      <label for="huey" class="text-md">柔軟</label>
+                      <label for="huey" class="text-md">平滑</label>
                     </div>
                   </div>
                   <div class="w-full mt-auto">
-                    <input id="rate" type="range" value="1" min="0.3" max="5" />
+                    <input
+                      type="range"
+                      value="70"
+                      min="0"
+                      max="100"
+                      id="range"
+                      oninput="rangevalue.value=value"
+                    />
                   </div>
                 </div>
 
                 <div class="w-full items-center gap-6 mb-5">
-                  <div class="w-full flex justify-between mb-3">
+                  <div class="w-full flex justify-between mb-1">
                     <label class="checkwrap text-md"
                       >觸摸涼感
                       <input type="checkbox" checked="checked" />
                       <span class="round-check"></span>
                     </label>
                     <div class="mt-auto">
-                      <label for="huey" class="text-md">觸摸涼感</label>
+                      <label for="huey" class="text-md">觸摸暖感</label>
                     </div>
                   </div>
                   <div class="w-full mt-auto">
-                    <input id="rate" type="range" value="1" min="0.3" max="5" />
+                    <input
+                      type="range"
+                      value="70"
+                      min="0"
+                      max="100"
+                      id="range"
+                      oninput="rangevalue.value=value"
+                    />
                   </div>
                 </div>
                 <div class="w-full items-center gap-6 mb-5">
-                  <div class="w-full flex justify-between mb-3">
+                  <div class="w-full flex justify-between mb-1">
                     <label class="checkwrap text-md"
                       >輕薄
                       <input type="checkbox" />
@@ -667,11 +688,18 @@
                     </div>
                   </div>
                   <div class="w-full mt-auto">
-                    <input id="rate" type="range" value="1" min="0.3" max="5" />
+                    <input
+                      type="range"
+                      value="70"
+                      min="0"
+                      max="100"
+                      id="range"
+                      oninput="rangevalue.value=value"
+                    />
                   </div>
                 </div>
                 <div class="w-full items-center gap-6 mb-5">
-                  <div class="w-full flex justify-between mb-3">
+                  <div class="w-full flex justify-between mb-1">
                     <label class="checkwrap text-md"
                       >輕Q彈
                       <input type="checkbox" />
@@ -682,11 +710,18 @@
                     </div>
                   </div>
                   <div class="w-full mt-auto">
-                    <input id="rate" type="range" value="1" min="0.3" max="5" />
+                    <input
+                      type="range"
+                      value="70"
+                      min="0"
+                      max="100"
+                      id="range"
+                      oninput="rangevalue.value=value"
+                    />
                   </div>
                 </div>
                 <div class="w-full items-center gap-6 mb-5">
-                  <div class="w-full flex justify-between mb-3">
+                  <div class="w-full flex justify-between mb-1">
                     <label class="checkwrap text-md"
                       >垂墜性低
                       <input type="checkbox" />
@@ -697,7 +732,14 @@
                     </div>
                   </div>
                   <div class="w-full mt-auto">
-                    <input id="rate" type="range" value="1" min="0.3" max="5" />
+                    <input
+                      type="range"
+                      value="70"
+                      min="0"
+                      max="100"
+                      id="range"
+                      oninput="rangevalue.value=value"
+                    />
                   </div>
                 </div>
               </div>
