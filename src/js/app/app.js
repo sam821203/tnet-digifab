@@ -1,34 +1,58 @@
 // checkbox event
-function checkBorder() {
-  const checkBox1 = document.getElementById("checkborder1");
-  const border1 = document.getElementById("imgborder1");
-
-  if (checkBox1.checked) {
-    border1.style.borderColor = "#E55400";
-  } else {
-    border1.style.borderColor = "transparent";
-  }
-}
-
-// var checkbox = document.querySelector("input[name=checkbox]");
-
-// checkbox.addEventListener( 'change', function() {
-//     if(this.checked) {
-
-//     } else {
-
-//     }
-// });
-
 // function checkBorder() {
-//   const checkBorder = document.querySelector("input[name=checkborder]");
-//   const borderBox = document.querySelector("input[name=imgborder]");
+//   const checkBox1 = document.getElementById("checkborder1");
+//   const border1 = document.getElementById("imgborder1");
 
+//   if (checkBox1.checked) {
+//     border1.style.borderColor = "#E55400";
+//   } else {
+//     border1.style.borderColor = "transparent";
+//   }
+// }
+
+// checkBorder.addEventListener("click", function () {
 //   if (checkBorder.checked) {
-//     console.log("hi");
 //     borderBox.style.borderColor = "#E55400";
 //   } else {
 //     borderBox.style.borderColor = "transparent";
+//   }
+// });
+
+// let checkBorder = document.querySelectorAll("input[name=checkborder]");
+// let borderBox = document.querySelectorAll("div[name=imgborder]");
+
+// for (let i = 0; i < checkBorder.length; i++) {
+//   console.log(checkBorder[i]);
+//   console.log(borderBox[i]);
+
+//   if (checkBorder[i].checked) {
+//     borderBox[i].style.borderColor = "#E55400";
+//   } else {
+//     borderBox[i].style.borderColor = "transparent";
+//   }
+// }
+
+function checkBorder() {
+  let checkBorder = document.querySelectorAll("input[name=checkborder]");
+  let borderBox = document.querySelectorAll("div[name=imgborder]");
+
+  for (let i = 0; i < checkBorder.length; i++) {
+    if (checkBorder[i].checked) {
+      borderBox[i].style.borderColor = "#E55400";
+    } else {
+      borderBox[i].style.borderColor = "transparent";
+    }
+  }
+}
+
+// for (let i = 0; i < checkBorder.length; i++) {
+//   console.log(checkBorder[i]);
+//   console.log(borderBox[i]);
+
+//   if (checkBorder[i].checked) {
+//     borderBox[i].style.borderColor = "#E55400";
+//   } else {
+//     borderBox[i].style.borderColor = "transparent";
 //   }
 // }
 
