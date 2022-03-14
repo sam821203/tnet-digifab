@@ -10,6 +10,28 @@ function checkBorder() {
   }
 }
 
+// var checkbox = document.querySelector("input[name=checkbox]");
+
+// checkbox.addEventListener( 'change', function() {
+//     if(this.checked) {
+
+//     } else {
+
+//     }
+// });
+
+// function checkBorder() {
+//   const checkBorder = document.querySelector("input[name=checkborder]");
+//   const borderBox = document.querySelector("input[name=imgborder]");
+
+//   if (checkBorder.checked) {
+//     console.log("hi");
+//     borderBox.style.borderColor = "#E55400";
+//   } else {
+//     borderBox.style.borderColor = "transparent";
+//   }
+// }
+
 // swiper
 var swiper = new Swiper(".mySwiper", {
   loop: true,
@@ -30,10 +52,10 @@ var swiper2 = new Swiper(".mySwiper2", {
   },
 });
 
-// add new items
-document.querySelector("#pushitem").onclick = function () {
-  document.querySelector("#gradients").innerHTML += `
-              <div class="flex items-center w-full mb-3">
+// add new items desktop
+document.querySelector("#pushitemDes").onclick = function () {
+  document.querySelector("#gradientsDes").innerHTML += `
+              <div class="flex items-center w-full mb-4">
                 <div class="select w-2/5 mr-5">
                   <select class="text-base" required>
                     <option value="" disabled selected>請選擇</option>
@@ -69,7 +91,80 @@ document.querySelector("#pushitem").onclick = function () {
               </div>
   `;
 
-  let currentlists = document.querySelector("#gradients").innerHTML;
+  let currentlists = document.querySelector("#gradientsDes").innerHTML;
+  var setsession = window.sessionStorage.setItem("items", "currentlists");
+  var getsession = window.sessionStorage.getItem("items");
+  console.log(getsession);
+};
+
+// add new items mobile
+document.querySelector("#pushitemMob").onclick = function () {
+  document.querySelector("#gradientsMob").innerHTML += `
+  <div class="flex items-center w-full mb-3">
+  <div class="select w-1/2 mr-3">
+    <select class="text-base" required>
+      <option value="" disabled selected>請選擇</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+    </select>
+  </div>
+  <div class="select w-1/2">
+    <select class="text-base" required>
+      <option value="" disabled selected>請選擇</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+    </select>
+  </div>
+  <h4 class="ml-3">～</h4>
+</div>
+<div class="flex items-center w-full mb-4">
+  <div class="select w-1/2 mr-3">
+    <select class="text-base" required>
+      <option value="" disabled selected>請選擇</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+    </select>
+  </div>
+  <h4>％</h4>
+
+  <div class="select w-1/2 ml-3">
+    <select class="text-base" required>
+      <option value="" disabled selected>請選擇</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+    </select>
+  </div>
+</div>
+  `;
+
+  let currentlists = document.querySelector("#gradientsMob").innerHTML;
+  var setsession = window.sessionStorage.setItem("items", "currentlists");
+  var getsession = window.sessionStorage.getItem("items");
+  console.log(getsession);
+};
+
+// add new function
+document.querySelector("#pushfunction").onclick = function () {
+  document.querySelector("#mutiFunction").innerHTML += `
+  <div class="flex items-center w-full mb-4 gap-6">
+  <div class="select w-full">
+    <select class="text-base" required>
+      <option value="" disabled selected>請選擇</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+    </select>
+  </div>
+  <div class="select w-full">
+    <select class="text-base" required>
+      <option value="" disabled selected>請選擇</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+    </select>
+  </div>
+</div>
+  `;
+
+  let currentlists = document.querySelector("#mutiFunction").innerHTML;
   var setsession = window.sessionStorage.setItem("items", "currentlists");
   var getsession = window.sessionStorage.getItem("items");
   console.log(getsession);
@@ -106,21 +201,4 @@ $(".pagination a").click(function (e) {
 
 $("#target").click(function (event) {
   alert("Handler for .click() called.");
-});
-
-// localStorage
-// 取得我們要保留內容的text field元件
-var field = document.getElementById("field");
-
-// 檢查是否有之前的autosave的內容
-// 這段程式碼會在瀏覽器進入該頁面時被執行
-if (sessionStorage.getItem("autosave")) {
-  // 還原先前的內容到指定的text field
-  field.value = sessionStorage.getItem("autosave");
-}
-
-// 註冊事件監聽text field內容的變化
-field.addEventListener("change", function () {
-  // 並儲存變化後的內容至sessionStorage的物件裡
-  sessionStorage.setItem("autosave", field.value);
 });

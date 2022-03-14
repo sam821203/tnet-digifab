@@ -95,15 +95,15 @@
 
               <input
                 type="text"
-                placeholder="inch"
-                name="inch"
+                placeholder="g/m 2"
+                name="g/m 2"
                 class="flex-grow px-5 py-2 text-base rounded-2point5"
               />
               <h4 class="mx-3 md:mx-5">至</h4>
               <input
                 type="text"
-                placeholder="inch"
-                name="inch"
+                placeholder="g/m 2"
+                name="g/m 2"
                 class="flex-grow px-5 py-2 text-base rounded-2point5"
               />
             </div>
@@ -111,15 +111,15 @@
               <h4 class="whitespace-no-wrap mr-2 md:mr-5">比重：</h4>
               <input
                 type="text"
-                placeholder="inch"
-                name="inch"
+                placeholder="g/cm 3"
+                name="g/cm 3"
                 class="flex-grow px-5 py-2 text-base rounded-2point5"
               />
               <h4 class="mx-3 md:mx-5">至</h4>
               <input
                 type="text"
-                placeholder="inch"
-                name="inch"
+                placeholder="g/cm 3"
+                name="g/cm 3"
                 class="flex-grow px-5 py-2 text-base rounded-2point5"
               />
             </div>
@@ -130,9 +130,10 @@
               <h4 class="w-1/2 md:w-1/5">And / OR：</h4>
             </div>
 
-            <div id="gradients" class="hidden md:block">
+            <!-- 電腦版本 -->
+            <div id="gradientsDes" class="hidden md:block">
               <!-- gradient 1 -->
-              <div class="flex items-center w-full mb-3">
+              <div class="flex items-center w-full mb-4">
                 <div class="select w-2/5 mr-5">
                   <select class="text-base" required>
                     <option value="" disabled selected>請選擇</option>
@@ -168,7 +169,7 @@
               </div>
 
               <!-- gradient 2 -->
-              <div class="flex items-center w-full mb-3">
+              <div class="flex items-center w-full mb-4">
                 <div class="select w-2/5 mr-2 md:mr-5">
                   <select class="text-base" required>
                     <option value="" disabled selected>請選擇</option>
@@ -202,7 +203,18 @@
               </div>
             </div>
 
-            <div id="gradients" class="block md:hidden">
+            <div id="newitemDes" class="hidden md:block">
+              <button data-add id="pushitemDes" class="flex">
+                <span
+                  class="w-5 h-5 bg-primary rounded-full text-white flex justify-center items-center icon-mr"
+                  >+</span
+                >
+                <h4 class="text-primary mb-6">新增一筆</h4>
+              </button>
+            </div>
+
+            <!-- 手機版本 -->
+            <div id="gradientsMob" class="block md:hidden">
               <!-- gradient 1 -->
               <div class="flex items-center w-full mb-3">
                 <div class="select w-1/2 mr-3">
@@ -278,8 +290,8 @@
               </div>
             </div>
 
-            <div id="newitem">
-              <button data-add id="pushitem" class="flex">
+            <div id="newitemMob" class="block md:hidden">
+              <button data-add id="pushitemMob" class="flex">
                 <span
                   class="w-5 h-5 bg-primary rounded-full text-white flex justify-center items-center icon-mr"
                   >+</span
@@ -425,24 +437,27 @@
               <h4 class="w-1/2">機能性：</h4>
               <h4 class="w-1/2">And / OR：</h4>
             </div>
-            <div class="flex items-center w-full mb-4 gap-6">
-              <div class="select w-full">
-                <select class="text-base" required>
-                  <option value="" disabled selected>請選擇</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                </select>
-              </div>
-              <div class="select w-full">
-                <select class="text-base" required>
-                  <option value="" disabled selected>請選擇</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                </select>
+
+            <div id="mutiFunction">
+              <div class="flex items-center w-full mb-4 gap-6">
+                <div class="select w-full">
+                  <select class="text-base" required>
+                    <option value="" disabled selected>請選擇</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                  </select>
+                </div>
+                <div class="select w-full">
+                  <select class="text-base" required>
+                    <option value="" disabled selected>請選擇</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                  </select>
+                </div>
               </div>
             </div>
 
-            <button data-add id="pushitem" class="flex">
+            <button data-add id="pushfunction" class="flex">
               <span
                 class="w-5 h-5 bg-primary rounded-full text-white flex justify-center items-center icon-mr"
                 >+</span
@@ -491,7 +506,7 @@
               <div class="hidden md:block">
                 <div class="w-full flex items-center gap-4 mb-5">
                   <div class="w-1/6">
-                    <label class="checkwrap text-md"
+                    <label class="checkwrap text-md whitespace-no-wrap"
                       >硬挺
                       <input type="checkbox" checked="checked" />
                       <span class="round-check"></span>
@@ -515,7 +530,7 @@
 
                 <div class="w-full flex items-center gap-4 mb-5">
                   <div class="w-1/6">
-                    <label class="checkwrap text-md"
+                    <label class="checkwrap text-md whitespace-no-wrap"
                       >粗糙
                       <input type="checkbox" />
                       <span class="round-check"></span>
@@ -539,7 +554,7 @@
 
                 <div class="w-full flex items-center gap-4 mb-5">
                   <div class="w-1/6">
-                    <label class="checkwrap text-md"
+                    <label class="checkwrap text-md whitespace-no-wrap"
                       >觸摸涼感
                       <input type="checkbox" checked="checked" />
                       <span class="round-check"></span>
@@ -563,7 +578,7 @@
 
                 <div class="w-full flex items-center gap-4 mb-5">
                   <div class="w-1/6">
-                    <label class="checkwrap text-md"
+                    <label class="checkwrap text-md whitespace-no-wrap"
                       >輕薄
                       <input type="checkbox" />
                       <span class="round-check"></span>
@@ -587,7 +602,7 @@
 
                 <div class="w-full flex items-center gap-4 mb-5">
                   <div class="w-1/6">
-                    <label class="checkwrap text-md"
+                    <label class="checkwrap text-md whitespace-no-wrap"
                       >輕Q彈
                       <input type="checkbox" />
                       <span class="round-check"></span>
@@ -611,7 +626,7 @@
 
                 <div class="w-full flex items-center gap-4 mb-5">
                   <div class="w-1/6">
-                    <label class="checkwrap text-md"
+                    <label class="checkwrap text-md whitespace-no-wrap"
                       >垂墜性低
                       <input type="checkbox" />
                       <span class="round-check"></span>
