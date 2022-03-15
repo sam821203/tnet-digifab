@@ -10,6 +10,9 @@ module.exports = {
     content: ["./src/**/*.html"],
   },
   theme: {
+    fill: {
+      hoverwhite: "white",
+    },
     maxWidth: {
       "1/4": "25%",
       "1/2": "50%",
