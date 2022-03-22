@@ -150,6 +150,33 @@ document.querySelector("#pushfunction").onclick = function () {
   console.log(getsession);
 };
 
+// add new processing
+document.querySelector("#pushProcess").onclick = function () {
+  document.querySelector("#newProcess").innerHTML += `
+  <div class="flex items-center w-full mb-4 gap-6">
+                <div class="select w-1/2 md:w-4/5">
+                  <select class="text-base" required>
+                    <option value="" disabled selected>請選擇</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                  </select>
+                </div>
+                <div class="select w-1/2 md:w-1/5">
+                  <select class="text-base" required>
+                    <option value="" disabled selected>And</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                  </select>
+                </div>
+              </div>
+  `;
+
+  let currentlists = document.querySelector("#newProcess").innerHTML;
+  var setsession = window.sessionStorage.setItem("items", "currentlists");
+  var getsession = window.sessionStorage.getItem("items");
+  console.log(getsession);
+};
+
 // input range
 const rangeInputs = document.querySelectorAll('input[type="range"]');
 const numberInput = document.querySelector('input[type="number"]');
@@ -181,4 +208,24 @@ $(".pagination a").click(function (e) {
 
 $("#target").click(function (event) {
   alert("Handler for .click() called.");
+});
+
+// switch tab
+function switchContent(index) {
+  $(".js-switch-content").hide();
+  $(".js-switch-content").eq(index).fadeIn();
+}
+
+$(".js-switch-tab").eq(0).addClass("is-active");
+$(".js-switch-content").eq(0).show();
+$(".js-switch-tab").on("click", function () {
+  var index = $(this).index();
+  switchContent(index);
+  $(this).addClass("is-active");
+  $(this).siblings().removeClass("is-active");
+});
+
+$(".js-switch-select").on("change", function () {
+  var index = $(this).val();
+  switchContent(index);
 });

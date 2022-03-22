@@ -106,6 +106,7 @@ module.exports = {
         25: "6.25rem",
         30: "7.5rem",
         40: "10rem",
+        mycontain220: "220px",
       },
       radius: {
         "2.5xl": "1.25rem",
