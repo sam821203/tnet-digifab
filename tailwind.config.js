@@ -10,18 +10,6 @@ module.exports = {
     content: ["./src/**/*.html"],
   },
   theme: {
-    fill: {
-      hoverwhite: "white",
-    },
-    maxWidth: {
-      "1/4": "25%",
-      "1/2": "50%",
-      "3/4": "75%",
-      "1/5": "20%",
-      "2/5": "40%",
-      "3/5": "60%",
-      "4/5": "80%",
-    },
     screens: {
       sm: "576px",
       md: "768px",
@@ -30,8 +18,7 @@ module.exports = {
       xxl: "1400px",
     },
     fontFamily: {
-      sans: ['"Noto Sans TC"', "sans-serif"],
-      filson: ["filson-soft", "sans-serif"],
+      sans: ["century-gothic", "Noto Sans TC", "sans-serif"],
     },
     fontSize: {
       xs: ".75rem",
@@ -44,7 +31,9 @@ module.exports = {
       "3xl": "2rem",
       "4xl": "2.25em",
       "5xl": "2.8125rem",
+      12: "3rem",
       "6xl": "3.75rem",
+      16: "4rem",
     },
     opacity: {
       0: "0",
@@ -58,16 +47,6 @@ module.exports = {
       80: ".8",
       90: ".9",
       100: "1",
-    },
-    inset: {
-      0: 0,
-      auto: "auto",
-      "1/2": "50%",
-      "8x2": "16px",
-      "8x3": "24px",
-      "8x4": "32px",
-      "8x5": "40px",
-      "8x6": "48px",
     },
     extend: {
       colors: {
@@ -106,10 +85,32 @@ module.exports = {
         25: "6.25rem",
         30: "7.5rem",
         40: "10rem",
-        mycontain220: "220px",
+        55: "13.75rem",
       },
-      radius: {
-        "2.5xl": "1.25rem",
+      borderRadius: {
+        1.25: "0.3125rem",
+      },
+      inset: {
+        0: 0,
+        auto: "auto",
+        "1/2": "50%",
+        4: "16px",
+        6: "24px",
+        8: "32px",
+        10: "40px",
+        12: "48px",
+      },
+      fill: {
+        white: "white",
+      },
+      maxWidth: {
+        "1/4": "25%",
+        "1/2": "50%",
+        "3/4": "75%",
+        "1/5": "20%",
+        "2/5": "40%",
+        "3/5": "60%",
+        "4/5": "80%",
       },
     },
   },

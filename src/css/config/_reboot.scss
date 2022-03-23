@@ -1,28 +1,15 @@
 body {
-  font-family: "Nunito", "Noto Sans TC", sans-serif;
+  overflow-x: hidden;
 }
 
 main {
   overflow: hidden;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  line-height: 1.25;
-}
-
-p {
-  line-height: 1.75;
-}
-
 input,
 select,
-textarea {
-  font-family: "Nunito", "Noto Sans TC", sans-serif;
+textarea,
+button {
   &:focus {
     outline: none;
   }
@@ -39,8 +26,4 @@ select {
   &::-ms-expand {
     display: none;
   }
-}
-
-button:focus {
-  outline: none;
 }
