@@ -35,7 +35,7 @@
             <h3 class="mb-5 border-b-2 pb-3 md:pb-5">規格</h3>
 
             <div class="flex items-center h-full mb-4">
-              <h4 class="whitespace-no-wrap mr-2 md:mr-5">廠商：</h4>
+              <h4 class="whitespace-no-wrap mr-2 md:mr-5">廠商</h4>
               <div class="select w-full">
                 <select class="text-base" required>
                   <option value="" disabled selected>請選擇</option>
@@ -46,59 +46,61 @@
             </div>
 
             <div class="flex items-center w-full h-full mb-4">
-              <h4 class="whitespace-no-wrap mr-2 md:mr-5">幅寬：</h4>
+              <h4 class="whitespace-no-wrap mr-2 md:mr-5">幅寬</h4>
               <input
                 type="text"
-                placeholder="inch"
                 name="inch"
                 class="flex-grow px-5 py-2 text-base rounded-2point5"
               />
               <h4 class="mx-3 md:mx-5">至</h4>
               <input
                 type="text"
-                placeholder="inch"
                 name="inch"
                 class="flex-grow px-5 py-2 text-base rounded-2point5"
               />
+              <h4 class="ml-4">&nbsp;inch</h4>
             </div>
-            <div class="flex items-center w-full h-full mb-4">
-              <h4 class="whitespace-no-wrap mr-2 md:mr-5">布重：</h4>
 
+            <div class="flex items-center w-full h-full mb-4">
+              <h4 class="whitespace-no-wrap mr-2 md:mr-5">布重</h4>
               <input
                 type="text"
-                placeholder="g/m 2"
-                name="g/m 2"
+                name="g/m²"
                 class="flex-grow px-5 py-2 text-base rounded-2point5"
               />
               <h4 class="mx-3 md:mx-5">至</h4>
               <input
                 type="text"
-                placeholder="g/m 2"
-                name="g/m 2"
+                name="g/m²"
                 class="flex-grow px-5 py-2 text-base rounded-2point5"
               />
+              <h4 class="ml-4">g/m²</h4>
             </div>
-            <div class="flex items-center w-full h-full mb-4">
-              <h4 class="whitespace-no-wrap mr-2 md:mr-5">比重：</h4>
+
+            <div class="flex items-center w-full h-full mb-5">
+              <h4 class="whitespace-no-wrap mr-2 md:mr-5">比重</h4>
               <input
                 type="text"
-                placeholder="g/cm 3"
-                name="g/cm 3"
+                name="g/cm³"
                 class="flex-grow px-5 py-2 text-base rounded-2point5"
               />
               <h4 class="mx-3 md:mx-5">至</h4>
               <input
                 type="text"
-                placeholder="g/cm 3"
-                name="g/cm 3"
+                name="g/cm³"
                 class="flex-grow px-5 py-2 text-base rounded-2point5"
               />
+              <h4 class="ml-4">g/cm³</h4>
             </div>
 
-            <!-- gradient -->
-            <div class="flex mb-4">
-              <h4 class="w-1/2 md:w-4/5">成分：</h4>
-              <h4 class="w-1/2 md:w-1/5">And / OR：</h4>
+            <div class="flex items-center w-full mb-3">
+              <h4 class="w-1/2 md:w-2/5 mr-0 md:mr-5">成分：</h4>
+              <div class="hidden md:block w-1/5 h-full mr-5"></div>
+              <h4 class="hidden md:block text-transparent">～</h4>
+              <div class="hidden md:block w-1/5 h-full ml-5"></div>
+              <h4 class="hidden md:block text-transparent mr-5">％</h4>
+              <div class="w-1/2 md:w-1/5 h-full ml-0 md:ml-5">And / OR：</div>
+              <h4 class="block md:hidden text-transparent">～</h4>
             </div>
 
             <!-- 電腦版本 -->
@@ -174,6 +176,7 @@
               </div>
             </div>
 
+            <!-- 桌機版本 -->
             <div id="newitemDes" class="hidden md:block">
               <button data-add id="pushitemDes" class="flex">
                 <span
@@ -322,70 +325,58 @@
             </div>
 
             <!-- processing -->
-            <div class="flex mb-3">
+            <div class="flex mb-3 gap-6">
               <h4 class="w-1/2 md:w-4/5">整理加工：</h4>
               <h4 class="w-1/2 md:w-1/5">And / OR：</h4>
             </div>
-            <div class="hidden md:flex items-center w-full mb-4 gap-6">
-              <div class="select w-2/5">
-                <select class="text-base" required>
-                  <option value="" disabled selected>請選擇</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                </select>
-              </div>
-              <div class="select w-2/5">
-                <select class="text-base" required>
-                  <option value="" disabled selected>請選擇</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                </select>
-              </div>
-              <div class="select w-1/5">
-                <select class="text-base" required>
-                  <option value="" disabled selected>And</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                </select>
+
+            <div id="newProcess">
+              <div class="flex items-center w-full mb-4 gap-6">
+                <div class="select w-1/2 md:w-4/5">
+                  <select class="text-base" required>
+                    <option value="" disabled selected>請選擇</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                  </select>
+                </div>
+                <div class="select w-1/2 md:w-1/5">
+                  <select class="text-base" required>
+                    <option value="" disabled selected>And</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                  </select>
+                </div>
               </div>
             </div>
+            <button data-add id="pushProcess" class="flex">
+              <span
+                class="w-5 h-5 bg-primary rounded-full text-white flex justify-center items-center icon-mr"
+                >+</span
+              >
+              <h4 class="text-primary mb-6">新增一筆</h4>
+            </button>
 
-            <div class="block md:hidden items-center w-full mb-4">
-              <div class="flex gap-3 mb-4">
-                <div class="select w-1/2">
-                  <select class="text-base" required>
-                    <option value="" disabled selected>請選擇</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                  </select>
-                </div>
-                <div class="select w-1/2">
-                  <select class="text-base" required>
-                    <option value="" disabled selected>請選擇</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                  </select>
-                </div>
-              </div>
+            <h4 class="mb-3">圖案：</h4>
+            <div class="flex items-center w-full mb-4 gap-6">
               <div class="select w-full">
                 <select class="text-base" required>
-                  <option value="" disabled selected>And</option>
+                  <option value="" disabled selected>請選擇</option>
                   <option value="1">One</option>
                   <option value="2">Two</option>
                 </select>
               </div>
             </div>
 
-            <!-- textarea -->
-            <h4 class="w-4/6 mb-3">全文檢索：</h4>
-            <textarea
-              id="message"
-              name="message"
-              rows="4"
-              cols="50"
-              placeholder="請填寫訊息"
-              class="w-full px-5 py-3 glo-radius"
-            ></textarea>
+            <h4 class="mb-3">應用：</h4>
+            <div class="flex items-center w-full mb-4 gap-6">
+              <div class="select w-full">
+                <select class="text-base" required>
+                  <option value="" disabled selected>請選擇</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                </select>
+              </div>
+            </div>
           </form>
         </section>
 
@@ -436,186 +427,258 @@
               <h4 class="text-primary mb-6">新增一筆</h4>
             </button>
 
-            <h4 class="mb-3">圖案：</h4>
-            <div class="flex items-center w-full mb-4 gap-6">
-              <div class="select w-full">
-                <select class="text-base" required>
-                  <option value="" disabled selected>請選擇</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                </select>
-              </div>
-            </div>
-
-            <h4 class="mb-3">應用：</h4>
-            <div class="flex items-center w-full mb-4 gap-6">
-              <div class="select w-full">
-                <select class="text-base" required>
-                  <option value="" disabled selected>請選擇</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                </select>
-              </div>
-            </div>
+            <!-- textarea -->
+            <h4 class="w-4/6 mb-3">全文檢索：</h4>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              cols="50"
+              placeholder="請填寫訊息"
+              class="w-full px-5 py-3 glo-radius"
+            ></textarea>
           </div>
 
           <!-- ----- range bar ----- -->
           <div class="my-gray-block mb-8">
             <h3 class="mb-5 border-b-2 pb-3 md:pb-5">手感</h3>
             <form action="">
-              <div class="flex items-center w-full mb-7.5 gap-6">
-                <div class="select w-full">
-                  <select class="text-base" required>
-                    <option value="" disabled selected>請選擇</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                  </select>
-                </div>
-              </div>
-
-              <!-- larger -->
-              <div class="hidden md:block">
-                <div class="w-full flex items-center gap-4 mb-5">
-                  <div class="w-1/6">
-                    <label class="checkwrap text-md whitespace-no-wrap"
-                      >硬挺
-                      <input type="checkbox" checked="checked" />
-                      <span class="round-check"></span>
-                    </label>
-                  </div>
-
-                  <div class="w-4/6 mt-auto">
-                    <input
-                      type="range"
-                      value="70"
-                      min="0"
-                      max="100"
-                      id="range"
-                      oninput="rangevalue.value=value"
-                    />
-                  </div>
-                  <div class="w-1/6 mt-auto">
-                    <label for="huey" class="text-md">柔軟</label>
+              <div class="flex flex-col items-center w-full mb-7.5 gap-6">
+                <div class="flex items-center w-full">
+                  <div class="select w-full">
+                    <select class="text-base js-switch-select" required>
+                      <option value="0" selected>One</option>
+                      <option value="1">Two</option>
+                    </select>
                   </div>
                 </div>
 
-                <div class="w-full flex items-center gap-4 mb-5">
-                  <div class="w-1/6">
-                    <label class="checkwrap text-md whitespace-no-wrap"
-                      >粗糙
-                      <input type="checkbox" />
-                      <span class="round-check"></span>
-                    </label>
-                  </div>
+                <div class="ad-body-slider w-full">
+                  <div class="js-switch-content">
+                    <!-- larger -->
+                    <div class="hidden md:block">
+                      <div class="w-full flex items-center gap-4 mb-5">
+                        <div class="w-1/6">
+                          <label class="checkwrap text-md whitespace-no-wrap"
+                            >硬挺
+                            <input type="checkbox" checked="checked" />
+                            <span class="round-check"></span>
+                          </label>
+                        </div>
 
-                  <div class="w-4/6 mt-auto">
-                    <input
-                      type="range"
-                      value="70"
-                      min="0"
-                      max="100"
-                      id="range"
-                      oninput="rangevalue.value=value"
-                    />
-                  </div>
-                  <div class="w-1/6 mt-auto">
-                    <label for="huey" class="text-md">平滑</label>
-                  </div>
-                </div>
+                        <div class="w-4/6 mt-auto">
+                          <input
+                            type="range"
+                            value="70"
+                            min="0"
+                            max="100"
+                            id="range"
+                            step="10"
+                            oninput="rangevalue.value=value"
+                          />
+                        </div>
+                        <div class="w-1/6 mt-auto">
+                          <label for="huey" class="text-md">柔軟</label>
+                        </div>
+                      </div>
 
-                <div class="w-full flex items-center gap-4 mb-5">
-                  <div class="w-1/6">
-                    <label class="checkwrap text-md whitespace-no-wrap"
-                      >觸摸涼感
-                      <input type="checkbox" checked="checked" />
-                      <span class="round-check"></span>
-                    </label>
-                  </div>
+                      <div class="w-full flex items-center gap-4 mb-5">
+                        <div class="w-1/6">
+                          <label class="checkwrap text-md whitespace-no-wrap"
+                            >粗糙
+                            <input type="checkbox" />
+                            <span class="round-check"></span>
+                          </label>
+                        </div>
 
-                  <div class="w-4/6 mt-auto">
-                    <input
-                      type="range"
-                      value="70"
-                      min="0"
-                      max="100"
-                      id="range"
-                      oninput="rangevalue.value=value"
-                    />
-                  </div>
-                  <div class="w-1/6 mt-auto">
-                    <label for="huey" class="text-md">觸摸暖感</label>
-                  </div>
-                </div>
+                        <div class="w-4/6 mt-auto">
+                          <input
+                            type="range"
+                            value="70"
+                            min="0"
+                            max="100"
+                            id="range"
+                            oninput="rangevalue.value=value"
+                          />
+                        </div>
+                        <div class="w-1/6 mt-auto">
+                          <label for="huey" class="text-md">平滑</label>
+                        </div>
+                      </div>
 
-                <div class="w-full flex items-center gap-4 mb-5">
-                  <div class="w-1/6">
-                    <label class="checkwrap text-md whitespace-no-wrap"
-                      >輕薄
-                      <input type="checkbox" />
-                      <span class="round-check"></span>
-                    </label>
-                  </div>
+                      <div class="w-full flex items-center gap-4 mb-5">
+                        <div class="w-1/6">
+                          <label class="checkwrap text-md whitespace-no-wrap"
+                            >觸摸涼感
+                            <input type="checkbox" checked="checked" />
+                            <span class="round-check"></span>
+                          </label>
+                        </div>
 
-                  <div class="w-4/6 mt-auto">
-                    <input
-                      type="range"
-                      value="70"
-                      min="0"
-                      max="100"
-                      id="range"
-                      oninput="rangevalue.value=value"
-                    />
-                  </div>
-                  <div class="w-1/6 mt-auto">
-                    <label for="huey" class="text-md">蓬鬆</label>
-                  </div>
-                </div>
+                        <div class="w-4/6 mt-auto">
+                          <input
+                            type="range"
+                            value="70"
+                            min="0"
+                            max="100"
+                            id="range"
+                            oninput="rangevalue.value=value"
+                          />
+                        </div>
+                        <div class="w-1/6 mt-auto">
+                          <label for="huey" class="text-md">觸摸暖感</label>
+                        </div>
+                      </div>
 
-                <div class="w-full flex items-center gap-4 mb-5">
-                  <div class="w-1/6">
-                    <label class="checkwrap text-md whitespace-no-wrap"
-                      >輕Q彈
-                      <input type="checkbox" />
-                      <span class="round-check"></span>
-                    </label>
-                  </div>
+                      <div class="w-full flex items-center gap-4 mb-5">
+                        <div class="w-1/6">
+                          <label class="checkwrap text-md whitespace-no-wrap"
+                            >輕薄
+                            <input type="checkbox" />
+                            <span class="round-check"></span>
+                          </label>
+                        </div>
 
-                  <div class="w-4/6 mt-auto">
-                    <input
-                      type="range"
-                      value="70"
-                      min="0"
-                      max="100"
-                      id="range"
-                      oninput="rangevalue.value=value"
-                    />
-                  </div>
-                  <div class="w-1/6 mt-auto">
-                    <label for="huey" class="text-md">厚Q彈</label>
-                  </div>
-                </div>
+                        <div class="w-4/6 mt-auto">
+                          <input
+                            type="range"
+                            value="70"
+                            min="0"
+                            max="100"
+                            id="range"
+                            oninput="rangevalue.value=value"
+                          />
+                        </div>
+                        <div class="w-1/6 mt-auto">
+                          <label for="huey" class="text-md">蓬鬆</label>
+                        </div>
+                      </div>
 
-                <div class="w-full flex items-center gap-4 mb-5">
-                  <div class="w-1/6">
-                    <label class="checkwrap text-md whitespace-no-wrap"
-                      >垂墜性低
-                      <input type="checkbox" />
-                      <span class="round-check"></span>
-                    </label>
-                  </div>
+                      <div class="w-full flex items-center gap-4 mb-5">
+                        <div class="w-1/6">
+                          <label class="checkwrap text-md whitespace-no-wrap"
+                            >輕Q彈
+                            <input type="checkbox" />
+                            <span class="round-check"></span>
+                          </label>
+                        </div>
 
-                  <div class="w-4/6 mt-auto">
-                    <input
-                      type="range"
-                      value="70"
-                      min="0"
-                      max="100"
-                      id="range"
-                      oninput="rangevalue.value=value"
-                    />
+                        <div class="w-4/6 mt-auto">
+                          <input
+                            type="range"
+                            value="70"
+                            min="0"
+                            max="100"
+                            id="range"
+                            oninput="rangevalue.value=value"
+                          />
+                        </div>
+                        <div class="w-1/6 mt-auto">
+                          <label for="huey" class="text-md">厚Q彈</label>
+                        </div>
+                      </div>
+
+                      <div class="w-full flex items-center gap-4 mb-5">
+                        <div class="w-1/6">
+                          <label class="checkwrap text-md whitespace-no-wrap"
+                            >垂墜性低
+                            <input type="checkbox" />
+                            <span class="round-check"></span>
+                          </label>
+                        </div>
+
+                        <div class="w-4/6 mt-auto">
+                          <input
+                            type="range"
+                            value="70"
+                            min="0"
+                            max="100"
+                            id="range"
+                            oninput="rangevalue.value=value"
+                          />
+                        </div>
+                        <div class="w-1/6 mt-auto">
+                          <label for="huey" class="text-md">垂墜性高</label>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="w-1/6 mt-auto">
-                    <label for="huey" class="text-md">垂墜性高</label>
+                  <div class="js-switch-content">
+                    <!-- larger -->
+                    <div class="hidden md:block">
+                      <div class="w-full flex items-center gap-4 mb-5">
+                        <div class="w-1/6">
+                          <label class="checkwrap text-md whitespace-no-wrap"
+                            >硬挺
+                            <input type="checkbox" checked="checked" />
+                            <span class="round-check"></span>
+                          </label>
+                        </div>
+
+                        <div class="w-4/6 mt-auto">
+                          <input
+                            type="range"
+                            value="70"
+                            min="0"
+                            max="100"
+                            id="range"
+                            step="10"
+                            oninput="rangevalue.value=value"
+                          />
+                        </div>
+                        <div class="w-1/6 mt-auto">
+                          <label for="huey" class="text-md">柔軟</label>
+                        </div>
+                      </div>
+
+                      <div class="w-full flex items-center gap-4 mb-5">
+                        <div class="w-1/6">
+                          <label class="checkwrap text-md whitespace-no-wrap"
+                            >粗糙
+                            <input type="checkbox" />
+                            <span class="round-check"></span>
+                          </label>
+                        </div>
+
+                        <div class="w-4/6 mt-auto">
+                          <input
+                            type="range"
+                            value="70"
+                            min="0"
+                            max="100"
+                            id="range"
+                            oninput="rangevalue.value=value"
+                          />
+                        </div>
+                        <div class="w-1/6 mt-auto">
+                          <label for="huey" class="text-md">平滑</label>
+                        </div>
+                      </div>
+
+                      <div class="w-full flex items-center gap-4 mb-5">
+                        <div class="w-1/6">
+                          <label class="checkwrap text-md whitespace-no-wrap"
+                            >觸摸涼感
+                            <input type="checkbox" checked="checked" />
+                            <span class="round-check"></span>
+                          </label>
+                        </div>
+
+                        <div class="w-4/6 mt-auto">
+                          <input
+                            type="range"
+                            value="70"
+                            min="0"
+                            max="100"
+                            id="range"
+                            oninput="rangevalue.value=value"
+                          />
+                        </div>
+                        <div class="w-1/6 mt-auto">
+                          <label for="huey" class="text-md">觸摸暖感</label>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -763,20 +826,18 @@
 
           <!-- ----- button ----- -->
           <div class="w-full flex gap-6">
-            <button
-              data-add
-              id="refresh"
+            <a
+              href="javascript:;"
               class="w-1/2 flex bg-secondary hover:bg-black trans200 glo-radius py-3 text-white justify-center"
             >
-              重新整理
-            </button>
-            <button
-              data-add
-              id="refresh"
+              <div>重新整理</div>
+            </a>
+            <a
+              href="../result/result.html"
               class="w-1/2 flex bg-primary hover:bg-primaryhover trans200 glo-radius py-3 text-white justify-center"
             >
-              <a href="../result/result.html"> 開始搜尋 </a>
-            </button>
+              <div>開始搜尋</div>
+            </a>
           </div>
         </aside>
       </div>

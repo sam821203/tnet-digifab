@@ -1,39 +1,6 @@
 "use strict";
 
 // checkbox event
-// function checkBorder() {
-//   const checkBox1 = document.getElementById("checkborder1");
-//   const border1 = document.getElementById("imgborder1");
-
-//   if (checkBox1.checked) {
-//     border1.style.borderColor = "#E55400";
-//   } else {
-//     border1.style.borderColor = "transparent";
-//   }
-// }
-
-// checkBorder.addEventListener("click", function () {
-//   if (checkBorder.checked) {
-//     borderBox.style.borderColor = "#E55400";
-//   } else {
-//     borderBox.style.borderColor = "transparent";
-//   }
-// });
-
-// let checkBorder = document.querySelectorAll("input[name=checkborder]");
-// let borderBox = document.querySelectorAll("div[name=imgborder]");
-
-// for (let i = 0; i < checkBorder.length; i++) {
-//   console.log(checkBorder[i]);
-//   console.log(borderBox[i]);
-
-//   if (checkBorder[i].checked) {
-//     borderBox[i].style.borderColor = "#E55400";
-//   } else {
-//     borderBox[i].style.borderColor = "transparent";
-//   }
-// }
-
 function checkBorder() {
   var checkBorder = document.querySelectorAll("input[name=checkborder]");
   var borderBox = document.querySelectorAll("div[name=imgborder]");
@@ -46,17 +13,6 @@ function checkBorder() {
     }
   }
 }
-
-// for (let i = 0; i < checkBorder.length; i++) {
-//   console.log(checkBorder[i]);
-//   console.log(borderBox[i]);
-
-//   if (checkBorder[i].checked) {
-//     borderBox[i].style.borderColor = "#E55400";
-//   } else {
-//     borderBox[i].style.borderColor = "transparent";
-//   }
-// }
 
 // swiper
 var swiper = new Swiper(".mySwiper", {
@@ -108,6 +64,16 @@ document.querySelector("#pushfunction").onclick = function () {
   console.log(getsession);
 };
 
+// add new processing
+document.querySelector("#pushProcess").onclick = function () {
+  document.querySelector("#newProcess").innerHTML += "\n  <div class=\"flex items-center w-full mb-4 gap-6\">\n                <div class=\"select w-1/2 md:w-4/5\">\n                  <select class=\"text-base\" required>\n                    <option value=\"\" disabled selected>\u8ACB\u9078\u64C7</option>\n                    <option value=\"1\">One</option>\n                    <option value=\"2\">Two</option>\n                  </select>\n                </div>\n                <div class=\"select w-1/2 md:w-1/5\">\n                  <select class=\"text-base\" required>\n                    <option value=\"\" disabled selected>And</option>\n                    <option value=\"1\">One</option>\n                    <option value=\"2\">Two</option>\n                  </select>\n                </div>\n              </div>\n  ";
+
+  var currentlists = document.querySelector("#newProcess").innerHTML;
+  var setsession = window.sessionStorage.setItem("items", "currentlists");
+  var getsession = window.sessionStorage.getItem("items");
+  console.log(getsession);
+};
+
 // input range
 var rangeInputs = document.querySelectorAll('input[type="range"]');
 var numberInput = document.querySelector('input[type="number"]');
@@ -139,6 +105,28 @@ $(".pagination a").click(function (e) {
 
 $("#target").click(function (event) {
   alert("Handler for .click() called.");
+});
+
+// switch tab
+function switchContent(index) {
+  $(".js-switch-content").hide();
+  $(".js-switch-content").eq(index).fadeIn();
+}
+
+// $(".js-switch-tab").eq(0).addClass("is-active");
+$(".js-switch-content").eq(0).show();
+
+// $(".js-switch-tab").on("click", function () {
+//   console.log("hi");
+//   var index = $(this).index();
+//   switchContent(index);
+//   $(this).addClass("is-active");
+//   $(this).siblings().removeClass("is-active");
+// });
+
+$(".js-switch-select").on("change", function () {
+  var index = $(this).val();
+  switchContent(index);
 });
 
 var initPhotoSwipeFromDOM = function initPhotoSwipeFromDOM(gallerySelector) {

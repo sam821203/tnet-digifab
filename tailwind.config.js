@@ -10,6 +10,9 @@ module.exports = {
     content: ["./src/**/*.html"],
   },
   theme: {
+    fill: {
+      hoverwhite: "white",
+    },
     maxWidth: {
       "1/4": "25%",
       "1/2": "50%",
@@ -103,6 +106,7 @@ module.exports = {
         25: "6.25rem",
         30: "7.5rem",
         40: "10rem",
+        mycontain220: "220px",
       },
       radius: {
         "2.5xl": "1.25rem",

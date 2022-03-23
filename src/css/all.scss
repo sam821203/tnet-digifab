@@ -25,6 +25,8 @@
 
 // Adobe font
 @import url("https://use.typekit.net/lqg0lqg.css");
+@import url("https://use.typekit.net/qwi1nki.css");
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700&display=swap");
 
 /* ==========
   #UTILITIES
@@ -42,7 +44,7 @@
 @import "utilities/marginPadding";
 // COLOR
 @import "utilities/color";
-// HOVEF
+// HOVER
 @import "utilities/hover";
 
 /* ==========
@@ -53,8 +55,6 @@
 @import "component/input";
 // DROPDOWN
 @import "component/dropdown";
-// ADDLIST
-@import "component/addlist";
 // SWIPER
 @import "component/swiper";
 // PAGINATION

@@ -76,6 +76,21 @@ body {
   object-fit: cover;
 }
 
+.my-swiper-next:hover,
+.my-swiper-prev:hover {
+  border-color: #3f4547;
+}
+
+.divide-line {
+  position: absolute;
+  top: 16px;
+  right: 28px;
+  width: 1px;
+  height: 20px;
+  background-color: rgba(112, 112, 112, 0.4);
+}
+
+// my swiper button
 .my-swiper-next {
   position: absolute;
   top: 16px;
@@ -117,16 +132,18 @@ body {
   transform: rotate(45deg);
 }
 
-.my-swiper-next:hover,
-.my-swiper-prev:hover {
-  border-color: #3f4547;
-}
+// @media screen and (min-width: 992px) {
+//   .my-swiper-next {
+//     top: 16px;
+//     right: 0px;
+//     width: 18px;
+//     height: 18px;
+//   }
 
-.divide-line {
-  position: absolute;
-  top: 16px;
-  right: 28px;
-  width: 1px;
-  height: 20px;
-  background-color: rgba(112, 112, 112, 0.4);
-}
+//   .my-swiper-prev {
+//     top: 16px;
+//     right: 40px;
+//     width: 18px;
+//     height: 18px;
+//   }
+// }
