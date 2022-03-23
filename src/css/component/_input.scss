@@ -34,8 +34,15 @@ input[type="range"] {
   background: rgba(255, 255, 255, 0.6);
   border-radius: 5px;
   background-image: linear-gradient(#cccccc, #cccccc);
-  background-size: 70% 100%;
   background-repeat: no-repeat;
+}
+
+input[name="select-one"] {
+  background-size: 50% 100%;
+}
+
+input[name="select-two"] {
+  background-size: 40% 100%;
 }
 
 /* Input Thumb */
